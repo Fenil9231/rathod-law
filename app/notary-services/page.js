@@ -214,6 +214,13 @@ const NotaryServicesPage = () => {
 export default NotaryServicesPage;
 
 export const metadata = {
-  title: 'Notary Services | Rathod Law Firm',
-  description: 'Professional notary services including document notarization, certified true copies, and legal document authentication at Rathod Law Firm.',
+  title: 'Notary Services Ontario - Document Notarization & Authentication | Rathod Law',
+  description: 'Professional notary services in Ontario including affidavits, statutory declarations, powers of attorney, certified true copies, and legal document authentication. Experienced notary public services.',
+  keywords: 'notary services ontario, notary public, document notarization, affidavits, statutory declarations, powers of attorney, certified true copies, legal document authentication',
+  openGraph: {
+    title: 'Notary Services Ontario - Document Notarization & Authentication | Rathod Law',
+    description: 'Professional notary services in Ontario including affidavits, statutory declarations, powers of attorney, certified true copies, and legal document authentication. Experienced notary public services.',
+    type: 'website',
+    url: 'https://rathodlaw.com/notary-services'
+  }
 };

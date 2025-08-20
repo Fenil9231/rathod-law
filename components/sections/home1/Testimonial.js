@@ -242,7 +242,7 @@ export default function Testimonial() {
                 <div className="sec-title text-center">
                   <div className="sub-title center">
                     <div className="icon">
-                      <img src="assets/img/icon/sec-title-img1.png" alt="Icon" />
+                      <img src="/assets/img/icon/sec-title-img1.png" alt="Icon" />
                     </div>
                     <div className="text">
                       <p>Our Testimonials</p>

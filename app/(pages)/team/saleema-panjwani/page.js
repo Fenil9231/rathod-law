@@ -1,6 +1,18 @@
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 
+export const metadata = {
+  title: "Saleema Panjwani - Licensed Paralegal & Notary Public | Rathod Law Firm",
+  description: "Meet Saleema Panjwani, Licensed Paralegal and Notary Public at Rathod Law Firm. Expert in traffic tickets, small claims, and landlord-tenant disputes with LL.B and LL.M qualifications.",
+  keywords: "saleema panjwani paralegal, licensed paralegal ontario, notary public, traffic tickets, small claims court, landlord tenant disputes",
+  openGraph: {
+    title: "Saleema Panjwani - Licensed Paralegal & Notary Public | Rathod Law Firm",
+    description: "Meet Saleema Panjwani, Licensed Paralegal and Notary Public at Rathod Law Firm. Expert in traffic tickets, small claims, and landlord-tenant disputes with LL.B and LL.M qualifications.",
+    type: "profile",
+    url: "https://rathodlaw.com/team/saleema-panjwani"
+  }
+};
+
 export default function SaleemaPanjwani() {
 
     return (

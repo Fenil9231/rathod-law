@@ -114,7 +114,6 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
               <span className="icon-icon-48"></span>
             </div>
             <p><a href="tel:+14168002222">Brampton: (416) 800-2222</a></p>
-            <p><a href="tel:+14168002223">Scarborough: (416) 800-2223</a></p>
             <p><a href="mailto:info@rathodlaw.ca">info@rathodlaw.ca</a></p>
           </div>
 

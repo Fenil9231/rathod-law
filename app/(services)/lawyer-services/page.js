@@ -1,6 +1,18 @@
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 
+export const metadata = {
+  title: "Lawyer Services & Pricing - Immigration, Family Law & More | Rathod Law",
+  description: "Professional lawyer services including immigration appeals, family law, judicial reviews, spousal sponsorship appeals, and refugee claims. Transparent pricing and experienced legal representation.",
+  keywords: "lawyer services ontario, immigration appeals, family law, judicial review, spousal sponsorship, refugee claims, legal pricing, immigration lawyer",
+  openGraph: {
+    title: "Lawyer Services & Pricing - Immigration, Family Law & More | Rathod Law",
+    description: "Professional lawyer services including immigration appeals, family law, judicial reviews, spousal sponsorship appeals, and refugee claims. Transparent pricing and experienced legal representation.",
+    type: "website",
+    url: "https://rathodlaw.com/lawyer-services"
+  }
+};
+
 export default function LawyerServices() {
 
     return (
@@ -13,50 +25,169 @@ export default function LawyerServices() {
                                 <div className="col-xl-8 col-lg-7">
                                     <div className="service-details__left">
                                         <div className="service-details__img">
-                                            <img src="assets/images/services/service-details-img-1.jpg" alt="" />
+                                            <img src="/assets/img/service/service-details-img2.jpg" alt="Lawyer Services" />
                                         </div>
                                         <div className="service-details__content">
-                                            <h3 className="service-details__title">Practice Areas & Price List</h3>
-                                            <p className="service-details__text-1">
-                                                At Rathod Law Professional Corporation, we provide comprehensive legal services 
-                                                across multiple practice areas. Our experienced legal team is committed to 
-                                                delivering professional and personalized legal solutions.
-                                            </p>
-                                            
-                                            <h4>Our Practice Areas</h4>
-                                            <div className="service-details__points">
-                                                <div className="service-details__points-single">
-                                                    <div className="service-details__points-icon">
-                                                        <i className="icon-check"></i>
-                                                    </div>
-                                                    <div className="service-details__points-text">
-                                                        <h5>Immigration Law</h5>
-                                                        <p>Comprehensive immigration services including judicial reviews, refugee appeals, and immigration applications.</p>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div className="service-details__points-single">
-                                                    <div className="service-details__points-icon">
-                                                        <i className="icon-check"></i>
-                                                    </div>
-                                                    <div className="service-details__points-text">
-                                                        <h5>Family Law</h5>
-                                                        <p>Divorce applications, child custody issues, spousal support, and property division matters.</p>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div className="service-details__points-single">
-                                                    <div className="service-details__points-icon">
-                                                        <i className="icon-check"></i>
-                                                    </div>
-                                                    <div className="service-details__points-text">
-                                                        <h5>Legal Consultation</h5>
-                                                        <p>Professional legal advice and consultation services for various legal matters.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div className="service-details__consultation">
+                                            <h3 className="service-details__title">Lawyer Services & Price List</h3>
+                            <p className="service-details__text-1">
+                                At Rathod Law Firm, we provide comprehensive legal services across multiple practice areas. 
+                                Our experienced legal team, led by Kapil Rathod, is committed to delivering professional 
+                                and personalized legal solutions with over 13 years of experience in Canadian law.
+                            </p>
+                            
+                            <h4>Immigration Appeals</h4>
+                            <p><strong>Judicial Reviews - Spousal Sponsorship Appeals - Refugee Claim Appeals</strong></p>
+                            
+                            <h5>Judicial Review Applications:</h5>
+                            <p>Many people are unaware that their refused visa application can be appealed to the Federal Court of Canada. We handle judicial reviews for:</p>
+                            <ul className="service-details__list">
+                                <li>Visitor Visa Applications</li>
+                                <li>Work Permit Applications</li>
+                                <li>Study Permit Applications</li>
+                                <li>Permanent Residence Applications</li>
+                                <li>Refugee Applications</li>
+                                <li>Spousal Work Permit Applications</li>
+                            </ul>
+                            <p>When applications are refused, we can appeal to the Federal Court of Canada through "Judicial Reviews". 
+                            Typical processing time is approximately 6 to 10 months. Upon successful appeal, IRCC reopens 
+                            the refused application for assessment by a different officer.</p>
+                            
+                            <h5>Mandamus Applications:</h5>
+                            <p>If your immigration application has surpassed the suggested processing time and you believe 
+                            the delay is unreasonable, you may file a Writ of Mandamus at the Federal Court of Canada. 
+                            Upon successful application, the Court directs IRCC to process the application within a specific timeline.</p>
+                            
+                            <h4>Immigration Applications</h4>
+                            <p><strong>Student Visa - Work Permit - LMIA Applications - Visitor Visa - Refugee Claims - Permanent Residence Applications - Spousal Sponsorships</strong></p>
+                            
+                            <div className="service-details__points">
+                                <div className="service-details__points-single">
+                                    <div className="service-details__points-icon">
+                                        <i className="icon-check"></i>
+                                    </div>
+                                    <div className="service-details__points-text">
+                                        <h5>Student Visa</h5>
+                                        <p>We provide strong attention to candidate profile assessment, appropriate course selection, 
+                                        compelling Statement of Purpose (SOP), and convincing submission letters.</p>
+                                    </div>
+                                </div>
+                                
+                                <div className="service-details__points-single">
+                                    <div className="service-details__points-icon">
+                                        <i className="icon-check"></i>
+                                    </div>
+                                    <div className="service-details__points-text">
+                                        <h5>Work Permit</h5>
+                                        <p>Whether Spousal Open Work Permit or LMIA-based work permit, we pay complete attention to details. 
+                                        Mr. Rathod has processed over 2,500 Spousal Open Work Permit applications in 13 years of practice.</p>
+                                    </div>
+                                </div>
+                                
+                                <div className="service-details__points-single">
+                                    <div className="service-details__points-icon">
+                                        <i className="icon-check"></i>
+                                    </div>
+                                    <div className="service-details__points-text">
+                                        <h5>Visitor Visa & Super Visa</h5>
+                                        <p>We establish strong ties to home country and prepare detailed submission and invitation letters 
+                                        to convince visa officers of the applicant's return.</p>
+                                    </div>
+                                </div>
+                                
+                                <div className="service-details__points-single">
+                                    <div className="service-details__points-icon">
+                                        <i className="icon-check"></i>
+                                    </div>
+                                    <div className="service-details__points-text">
+                                        <h5>Refugee Claims</h5>
+                                        <p>We prepare detailed submissions demonstrating fear of persecution and attend hearings 
+                                        at the Refugee Protection Division, Refugee Appeal Division, and Federal Court appeals.</p>
+                                    </div>
+                                </div>
+                                
+                                <div className="service-details__points-single">
+                                    <div className="service-details__points-icon">
+                                        <i className="icon-check"></i>
+                                    </div>
+                                    <div className="service-details__points-text">
+                                        <h5>Permanent Residence Applications</h5>
+                                        <p>We navigate Express Entry and Provincial Nominee programs, ensuring candidates actually qualify 
+                                        and advising on the best possible paths to permanent residence.</p>
+                                    </div>
+                                </div>
+                                
+                                <div className="service-details__points-single">
+                                    <div className="service-details__points-icon">
+                                        <i className="icon-check"></i>
+                                    </div>
+                                    <div className="service-details__points-text">
+                                        <h5>Spousal Sponsorships</h5>
+                                        <p>We pay specific attention to detail in spousal sponsorship applications, presenting relationships 
+                                        convincingly so applicants typically avoid interviews.</p>
+                                    </div>
+                                </div>
+                                
+                                <div className="service-details__points-single">
+                                    <div className="service-details__points-icon">
+                                        <i className="icon-check"></i>
+                                    </div>
+                                    <div className="service-details__points-text">
+                                        <h5>Refused Visa Applications</h5>
+                                        <p>Mr. Rathod specializes in previously refused applications, accurately identifying key issues, 
+                                        suggesting additional documents, and resubmitting with convincing submission letters.</p>
+                                    </div>
+                                </div>
+                                
+                                <div className="service-details__points-single">
+                                    <div className="service-details__points-icon">
+                                        <i className="icon-check"></i>
+                                    </div>
+                                    <div className="service-details__points-text">
+                                        <h5>Procedural Fairness Letters</h5>
+                                        <p>We carefully analyze and respond to procedural fairness letters, preparing the best response 
+                                        based on prevailing laws and specific circumstances.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <h4>Family Law</h4>
+                            <p><strong>Divorce Applications - Child Custody Issues - Spousal Support Issues</strong></p>
+                            
+                            <h5>Divorce Applications:</h5>
+                            <p>Getting separated is an unfortunate event in anyone's life. At Rathod Law Firm, we take special care 
+                            of the issues that revolve around your separation, including properties, income, support, and children. 
+                            We carefully analyze your situation and provide guidance based on current law.</p>
+                            
+                            <p><strong>The divorce process in Canada involves several key steps:</strong></p>
+                            <ul className="service-details__list">
+                                <li><strong>Eligibility:</strong> At least one spouse must have lived in Canada for one year before filing</li>
+                                <li><strong>Grounds for Divorce:</strong> Separation for one year, adultery, or cruelty</li>
+                                <li><strong>Filing Process:</strong> Complete divorce forms and affidavits with marriage and separation details</li>
+                                <li><strong>Serving Documents:</strong> Deliver copies to your spouse through authorized process</li>
+                                <li><strong>Court Proceedings:</strong> Uncontested or contested divorce depending on agreement</li>
+                                <li><strong>Separation Agreement:</strong> Outline property division, custody, and support arrangements</li>
+                                <li><strong>Divorce Order:</strong> Court issues final divorce order and Certificate of Divorce</li>
+                            </ul>
+                            
+                            <p>We handle all aspects of family law including child custody, spousal support, and property equalization. 
+                            Our team provides guidance through mediation and court proceedings to achieve fair resolutions.</p>
+                            
+                            <h4>Refugee Appeals</h4>
+                            <p><strong>How Does a Refugee Claim Work in Canada?</strong></p>
+                            
+                            <p>The refugee claim process involves several critical steps that we guide you through:</p>
+                            <ul className="service-details__list">
+                                <li><strong>Arrival in Canada:</strong> Make your claim at a port of entry or IRCC office</li>
+                                <li><strong>Initial Screening:</strong> Eligibility assessment and documentation review</li>
+                                <li><strong>Refugee Hearing:</strong> Present your case before the Refugee Protection Division</li>
+                                <li><strong>Decision Process:</strong> Positive decisions lead to permanent residence applications</li>
+                                <li><strong>Appeals:</strong> We handle appeals for negative decisions at various levels</li>
+                            </ul>
+                            
+                            <p>We prepare detailed evidence demonstrating fear of persecution and provide representation 
+                            throughout the entire process, from initial claim to potential Federal Court appeals.</p>
+                            
+                            <div className="service-details__consultation">
                                                 <div className="service-details__consultation-bg" style={{backgroundColor: '#f8f9fa', padding: '30px', borderRadius: '10px', marginTop: '30px'}}>
                                                     <h4 style={{color: '#1e3a8a', marginBottom: '20px'}}>Call Us for Consultation</h4>
                                                     <p style={{marginBottom: '15px'}}>

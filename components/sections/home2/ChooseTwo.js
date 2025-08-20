@@ -78,7 +78,7 @@ export default function ChooseTwo({
                 <div className="sec-title">
                   <div className="sub-title">
                     <div className="icon">
-                      <img src="assets/img/icon/sec-title-img1.png" alt="Icon" />
+                      <img src="/assets/img/icon/sec-title-img1.png" alt="Icon" />
                     </div>
                     <div className="text">
                       <p>{subTitle}</p>

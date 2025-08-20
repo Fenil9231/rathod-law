@@ -1,6 +1,18 @@
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 
+export const metadata = {
+  title: "Paralegal Services Ontario - Traffic Tickets, Small Claims & More | Rathod Law",
+  description: "Expert paralegal services in Ontario including traffic ticket defense, small claims court representation, landlord tenant disputes, and provincial offenses. Affordable legal help.",
+  keywords: "paralegal services ontario, traffic tickets, small claims court, landlord tenant disputes, provincial offenses, paralegal representation, affordable legal services",
+  openGraph: {
+    title: "Paralegal Services Ontario - Traffic Tickets, Small Claims & More | Rathod Law",
+    description: "Expert paralegal services in Ontario including traffic ticket defense, small claims court representation, landlord tenant disputes, and provincial offenses. Affordable legal help.",
+    type: "website",
+    url: "https://rathodlaw.com/paralegal-services"
+  }
+};
+
 export default function ParalegalServices() {
 
     return (
@@ -13,7 +25,7 @@ export default function ParalegalServices() {
                                 <div className="col-xl-8 col-lg-7">
                                     <div className="service-details__left">
                                         <div className="service-details__img">
-                                            <img src="assets/images/services/service-details-img-1.jpg" alt="" />
+                                            <img src="/assets/img/service/service-details-img3.jpg" alt="Paralegal Services" />
                                         </div>
                                         <div className="service-details__content">
                                             <h3 className="service-details__title">Traffic Tickets</h3>
@@ -72,22 +84,66 @@ export default function ParalegalServices() {
                                                 </div>
                                             </div>
                                             
-                                            <h4>Our Paralegal Services Include:</h4>
-                                            <ul className="service-details__list">
-                                                <li>Speeding Tickets</li>
-                                                <li>Cell Phone Tickets/Distracted Driving</li>
-                                                <li>Seat Belt Tickets</li>
-                                                <li>Red Light Tickets</li>
-                                                <li>Stunt Driving Tickets</li>
-                                                <li>Suspended Driver's License</li>
-                                                <li>Demerit Points</li>
-                                                <li>Small Claims Court Cases</li>
-                                            </ul>
-                                            
-                                            <p className="service-details__text-2">
-                                                By carefully following these steps, you can effectively challenge a traffic ticket in Ontario. 
-                                                Our experienced paralegal team is here to guide you through the process and represent you in court.
-                                            </p>
+                                            <h4>Small Claims Court Process</h4>
+                            <p>
+                                In Ontario, Small Claims Court handles disputes involving claims up to $35,000. The process is designed to be accessible and straightforward, allowing individuals and businesses to resolve financial disputes without requiring legal representation.
+                            </p>
+                            
+                            <div className="service-details__points">
+                                <div className="service-details__points-single">
+                                    <div className="service-details__points-icon">
+                                        <i className="icon-check"></i>
+                                    </div>
+                                    <div className="service-details__points-text">
+                                        <h5>Filing a Claim</h5>
+                                        <p>File a Plaintiff's Claim (Form 7A) with the court, outlining the details of your claim and paying the required filing fee.</p>
+                                    </div>
+                                </div>
+                                
+                                <div className="service-details__points-single">
+                                    <div className="service-details__points-icon">
+                                        <i className="icon-check"></i>
+                                    </div>
+                                    <div className="service-details__points-text">
+                                        <h5>Serving Documents</h5>
+                                        <p>Serve the defendant with the claim documents and file proof of service with the court.</p>
+                                    </div>
+                                </div>
+                                
+                                <div className="service-details__points-single">
+                                    <div className="service-details__points-icon">
+                                        <i className="icon-check"></i>
+                                    </div>
+                                    <div className="service-details__points-text">
+                                        <h5>Trial Preparation</h5>
+                                        <p>Organize evidence, prepare witnesses, and submit trial briefs as required.</p>
+                                    </div>
+                                </div>
+                                
+                                <div className="service-details__points-single">
+                                    <div className="service-details__points-icon">
+                                        <i className="icon-check"></i>
+                                    </div>
+                                    <div className="service-details__points-text">
+                                        <h5>Enforcement</h5>
+                                        <p>If successful, enforce the judgment through wage garnishment, asset seizure, or property liens.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <h4>Our Paralegal Services Include:</h4>
+                            <ul className="service-details__list">
+                                <li>Traffic Tickets (Speeding, Red Light, Distracted Driving)</li>
+                                <li>Stunt Driving and Suspended License Cases</li>
+                                <li>Small Claims Court Cases (up to $35,000)</li>
+                                <li>Landlord-Tenant Disputes</li>
+                                <li>Legal Research and Federal Court File Preparation</li>
+                                <li>Court Representation at Various Tribunals</li>
+                            </ul>
+                            
+                            <p className="service-details__text-2">
+                                Our experienced paralegal team provides comprehensive representation at the Landlord and Tenant Board, Small Claims Court, and Ontario Court of Justice for Traffic Offences. We guide you through each step of the legal process to achieve the best possible outcome for your case.
+                            </p>
                                         </div>
                                     </div>
                                 </div>

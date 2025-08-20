@@ -34,17 +34,17 @@ export default function Footer2() {
         <>
             <footer className="footer-two">
                 <div className="shape1 float-bob-x">
-                    <img src="assets/img/shape/footer-v2-shape1.png" alt="Shape 1" />
+                    <img src="/assets/img/shape/footer-v2-shape1.png" alt="Shape 1" />
                 </div>
                 <div className="shape2 float-bob-y">
-                    <img src="assets/img/shape/footer-v2-shape2.png" alt="Shape 2" />
+                    <img src="/assets/img/shape/footer-v2-shape2.png" alt="Shape 2" />
                 </div>
                 <div className="footer-main">
                     <div className="footer-two__top">
                         <div className="container">
                             <div className="footer-two__top-inner">
                                 <div className="logo-box">
-                                    <Link href="/"><img src="assets/img/resource/logo-3.png" alt="Logo" /></Link>
+                                    <Link href="/"><img src="/assets/img/resource/logo-3.png" alt="Logo" /></Link>
                                 </div>
 
                                 <div className="footer-two__top-menu">

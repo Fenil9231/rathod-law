@@ -1,6 +1,18 @@
 import Link from 'next/link';
 import Layout from "@/components/layout/Layout";
 
+export const metadata = {
+  title: "About Rathod Law Firm - Experienced Legal Services in Ontario",
+  description: "Learn about Rathod Law Firm's 15+ years of experience providing exceptional legal services including immigration, family law, paralegal services, and notarization in Ontario.",
+  keywords: "about rathod law firm, legal services ontario, immigration lawyers, family law, paralegal services, experienced lawyers, legal solutions",
+  openGraph: {
+    title: "About Rathod Law Firm - Experienced Legal Services in Ontario",
+    description: "Learn about Rathod Law Firm's 15+ years of experience providing exceptional legal services including immigration, family law, paralegal services, and notarization in Ontario.",
+    type: "website",
+    url: "https://rathodlaw.com/about-us"
+  }
+};
+
 export default function AboutUs() {
   return (
     <Layout headerStyle={1} footerStyle={3} breadcrumbTitle="About Us">
@@ -160,6 +172,83 @@ export default function AboutUs() {
           </div>
         </section>
         {/* End Our Mission Section */}
+
+        {/* Start Client Reviews Section */}
+        <section className="testimonials-one">
+          <div className="container">
+            <div className="row">
+              <div className="col-xl-12">
+                <div className="testimonials-one__top">
+                  <div className="sec-title text-center">
+                    <div className="sub-title">
+                      <div className="icon">
+                        <img src="/assets/img/icon/sec-title-img1.png" alt="Section Title Icon" />
+                      </div>
+                      <div className="text">
+                        <p>client testimonials</p>
+                      </div>
+                    </div>
+                    <h2>What Our Clients Say <br /> About Our Services</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="row">
+              <div className="col-xl-12">
+                <div className="testimonials-one__inner">
+                  <div className="testimonials-one__content text-center">
+                    <p className="mb-4">We are proud of the positive feedback we receive from our clients. 
+                    Your satisfaction is our priority, and we continuously strive to exceed your expectations.</p>
+                    
+                    <div className="google-reviews-section">
+                      <div className="google-reviews-box">
+                        <div className="google-icon">
+                          <img src="/assets/img/icon/google-icon.png" alt="Google Reviews" style={{width: '40px', height: '40px'}} />
+                        </div>
+                        <h3>Read Our Google Reviews</h3>
+                        <p>See what our clients have to say about their experience with Rathod Law Firm.</p>
+                        <div className="google-reviews-btn">
+                          <a 
+                            href="https://www.google.com/search?q=rathod+law+firm+reviews" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="thm-btn"
+                          >
+                            View Google Reviews
+                            <span className="thm-btn__icon">
+                              <i className="icon-icon-8"></i>
+                            </span>
+                            <span className="thm-btn__hover-group">
+                              <span className="thm-btn__hover thm-btn__hover--1"></span>
+                              <span className="thm-btn__hover thm-btn__hover--2"></span>
+                              <span className="thm-btn__hover thm-btn__hover--3"></span>
+                              <span className="thm-btn__hover thm-btn__hover--4"></span>
+                            </span>
+                          </a>
+                        </div>
+                        
+                        <div className="review-us-section mt-4">
+                          <h4>Share Your Experience</h4>
+                          <p>If you've worked with us, we'd love to hear about your experience!</p>
+                          <a 
+                            href="https://www.google.com/search?q=rathod+law+firm&rlz=1C1GCEU_enCA962CA962#lrd=0x882b2d68d6e5ac0b:0x123456789abcdef0,3" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="btn btn-outline-primary"
+                          >
+                            Leave a Review
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* End Client Reviews Section */}
 
         {/* Start Contact CTA Section */}
         <section className="cta-one">

@@ -61,7 +61,7 @@ export default function PortfolioFilter1() {
                     <div className="case-three__single">
                         <div className="case-three__single-img">
                             <div className="inner">
-                            <img src="assets/img/resource/case-v3-img1.jpg" alt="" />
+                            <img src="/assets/img/resource/case-v3-img1.jpg" alt="" />
 
                             <div className="overlay-icon">
                                 <Link href="/case-details">
@@ -84,7 +84,7 @@ export default function PortfolioFilter1() {
                     <div className="case-three__single">
                         <div className="case-three__single-img">
                             <div className="inner">
-                            <img src="assets/img/resource/case-v3-img2.jpg" alt="" />
+                            <img src="/assets/img/resource/case-v3-img2.jpg" alt="" />
 
                             <div className="overlay-icon">
                                 <Link href="/case-details">
@@ -107,7 +107,7 @@ export default function PortfolioFilter1() {
                     <div className="case-three__single">
                         <div className="case-three__single-img">
                             <div className="inner">
-                            <img src="assets/img/resource/case-v3-img3.jpg" alt="" />
+                            <img src="/assets/img/resource/case-v3-img3.jpg" alt="" />
 
                             <div className="overlay-icon">
                                 <Link href="/case-details">

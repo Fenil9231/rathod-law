@@ -1,6 +1,18 @@
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 
+export const metadata = {
+  title: "Kapil Rathod - Principal Lawyer & Immigration Expert | Rathod Law Firm",
+  description: "Meet Kapil Rathod, Principal Lawyer at Rathod Law Firm with 13+ years experience in Canadian Immigration Law. Expert in appeals, spousal sponsorship, and federal court cases.",
+  keywords: "kapil rathod lawyer, immigration lawyer ontario, barrister solicitor, canadian immigration law, federal court appeals, spousal sponsorship",
+  openGraph: {
+    title: "Kapil Rathod - Principal Lawyer & Immigration Expert | Rathod Law Firm",
+    description: "Meet Kapil Rathod, Principal Lawyer at Rathod Law Firm with 13+ years experience in Canadian Immigration Law. Expert in appeals, spousal sponsorship, and federal court cases.",
+    type: "profile",
+    url: "https://rathodlaw.com/team/kapil-rathod"
+  }
+};
+
 export default function KapilRathod() {
 
     return (
@@ -38,19 +50,121 @@ export default function KapilRathod() {
                                             </div>
                                             
                                             <div className="team-details__experience">
-                                                <h4>Experience & Expertise</h4>
-                                                <ul className="team-details__list">
-                                                    <li>13+ years in Canadian Immigration Law</li>
-                                                    <li>Regulated Canadian Immigration Consultant (2011-2019)</li>
-                                                    <li>Licensed Lawyer in Canada (2019-present)</li>
-                                                    <li>Federal Court Appeals and Mandamus Applications</li>
-                                                    <li>Immigration and Refugee Board Representation</li>
-                                                    <li>Criminal Law Practice</li>
-                                                    <li>Family Law Practice</li>
-                                                </ul>
+                                <h4>Experience & Expertise</h4>
+                                <ul className="team-details__list">
+                                    <li>13+ years in Canadian Immigration Law</li>
+                                    <li>Regulated Canadian Immigration Consultant (2011-2019)</li>
+                                    <li>Licensed Lawyer in Canada (2019-present)</li>
+                                    <li>Federal Court Appeals and Mandamus Applications</li>
+                                    <li>Immigration and Refugee Board Representation</li>
+                                    <li>Criminal Law Practice</li>
+                                    <li>Family Law Practice</li>
+                                </ul>
+                            </div>
+                            
+                            <div className="team-details__court-experience">
+                                <div className="card border-0 shadow-sm mb-4">
+                                    <div className="card-header bg-primary text-white">
+                                        <h4 className="mb-0 text-white">Court Experience</h4>
+                                    </div>
+                                    <div className="card-body">
+                                        <p className="mb-3">
+                                            In his legal career, Mr. Kapil Rathod has appeared in many court cases including Immigration and Refugee Board of Canada, Federal Court of Canada, Ontario Court of Justice and Superior Court of Justice. Here are some cases in which Mr. Kapil Rathod appeared as a Counsel:
+                                        </p>
+                                        
+                                        <div className="row">
+                                            <div className="col-md-6">
+                                                <div className="card border-light mb-3">
+                                                    <div className="card-header bg-light">
+                                                        <h5 className="mb-0">Federal Court of Canada</h5>
+                                                    </div>
+                                                    <div className="card-body">
+                                                        <div className="list-group list-group-flush">
+                                                            <div className="list-group-item border-0 px-0 py-1">
+                                                                <small>Jethi v. Canada (Citizenship and Immigration), 2024 FC 1503</small>
+                                                            </div>
+                                                            <div className="list-group-item border-0 px-0 py-1">
+                                                                <small>Trivedi v. Canada (Citizenship and Immigration), 2025 FC 617</small>
+                                                            </div>
+                                                            <div className="list-group-item border-0 px-0 py-1">
+                                                                <small>Raiyani v. Canada (Citizenship and Immigration), 2024 FC 2020</small>
+                                                            </div>
+                                                            <div className="list-group-item border-0 px-0 py-1">
+                                                                <small>Sharma v. Canada (Citizenship and Immigration), 2023 FC 1190</small>
+                                                            </div>
+                                                            <div className="list-group-item border-0 px-0 py-1">
+                                                                <small>Tandel v. Canada (Citizenship and Immigration), 2024 FC 1487</small>
+                                                            </div>
+                                                            <div className="list-group-item border-0 px-0 py-1">
+                                                                <small>Sharma v. Canada (Citizenship and Immigration), 2024 FC 1928</small>
+                                                            </div>
+                                                            <div className="list-group-item border-0 px-0 py-1">
+                                                                <small>Khan v. Canada (Citizenship and Immigration), 2025 FC 247</small>
+                                                            </div>
+                                                            <div className="list-group-item border-0 px-0 py-1">
+                                                                <small>Okornor v. Canada (Citizenship and Immigration), 2024 FC 1693</small>
+                                                            </div>
+                                                            <div className="list-group-item border-0 px-0 py-1">
+                                                                <small>Singh v. Canada (Citizenship and Immigration), 2024 FC 1026</small>
+                                                            </div>
+                                                            <div className="list-group-item border-0 px-0 py-1">
+                                                                <small>Singh v. Canada (Citizenship and Immigration), 2024 FC 900</small>
+                                                            </div>
+                                                            <div className="list-group-item border-0 px-0 py-1">
+                                                                <small>Sandhu v. Canada (Citizenship and Immigration), 2025 FC 857</small>
+                                                            </div>
+                                                            <div className="list-group-item border-0 px-0 py-1">
+                                                                <small>Firdous v. Canada (Citizenship and Immigration), 2024 FC 1512</small>
+                                                            </div>
+                                                            <div className="list-group-item border-0 px-0 py-1">
+                                                                <small>Samra v. Canada (Citizenship and Immigration), 2024 FC 1649</small>
+                                                            </div>
+                                                            <div className="list-group-item border-0 px-0 py-1">
+                                                                <small>Goel v. Canada (Citizenship and Immigration), 2025 FC 275</small>
+                                                            </div>
+                                                            <div className="list-group-item border-0 px-0 py-1">
+                                                                <small>Gill v. Canada (Citizenship and Immigration), 2024 FC 1453</small>
+                                                            </div>
+                                                            <div className="list-group-item border-0 px-0 py-1">
+                                                                <small>Seeto v. Canada (Citizenship and Immigration), 2025 FC 308</small>
+                                                            </div>
+                                                            <div className="list-group-item border-0 px-0 py-1">
+                                                                <small>Antala v. Canada (Citizenship and Immigration), 2025 FC 420</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                             
-                                            <div className="team-details__contact">
+                                            <div className="col-md-6">
+                                                <div className="card border-light mb-3">
+                                                    <div className="card-header bg-light">
+                                                        <h5 className="mb-0">Immigration & Refugee Board</h5>
+                                                    </div>
+                                                    <div className="card-body">
+                                                        <div className="list-group list-group-flush">
+                                                            <div className="list-group-item border-0 px-0 py-1">
+                                                                <small>Sandhu v Canada (Citizenship and Immigration), 2024 CanLII 40860</small>
+                                                            </div>
+                                                            <div className="list-group-item border-0 px-0 py-1">
+                                                                <small>Kaur v Canada (Citizenship and Immigration), 2024 CanLII 139919</small>
+                                                            </div>
+                                                            <div className="list-group-item border-0 px-0 py-1">
+                                                                <small>Patel v Canada (Citizenship and Immigration), 2019 CanLII 54632</small>
+                                                            </div>
+                                                            <div className="list-group-item border-0 px-0 py-1">
+                                                                <small>Chaudhari v Canada (Citizenship and Immigration), 2024 CanLII 140331</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div className="team-details__contact">
                                                 <h4>Contact Information</h4>
                                                 <div className="team-details__contact-info">
                                                     <p><strong>Email:</strong> <a href="mailto:rathod@hplaw.org">rathod@hplaw.org</a></p>

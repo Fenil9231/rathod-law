@@ -1,6 +1,18 @@
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 
+export const metadata = {
+  title: "Lincy Gomez - Immigration Specialist & Digital Marketing Expert | Rathod Law",
+  description: "Meet Lincy Gomez, Immigration Specialist and Digital Marketing Expert at Rathod Law Firm with 4+ years in Canadian Immigration and 10+ years in educational counselling.",
+  keywords: "lincy gomez immigration specialist, canadian immigration expert, digital marketing, educational counselling, immigration consultant",
+  openGraph: {
+    title: "Lincy Gomez - Immigration Specialist & Digital Marketing Expert | Rathod Law",
+    description: "Meet Lincy Gomez, Immigration Specialist and Digital Marketing Expert at Rathod Law Firm with 4+ years in Canadian Immigration and 10+ years in educational counselling.",
+    type: "profile",
+    url: "https://rathodlaw.com/team/lincy-gomez"
+  }
+};
+
 export default function LincyGomez() {
 
     return (

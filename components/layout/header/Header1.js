@@ -18,7 +18,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
                   <div className="main-header-one__left">
                     <div className="logo-box-one">
                       <Link href="/">
-                        <img src="assets/img/logo/Rathod-logo-white.png" alt="Rathod Law Firm" />
+                        <img src="/assets/img/logo/Rathod-logo-white.png" alt="Rathod Law Firm" />
                       </Link>
                     </div>
 

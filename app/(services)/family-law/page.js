@@ -13,7 +13,7 @@ export default function FamilyLaw() {
                                 <div className="col-xl-8 col-lg-7">
                                     <div className="service-details__left">
                                         <div className="service-details__img">
-                                            <img src="assets/images/services/service-details-img-1.jpg" alt="" />
+                                            <img src="/assets/img/service/service-details-img1.jpg" alt="Family Law Services" />
                                         </div>
                                         <div className="service-details__content">
                                             <h3 className="service-details__title">Family Law</h3>

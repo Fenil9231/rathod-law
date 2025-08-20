@@ -1,5 +1,17 @@
 import Layout from "@/components/layout/Layout";
 
+export const metadata = {
+  title: "Contact Rathod Law Firm - Get Legal Help Today",
+  description: "Contact Rathod Law Firm for expert legal assistance. Reach out for immigration, family law, paralegal services, and notarization. Call us or visit our office in Ontario.",
+  keywords: "contact rathod law firm, legal consultation, immigration lawyer contact, family law attorney, paralegal services contact, legal help ontario",
+  openGraph: {
+    title: "Contact Rathod Law Firm - Get Legal Help Today",
+    description: "Contact Rathod Law Firm for expert legal assistance. Reach out for immigration, family law, paralegal services, and notarization. Call us or visit our office in Ontario.",
+    type: "website",
+    url: "https://rathodlaw.com/contact"
+  }
+};
+
 export default function Home() {
     return (
         <>
