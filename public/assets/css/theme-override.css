@@ -1,0 +1,61 @@
+:root {
+  /* Override Bootstrap primary color to match theme */
+  --bs-primary: #FFD550;
+  --bs-primary-rgb: 255, 213, 80;
+  
+  /* Override other Bootstrap colors to match theme if needed */
+  --bs-dark: #121213;
+  --bs-dark-rgb: 18, 18, 19;
+  --bs-light: #F7F7F7;
+  --bs-light-rgb: 247, 247, 247;
+  --bs-body-color: #6F7174;
+  --bs-body-color-rgb: 111, 113, 116;
+}
+
+/* Ensure primary button styles use theme colors */
+.btn-primary {
+  --bs-btn-color: #121213;
+  --bs-btn-bg: #FFD550;
+  --bs-btn-border-color: #FFD550;
+  --bs-btn-hover-color: #121213;
+  --bs-btn-hover-bg: #e6c047;
+  --bs-btn-hover-border-color: #e6c047;
+  --bs-btn-focus-shadow-rgb: 255, 213, 80;
+  --bs-btn-active-color: #121213;
+  --bs-btn-active-bg: #d9b33d;
+  --bs-btn-active-border-color: #d9b33d;
+  --bs-btn-disabled-color: #121213;
+  --bs-btn-disabled-bg: #FFD550;
+  --bs-btn-disabled-border-color: #FFD550;
+}
+
+/* Ensure card headers with bg-primary use theme colors */
+.bg-primary {
+  background-color: #FFD550 !important;
+  color: #121213 !important;
+}
+
+.text-primary {
+  color: #FFD550 !important;
+}
+
+.border-primary {
+  border-color: #FFD550 !important;
+}
+
+/* Ensure text is readable on yellow background */
+.bg-primary .text-white,
+.card-header.bg-primary .text-white,
+.card-header.bg-primary h1,
+.card-header.bg-primary h2,
+.card-header.bg-primary h3,
+.card-header.bg-primary h4,
+.card-header.bg-primary h5,
+.card-header.bg-primary h6 {
+  color: #121213 !important;
+}
+
+/* Fix any white text on yellow background for better readability */
+.bg-primary.text-white {
+  color: #121213 !important;
+}
