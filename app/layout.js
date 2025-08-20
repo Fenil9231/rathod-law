@@ -37,8 +37,66 @@ export const viewport = {
 };
 
 export default function RootLayout({ children }) {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Rathod Law Firm",
+    "description": "Expert immigration lawyer and paralegal services in Brampton & Scarborough. Specializing in Federal Court appeals, family law, traffic tickets, small claims, and notary services.",
+    "url": "https://www.rathodlaw.com",
+    "logo": "https://www.rathodlaw.com/assets/img/logo.png",
+    "image": "https://www.rathodlaw.com/assets/img/logo.png",
+    "telephone": "+1-647-490-7051",
+    "email": "info@rathodlaw.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Brampton & Scarborough",
+      "addressLocality": "Brampton",
+      "addressRegion": "ON",
+      "addressCountry": "CA"
+    },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Brampton"
+      },
+      {
+        "@type": "City",
+        "name": "Scarborough"
+      },
+      {
+        "@type": "City",
+        "name": "Toronto"
+      },
+      {
+        "@type": "Province",
+        "name": "Ontario"
+      }
+    ],
+    "serviceType": [
+      "Immigration Law",
+      "Federal Court Appeals",
+      "Traffic Tickets",
+      "Family Law",
+      "Small Claims",
+      "Notary Services",
+      "Paralegal Services"
+    ],
+    "priceRange": "$$",
+    "openingHours": "Mo-Fr 09:00-17:00",
+    "sameAs": [
+      "https://www.facebook.com/rathodlaw",
+      "https://www.linkedin.com/company/rathod-law-firm"
+    ]
+  };
+
   return (
     <html lang="en" className={`${DM_Sans.variable} ${Marcellus.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </head>
       <body>{children}</body>
     </html>
   );
