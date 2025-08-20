@@ -16,7 +16,7 @@ export default function About() {
         learnMoreLink: "/about",
         signatureImage: "/assets/img/about/signature1.png",
         ceoName: "Kapil Rathod, Principal Lawyer",
-        aboutImage: "/assets/img/about/about-v1-img1.jpg",
+        aboutImage: "/assets/img/about/about-v1-img1.jpeg",
         counters: [
             { icon: "icon-icon-13", count: 1000, suffix: "+", title: "Cases Successfully Handled" },
             { icon: "icon-icon-14", count: 15, suffix: "+", title: "Years of Experience" },

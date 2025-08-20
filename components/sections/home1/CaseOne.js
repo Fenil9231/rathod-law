@@ -10,21 +10,24 @@ export default function CaseOne() {
       subTitleImg: "/assets/img/icon/sec-title-img1.png",
       subTitleText: "latest case studies",
       title: "recent case studies showcase for our happy victim",
-      imgSrc: "/assets/img/project/case-v1-img1.jpg",
+      imgSrc: "/assets/img/project/case-v1-img1.jpeg",
+
       category: "business / public",
       caseTitle: "public company case",
       caseLink: "/case-details",
     },
     {
       delay: ".2s",
-      imgSrc: "/assets/img/project/case-v1-img2.jpg",
+      imgSrc: "/assets/img/project/case-v1-img2.jpeg",
+
       category: "Family / domestic",
       caseTitle: "Family violence case",
       caseLink: "/case-details",
     },
     {
       delay: ".3s",
-      imgSrc: "/assets/img/project/case-v1-img3.jpg",
+      imgSrc: "/assets/img/project/case-v1-img3.jpeg",
+
       category: "corporate / tax",
       caseTitle: "business tax consultancy",
       caseLink: "/case-details",
@@ -33,7 +36,8 @@ export default function CaseOne() {
     },
     {
       delay: ".4s",
-      imgSrc: "/assets/img/project/case-v1-img4.jpg",
+      imgSrc: "/assets/img/project/case-v1-img4.jpeg",
+
       category: "Family / domestic",
       caseTitle: "marriage agreement",
       caseLink: "/case-details",

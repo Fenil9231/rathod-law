@@ -6,7 +6,7 @@ import { useState } from "react";
 export default function ServicesOne() {
   // State for dynamic data (e.g., dynamic images, text, links)
   const [servicesContent, setServicesContent] = useState({
-    backgroundImage: "/assets/img/background/services-v1-bg.jpg",
+    backgroundImage: "/assets/img/background/services-v1-bg.jpeg",
     sectionTitleIcon: "/assets/img/icon/sec-title-img1.png",
     sectionTitleText: "our services",
     sectionMainTitle: "We Provide Best Legal Services",

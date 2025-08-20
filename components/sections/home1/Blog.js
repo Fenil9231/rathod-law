@@ -6,7 +6,7 @@ import Link from 'next/link';
 const blogPosts = [
   {
     id: 1,
-    imgSrc: "/assets/img/blog/blog-v1-img1.jpg",
+    imgSrc: "/assets/img/blog/blog-v1-img1.jpeg",
     date: { day: "12", month: "Nov" },
     category: "family law",
     title: "days replenish to gathering lesser morning one",
@@ -14,7 +14,7 @@ const blogPosts = [
   },
   {
     id: 2,
-    imgSrc: "/assets/img/blog/blog-v1-img2.jpg",
+    imgSrc: "/assets/img/blog/blog-v1-img2.jpeg",
     date: { day: "14", month: "Nov" },
     category: "corporate",
     title: "Form Place Created so had said from Called",
