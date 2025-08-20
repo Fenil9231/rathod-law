@@ -28,7 +28,7 @@ export default function ScheduleCall() {
     e.preventDefault();
     // Here you would typically send the form data to your backend or email service
     // Form submitted
-    // For demo purposes, we'll just set formSubmitted to true
+    // For demo purposes,  just set formSubmitted to true
     setFormSubmitted(true);
     // Reset form
     setFormData({
