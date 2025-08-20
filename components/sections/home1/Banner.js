@@ -14,7 +14,7 @@ export default function Banner() {
             { icon: "icon-icon-4", url: "#" }
         ],
         backgroundImage: "/assets/img/pattern/banner-v1-pattern.png",
-        bannerImage: "/assets/img/background/banner-v1-bg.jpg"
+        bannerImage: "/assets/img/background/banner-v1-bg.jpeg"
     });
 
     return (
