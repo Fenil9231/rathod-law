@@ -51,13 +51,15 @@ export default function Home() {
                                                 <p>welcome to Rathod Law</p>
                                             </div>
                                         </div>
-                                        <h2>Legal Solutions for <br /> better World</h2>
+                                        <h2>Trusted Legal Expertise <br /> for Your Peace of Mind</h2>
                                     </div>
 
                                     <div className="about-three__content-text">
-                                        <p>Fill unto likeness had shall is herb air set midst land in meat green had creepeth
-                                            days bearing and winged together malea moving also two replenish spirit set moving.
-                                            All moving give form deep upon grass man</p>
+                                        <p>At Rathod Law, we are dedicated to providing exceptional legal services with a 
+                                            personal touch. Our experienced team combines deep legal expertise with genuine 
+                                            care for our clients, ensuring that every case receives the attention and dedication 
+                                            it deserves. We believe in building lasting relationships based on trust, integrity, 
+                                            and results.</p>
                                     </div>
 
                                     <div className="about-three__content-list">
@@ -75,8 +77,8 @@ export default function Home() {
                                     </div>
 
                                     <div className="about-three__content-btn">
-                                        <a className="thm-btn" href="#">
-                                            appintment now
+                                        <a className="thm-btn" href="/schedule-call" style={{backgroundColor: '#d4af37', borderColor: '#d4af37'}}>
+                                            Schedule Consultation
                                             <span className="thm-btn__icon">
                                                 <i className="icon-icon-8"></i>
                                             </span>
@@ -108,18 +110,18 @@ export default function Home() {
                                     <p>company history</p>
                                 </div>
                             </div>
-                            <h2>history of Rathod Law</h2>
+                            <h2>Our Journey of Excellence</h2>
                         </div>
                         <div className="row">
                             {/* Start Company History Single */}
                             <div className="col-xl-3 col-lg-6 col-md-6">
                                 <div className="company-history__single text-center">
                                     <div className="company-history__single-content">
-                                        <h2>start journey</h2>
-                                        <p>Heaven appear great is likeness <br /> first tree face though at gathered <br />
-                                            dominion which other</p>
-                                        <div className="date-box">
-                                            2015
+                                        <h2>Foundation</h2>
+                                        <p>Rathod Law was established with <br /> a vision to provide accessible <br />
+                                            and effective legal services</p>
+                                        <div className="date-box" style={{backgroundColor: '#d4af37', color: '#1a365d'}}>
+                                            2000
                                         </div>
                                     </div>
                                     <div className="company-history__single-img">
@@ -136,12 +138,12 @@ export default function Home() {
                                         <img src="/assets/img/resource/company-history-img2.jpg" alt="Firm of the Year" />
                                     </div>
                                     <div className="company-history__single-content">
-                                        <div className="date-box">
-                                            2017
+                                        <div className="date-box" style={{backgroundColor: '#d4af37', color: '#1a365d'}}>
+                                            2010
                                         </div>
-                                        <h2>Firm of year</h2>
-                                        <p>Heaven appear great is likeness <br /> first tree face though at gathered <br />
-                                            dominion which other</p>
+                                        <h2>Expansion</h2>
+                                        <p>Expanded our practice areas to <br /> include immigration, family law <br />
+                                            and paralegal services</p>
                                     </div>
                                 </div>
                             </div>
@@ -151,11 +153,11 @@ export default function Home() {
                             <div className="col-xl-3 col-lg-6 col-md-6">
                                 <div className="company-history__single text-center">
                                     <div className="company-history__single-content">
-                                        <h2>open branch</h2>
-                                        <p>Heaven appear great is likeness <br /> first tree face though at gathered <br />
-                                            dominion which other</p>
-                                        <div className="date-box">
-                                            2021
+                                        <h2>Recognition</h2>
+                                        <p>Recognized for outstanding <br /> client service and successful <br />
+                                            case outcomes</p>
+                                        <div className="date-box" style={{backgroundColor: '#d4af37', color: '#1a365d'}}>
+                                            2015
                                         </div>
                                     </div>
                                     <div className="company-history__single-img">
@@ -172,12 +174,12 @@ export default function Home() {
                                         <img src="/assets/img/resource/company-history-img4.jpg" alt="Global Awards" />
                                     </div>
                                     <div className="company-history__single-content">
-                                        <div className="date-box">
-                                            2023
+                                        <div className="date-box" style={{backgroundColor: '#d4af37', color: '#1a365d'}}>
+                                            2024
                                         </div>
-                                        <h2>global awards</h2>
-                                        <p>Heaven appear great is likeness <br /> first tree face though at gathered <br />
-                                            dominion which other</p>
+                                        <h2>Innovation</h2>
+                                        <p>Embracing technology and modern <br /> approaches to deliver exceptional <br />
+                                            legal solutions</p>
                                     </div>
                                 </div>
                             </div>
@@ -191,13 +193,13 @@ export default function Home() {
                 <TestimonialsTwo/>
                 <TeamOne 
                     className="team-one team-one--about"
-                    sectionTitle="Experienced Attorneys"
-                    subTitle="Meet Our Lawyers"
+                    sectionTitle="Our Legal Team"
+                    subTitle="Meet Our Professionals"
                     teamData={[
                         {
-                        name: 'Pamela Lasen',
-                        position: 'Senior Partner',
-                        image: '/assets/img/team/team-v1-img1.png',
+                        name: 'Kapil Rathod',
+                        position: 'Principal Lawyer',
+                        image: '/assets/img/team/team-1-1.jpg',
                         social: [
                             { url: '#', iconClass: 'icon-icon-4' },
                             { url: '#', iconClass: 'icon-icon-3' },
@@ -206,8 +208,8 @@ export default function Home() {
                         ]
                         },
                         {
-                        name: 'Beverly Daniels',
-                        position: 'Senior Partner',
+                        name: 'Saleema Panjwani',
+                        position: 'Licensed Paralegal',
                         image: '/assets/img/team/team-v1-img2.png',
                         social: [
                             { url: '#', iconClass: 'icon-icon-4' },
@@ -217,8 +219,8 @@ export default function Home() {
                         ]
                         },
                         {
-                        name: 'Fred Vaughan',
-                        position: 'Senior Partner',
+                        name: 'Legal Support Team',
+                        position: 'Administrative Staff',
                         image: '/assets/img/team/team-v1-img3.png',
                         social: [
                             { url: '#', iconClass: 'icon-icon-4' },

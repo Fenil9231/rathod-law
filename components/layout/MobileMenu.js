@@ -96,6 +96,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                 <Link href="#" onClick={handleMobileMenu}>About</Link>
                 <ul className="sub-menu" style={{ display: isActive.key === 4 ? "block" : "none" }}>
                   <li><Link href="/about-us" onClick={handleMobileMenu}>About Us</Link></li>
+                  <li><Link href="/contact" onClick={handleMobileMenu}>Contact Us</Link></li>
                   <li><Link href="/privacy-policy" onClick={handleMobileMenu}>Privacy Policy</Link></li>
                   <li><Link href="/terms-conditions" onClick={handleMobileMenu}>Terms & Conditions</Link></li>
                   <li><Link href="/cookie-policy" onClick={handleMobileMenu}>Cookie Policy</Link></li>
@@ -113,7 +114,8 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
             <div className="icon-box">
               <span className="icon-icon-48"></span>
             </div>
-            <p><a href="tel:+14168002222">Brampton: (416) 800-2222</a></p>
+            <p><a href="tel:+16476549454">Brampton: (647) 654-9454</a></p>
+            <p><a href="tel:+14378809656">Scarborough: (437) 880-9656</a></p>
             <p><a href="mailto:info@rathodlaw.ca">info@rathodlaw.ca</a></p>
           </div>
 

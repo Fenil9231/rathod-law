@@ -202,9 +202,9 @@ export default function Footer1() {
 
               <div className="footer-bottom__menu">
                 <ul>
-                  <li><Link href="/about">Career</Link></li>
-                  <li><Link href="/about">privacy & policy</Link></li>
-                  <li><Link href="/contact">contact</Link></li>
+                  <li><Link href="/privacy-policy">Privacy Policy</Link></li>
+                  <li><Link href="/terms-and-conditions">Terms & Conditions</Link></li>
+                  <li><Link href="/cookie-policy">Cookie Policy</Link></li>
                 </ul>
               </div>
             </div>

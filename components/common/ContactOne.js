@@ -11,14 +11,47 @@ const ContactOne = () => {
     message: ''
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission logic
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus({ type: 'success', message: 'Thank you! Your message has been sent successfully. We will get back to you soon.' });
+        setFormData({
+          name: '',
+          phone: '',
+          email: '',
+          subject: '',
+          message: ''
+        });
+      } else {
+        setSubmitStatus({ type: 'error', message: result.message || 'Failed to send message. Please try again.' });
+      }
+    } catch (error) {
+      setSubmitStatus({ type: 'error', message: 'Network error. Please check your connection and try again.' });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -40,6 +73,19 @@ const ContactOne = () => {
             </div>
             <h2 className="">send us free message</h2>
           </div>
+
+          {submitStatus && (
+            <div className={`alert ${submitStatus.type === 'success' ? 'alert-success' : 'alert-danger'}`} style={{
+              padding: '15px',
+              marginBottom: '20px',
+              borderRadius: '5px',
+              backgroundColor: submitStatus.type === 'success' ? '#d4edda' : '#f8d7da',
+              color: submitStatus.type === 'success' ? '#155724' : '#721c24',
+              border: `1px solid ${submitStatus.type === 'success' ? '#c3e6cb' : '#f5c6cb'}`
+            }}>
+              {submitStatus.message}
+            </div>
+          )}
 
           <form className="contact-page__form contact-form-validated" onSubmit={handleSubmit}>
             <div className="row">
@@ -119,8 +165,8 @@ const ContactOne = () => {
                   </div>
                 </div>
                 <div className="contact-page__btn">
-                  <button className="thm-btn" type="submit">
-                    send message
+                  <button className="thm-btn" type="submit" disabled={isSubmitting}>
+                    {isSubmitting ? 'Sending...' : 'send message'}
                     <span className="thm-btn__icon">
                       <i className="icon-icon-8"></i>
                     </span>

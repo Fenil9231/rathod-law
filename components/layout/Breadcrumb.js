@@ -3,13 +3,7 @@ import Link from "next/link";
 export default function Breadcrumb({ breadcrumbTitle }) {
     return (
         <section className="page-header">
-            {/* Background Image */}
-            <div
-                className="page-header__bg"
-                style={{
-                    backgroundImage: "url(/assets/img/background/page-header-bg.jpg)"
-                }}
-            ></div>
+           
 
             {/* Shapes */}
             <div className="shape1 float-bob-y">

@@ -12,30 +12,7 @@ export default function StuntDriving() {
   return (
     <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Stunt Driving">
       <div>
-        {/* Hero Section */}
-        <section className="page-title">
-          <div className="page-title-bg" style={{backgroundImage: 'url(assets/images/backgrounds/page-title-bg.jpg)'}}>
-          </div>
-          <div className="page-title-bg-overly"></div>
-          <div className="container">
-            <div className="row">
-              <div className="col-xl-12">
-                <div className="page-title__wrapper">
-                  <div className="page-title__content">
-                    <h2 className="page-title__title">Stunt Driving Defense</h2>
-                    <div className="page-title__menu">
-                      <ul>
-                        <li><Link href="/">Home</Link></li>
-                        <li>Stunt Driving</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
+       
         {/* Main Content */}
         <section className="about-page">
           <div className="container">
@@ -43,8 +20,8 @@ export default function StuntDriving() {
               <div className="col-xl-8 col-lg-8">
                 <div className="about-page__content">
                   <div className="section-title text-left">
-                    <span className="section-title__tagline">Serious Traffic Offense Defense</span>
-                    <h2 className="section-title__title">Expert Stunt Driving Defense in Ontario</h2>
+                    <span className="section-title__tagline" style={{color: '#d4af37', fontWeight: 'bold'}}>Serious Traffic Offense Defense</span>
+                    <h2 className="section-title__title" style={{color: '#1a365d', fontWeight: 'bold'}}>Expert Stunt Driving Defense in Ontario</h2>
                   </div>
                   
                   <p className="about-page__text-1">
@@ -53,9 +30,11 @@ export default function StuntDriving() {
                     Our experienced paralegals provide aggressive defense against these life-changing charges.
                   </p>
 
-                  <div className="card mb-4">
+                  <div className="card mb-4 shadow-sm">
+                    <div className="card-header text-white" style={{backgroundColor: '#d4af37'}}>
+                      <h3 className="card-title mb-0">What Constitutes Stunt Driving in Ontario</h3>
+                    </div>
                     <div className="card-body">
-                      <h3 className="card-title">What Constitutes Stunt Driving in Ontario</h3>
                       <p className="card-text">
                         Under Ontario Regulation 455/07, stunt driving encompasses various dangerous driving behaviors 
                         that pose serious risks to public safety. The definition is broad and includes both speed-related 
@@ -81,9 +60,11 @@ export default function StuntDriving() {
                     </div>
                   </div>
 
-                  <div className="card mb-4">
+                  <div className="card mb-4 shadow-sm">
+                    <div className="card-header text-white" style={{backgroundColor: '#d4af37'}}>
+                      <h3 className="card-title mb-0">Immediate Roadside Penalties</h3>
+                    </div>
                     <div className="card-body">
-                      <h3 className="card-title">Immediate Roadside Penalties</h3>
                       <p className="card-text">Stunt driving charges result in immediate severe penalties at the roadside:</p>
                       
                       <h4>Immediate Consequences:</h4>
@@ -104,9 +85,11 @@ export default function StuntDriving() {
                     </div>
                   </div>
 
-                  <div className="card mb-4">
+                  <div className="card mb-4 shadow-sm">
+                    <div className="card-header text-white" style={{backgroundColor: '#d4af37'}}>
+                      <h3 className="card-title mb-0">Court Penalties Upon Conviction</h3>
+                    </div>
                     <div className="card-body">
-                      <h3 className="card-title">Court Penalties Upon Conviction</h3>
                       <p className="card-text">If convicted in court, stunt driving carries severe additional penalties:</p>
                       
                       <h4>First Offense:</h4>
@@ -129,9 +112,11 @@ export default function StuntDriving() {
                     </div>
                   </div>
 
-                  <div className="card mb-4">
+                  <div className="card mb-4 shadow-sm">
+                    <div className="card-header text-white" style={{backgroundColor: '#d4af37'}}>
+                      <h3 className="card-title mb-0">Defense Strategies for Stunt Driving</h3>
+                    </div>
                     <div className="card-body">
-                      <h3 className="card-title">Defense Strategies for Stunt Driving</h3>
                       <p className="card-text">Our experienced paralegals employ comprehensive defense strategies:</p>
                       <div className="list-group list-group-flush">
                         <div className="list-group-item"><strong>Speed Measurement Challenges:</strong> Questioning radar/laser accuracy and calibration</div>
@@ -145,9 +130,11 @@ export default function StuntDriving() {
                     </div>
                   </div>
 
-                  <div className="card mb-4">
+                  <div className="card mb-4 shadow-sm">
+                    <div className="card-header text-white" style={{backgroundColor: '#d4af37'}}>
+                      <h3 className="card-title mb-0">Impact on Insurance and Employment</h3>
+                    </div>
                     <div className="card-body">
-                      <h3 className="card-title">Impact on Insurance and Employment</h3>
                       <p className="card-text">Stunt driving convictions have devastating long-term consequences:</p>
                       <div className="list-group list-group-flush">
                         <div className="list-group-item"><strong>Insurance Cancellation:</strong> Most insurers will cancel policies</div>
@@ -160,9 +147,11 @@ export default function StuntDriving() {
                     </div>
                   </div>
 
-                  <div className="card mb-4">
+                  <div className="card mb-4 shadow-sm">
+                    <div className="card-header text-white" style={{backgroundColor: '#d4af37'}}>
+                      <h3 className="card-title mb-0">Street Racing and Related Charges</h3>
+                    </div>
                     <div className="card-body">
-                      <h3 className="card-title">Street Racing and Related Charges</h3>
                       <p className="card-text">Stunt driving often involves related serious charges:</p>
                       <div className="list-group list-group-flush">
                         <div className="list-group-item"><strong>Street Racing:</strong> Separate offense with similar penalties</div>
@@ -175,9 +164,11 @@ export default function StuntDriving() {
                     </div>
                   </div>
 
-                  <div className="card mb-4">
+                  <div className="card mb-4 shadow-sm">
+                    <div className="card-header text-white" style={{backgroundColor: '#d4af37'}}>
+                      <h3 className="card-title mb-0">License Reinstatement Process</h3>
+                    </div>
                     <div className="card-body">
-                      <h3 className="card-title">License Reinstatement Process</h3>
                       <p className="card-text">Getting your license back after stunt driving requires multiple steps:</p>
                       <div className="list-group list-group-flush">
                         <div className="list-group-item"><strong>Suspension Period:</strong> Must complete full suspension period</div>
@@ -190,9 +181,11 @@ export default function StuntDriving() {
                     </div>
                   </div>
 
-                  <div className="card mb-4">
+                  <div className="card mb-4 shadow-sm">
+                    <div className="card-header text-white" style={{backgroundColor: '#d4af37'}}>
+                      <h3 className="card-title mb-0">How We Can Help</h3>
+                    </div>
                     <div className="card-body">
-                      <h3 className="card-title">How We Can Help</h3>
                       <p className="card-text">Our experienced team provides comprehensive defense services:</p>
                       <div className="list-group list-group-flush">
                         <div className="list-group-item">Immediate representation for license suspension hearings</div>
@@ -206,9 +199,11 @@ export default function StuntDriving() {
                     </div>
                   </div>
 
-                  <div className="card mb-4">
+                  <div className="card mb-4 shadow-sm">
+                    <div className="card-header text-white" style={{backgroundColor: '#d4af37'}}>
+                      <h3 className="card-title mb-0">Why Immediate Action is Critical</h3>
+                    </div>
                     <div className="card-body">
-                      <h3 className="card-title">Why Immediate Action is Critical</h3>
                       <p className="card-text">Time is crucial in stunt driving cases:</p>
                       <div className="list-group list-group-flush">
                         <div className="list-group-item"><strong>Evidence Preservation:</strong> Critical evidence may be lost over time</div>
@@ -226,37 +221,60 @@ export default function StuntDriving() {
               <div className="col-xl-4 col-lg-4">
                 <div className="sidebar">
                   <div className="sidebar__single sidebar__services">
-                    <h3 className="sidebar__title">Related Services</h3>
-                    <ul className="sidebar__services-list">
+                    <div className="card mb-4 shadow-sm">
+                      <div className="card-header text-white" style={{backgroundColor: '#1a365d'}}>
+                        <h3 className="sidebar__title mb-0">Related Services</h3>
+                      </div>
+                      <div className="card-body">
+                        <ul className="sidebar__services-list list-unstyled">
                       <li><Link href="/speeding-tickets">Speeding Tickets</Link></li>
                       <li><Link href="/suspended-license">Suspended License</Link></li>
                       <li><Link href="/demerit-points">Demerit Points</Link></li>
                       <li><Link href="/red-light-tickets">Red Light Tickets</Link></li>
                       <li><Link href="/cell-phone-tickets">Cell Phone Tickets</Link></li>
-                    </ul>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
 
                   <div className="sidebar__single sidebar__contact">
-                    <div className="sidebar__contact-bg" style={{backgroundImage: 'url(assets/images/resources/sidebar-contact-bg.jpg)'}}></div>
-                    <div className="sidebar__contact-content">
-                      <h3 className="sidebar__contact-title">Emergency Consultation</h3>
-                      <p className="sidebar__contact-text">Immediate help for stunt driving charges</p>
-                      <div className="sidebar__contact-btn">
-                        <Link href="/contact" className="thm-btn">Contact Now</Link>
+                    <div className="card mb-4 shadow-sm" style={{
+                      background: 'linear-gradient(135deg, #1a365d, #2d4a6b)',
+                      color: 'white'
+                    }}>
+                      <div className="card-body text-center">
+                        <h3 className="sidebar__contact-title" style={{color: '#d4af37'}}>Emergency Consultation</h3>
+                        <p className="sidebar__contact-text">Immediate help for stunt driving charges</p>
+                        <div className="sidebar__contact-btn">
+                          <Link href="/contact" className="btn" style={{
+                            background: 'linear-gradient(135deg, #d4af37, #b8941f)',
+                            border: 'none',
+                            color: 'white',
+                            borderRadius: '25px',
+                            fontWeight: 'bold',
+                            textDecoration: 'none'
+                          }}>Contact Now</Link>
+                        </div>
                       </div>
                     </div>
                   </div>
 
                   <div className="sidebar__single sidebar__info">
-                    <h3 className="sidebar__title">Critical Facts</h3>
-                    <ul className="sidebar__info-list">
+                    <div className="card mb-4 shadow-sm">
+                      <div className="card-header text-white" style={{backgroundColor: '#1a365d'}}>
+                        <h3 className="sidebar__title mb-0">Critical Facts</h3>
+                      </div>
+                      <div className="card-body">
+                        <ul className="sidebar__info-list list-unstyled">
                       <li><strong>Immediate Suspension:</strong> 30 days roadside</li>
                       <li><strong>Vehicle Impounded:</strong> 14 days minimum</li>
                       <li><strong>Maximum Fine:</strong> Up to $10,000 first offense</li>
                       <li><strong>Jail Time:</strong> Up to 6 months possible</li>
                       <li><strong>License Suspension:</strong> 1-3 years additional</li>
                       <li><strong>Demerit Points:</strong> 6 points</li>
-                    </ul>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -265,14 +283,19 @@ export default function StuntDriving() {
         </section>
 
         {/* Call to Action */}
-        <section className="py-5">
+        <section className="py-5" style={{background: '#1a365d'}}>
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-xl-10">
-                <div className="card bg-primary text-white">
+                <div className="card shadow-lg" style={{
+                  background: 'rgba(255, 255, 255, 0.1)',
+                  backdropFilter: 'blur(15px)',
+                  border: '1px solid rgba(255, 255, 255, 0.2)',
+                  borderRadius: '20px'
+                }}>
                   <div className="card-body text-center p-5">
-                    <h3 className="card-title h2 mb-3">Fight Your Stunt Driving Charge</h3>
-                    <p className="card-text lead mb-4">Don't face these serious charges alone. Get immediate expert legal representation to protect your future.</p>
+                    <h3 className="card-title h2 mb-3" style={{color: '#d4af37'}}>Fight Your Stunt Driving Charge</h3>
+                    <p className="card-text lead mb-4" style={{color: 'white'}}>Don't face these serious charges alone. Get immediate expert legal representation to protect your future.</p>
                     <div className="row g-3 justify-content-center">
                       <div className="col-md-4">
                         <div className="d-flex flex-column align-items-center">
@@ -294,7 +317,15 @@ export default function StuntDriving() {
                       </div>
                     </div>
                     <div className="mt-4">
-                      <Link href="/contact" className="btn btn-light btn-lg px-5">Get Emergency Help</Link>
+                      <Link href="/contact" className="btn btn-lg px-5" style={{
+                        background: 'linear-gradient(135deg, #d4af37, #b8941f)',
+                        border: 'none',
+                        color: 'white',
+                        borderRadius: '50px',
+                        fontWeight: 'bold',
+                        textDecoration: 'none',
+                        boxShadow: '0 4px 15px rgba(212, 175, 55, 0.3)'
+                      }}>Get Emergency Help</Link>
                     </div>
                   </div>
                 </div>

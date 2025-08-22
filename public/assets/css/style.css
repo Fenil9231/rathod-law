@@ -53,14 +53,14 @@
 	1. Variable CSS
 ===============================*/
 :root {
-    --thm-primary: #BF5E44;
-    --thm-primary-rgb: 191, 94, 68;
+    --thm-primary: #cb9930;
+    --thm-primary-rgb: 203, 153, 48;
     --thm-white: #ffffff;
     --thm-white-rgb: 255, 255, 255;
-    --thm-black: #042748;
-    --thm-black-rgb: 4, 39, 72;
-    --thm-gray: #5A5D60;
-    --thm-gray-rgb: 90, 93, 96;
+    --thm-black: #1f2b3e;
+    --thm-black-rgb: 31, 43, 62;
+    --thm-gray: #3a5576;
+    --thm-gray-rgb: 58, 85, 118;
     --thm-gray-bg: #F9F6F1;
     --thm-gray-bg-rgb: 249, 246, 241;
     --thm-black-bg: #001026;

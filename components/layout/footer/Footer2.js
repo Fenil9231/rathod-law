@@ -25,9 +25,9 @@ export default function Footer2() {
     ];
 
     const footerLinks = [
-        { name: "Career", href: "about.html" },
-        { name: "privacy & policy", href: "about.html" },
-        { name: "contact", href: "contact.html" }
+        { name: "Privacy Policy", href: "/privacy-policy" },
+        { name: "Terms & Conditions", href: "/terms-and-conditions" },
+        { name: "Cookie Policy", href: "/cookie-policy" }
     ];
 
     return (

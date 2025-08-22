@@ -12,29 +12,7 @@ export default function SuspendedLicense() {
   return (
     <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Suspended License">
       <div>
-        {/* Hero Section */}
-        <section className="page-title">
-          <div className="page-title-bg" style={{backgroundImage: 'url(assets/images/backgrounds/page-title-bg.jpg)'}}>
-          </div>
-          <div className="page-title-bg-overly"></div>
-          <div className="container">
-            <div className="row">
-              <div className="col-xl-12">
-                <div className="page-title__wrapper">
-                  <div className="page-title__content">
-                    <h2 className="page-title__title">Suspended License Defense</h2>
-                    <div className="page-title__menu">
-                      <ul>
-                        <li><Link href="/">Home</Link></li>
-                        <li>Suspended License</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        
 
         {/* Main Content */}
         <section className="about-page">
@@ -43,8 +21,8 @@ export default function SuspendedLicense() {
               <div className="col-xl-8 col-lg-8">
                 <div className="about-page__content">
                   <div className="section-title text-left">
-                    <span className="section-title__tagline">License Suspension Defense</span>
-                    <h2 className="section-title__title">Expert Help for Suspended Driver's License in Ontario</h2>
+                    <span className="section-title__tagline" style={{color: '#d4af37'}}>License Suspension Defense</span>
+                    <h2 className="section-title__title" style={{color: '#1a365d'}}>Expert Help for Suspended Driver's License in Ontario</h2>
                   </div>
                   
                   <p className="about-page__text-1">
@@ -53,9 +31,11 @@ export default function SuspendedLicense() {
                     through the reinstatement process to get you back on the road legally.
                   </p>
 
-                  <div className="card mb-4">
+                  <div className="card mb-4 shadow-sm">
+                    <div className="card-header text-white" style={{backgroundColor: '#d4af37'}}>
+                      <h3 className="card-title mb-0">Common Reasons for License Suspension in Ontario</h3>
+                    </div>
                     <div className="card-body">
-                      <h3 className="card-title">Common Reasons for License Suspension in Ontario</h3>
                       <p className="card-text">
                         Ontario can suspend your driver's license for various reasons under the Highway Traffic Act 
                         and other legislation. Understanding the reason for your suspension is crucial for determining 
@@ -89,9 +69,11 @@ export default function SuspendedLicense() {
                     </div>
                   </div>
 
-                  <div className="card mb-4">
+                  <div className="card mb-4 shadow-sm">
+                    <div className="card-header text-white" style={{backgroundColor: '#d4af37'}}>
+                      <h3 className="card-title mb-0">Types of License Suspensions</h3>
+                    </div>
                     <div className="card-body">
-                      <h3 className="card-title">Types of License Suspensions</h3>
                       <p className="card-text">Different types of suspensions have different rules and consequences:</p>
                       
                       <h4 className="mt-3">Administrative Driver's License Suspension (ADLS):</h4>
@@ -120,9 +102,11 @@ export default function SuspendedLicense() {
                     </div>
                   </div>
 
-                  <div className="card mb-4">
+                  <div className="card mb-4 shadow-sm">
+                    <div className="card-header text-white" style={{backgroundColor: '#d4af37'}}>
+                      <h3 className="card-title mb-0">Consequences of Driving While Suspended</h3>
+                    </div>
                     <div className="card-body">
-                      <h3 className="card-title">Consequences of Driving While Suspended</h3>
                       <p className="card-text">Driving while your license is suspended carries severe additional penalties:</p>
                       
                       <h4 className="mt-3">First Offense:</h4>
@@ -143,9 +127,11 @@ export default function SuspendedLicense() {
                     </div>
                   </div>
 
-                  <div className="card mb-4">
+                  <div className="card mb-4 shadow-sm">
+                    <div className="card-header text-white" style={{backgroundColor: '#d4af37'}}>
+                      <h3 className="card-title mb-0">License Reinstatement Process</h3>
+                    </div>
                     <div className="card-body">
-                      <h3 className="card-title">License Reinstatement Process</h3>
                       <p className="card-text">Getting your license back requires completing specific steps:</p>
                       <div className="list-group list-group-flush">
                         <div className="list-group-item"><strong>Suspension Period:</strong> Must complete full suspension period</div>
@@ -159,9 +145,11 @@ export default function SuspendedLicense() {
                     </div>
                   </div>
 
-                  <div className="card mb-4">
+                  <div className="card mb-4 shadow-sm">
+                    <div className="card-header text-white" style={{backgroundColor: '#d4af37'}}>
+                      <h3 className="card-title mb-0">Appealing License Suspensions</h3>
+                    </div>
                     <div className="card-body">
-                      <h3 className="card-title">Appealing License Suspensions</h3>
                       <p className="card-text">Many license suspensions can be appealed or challenged:</p>
                       <div className="list-group list-group-flush">
                         <div className="list-group-item"><strong>Administrative Appeals:</strong> Challenge ADLS suspensions</div>
@@ -174,9 +162,11 @@ export default function SuspendedLicense() {
                     </div>
                   </div>
 
-                  <div className="card mb-4">
+                  <div className="card mb-4 shadow-sm">
+                    <div className="card-header text-white" style={{backgroundColor: '#d4af37'}}>
+                      <h3 className="card-title mb-0">Work and Hardship Permits</h3>
+                    </div>
                     <div className="card-body">
-                      <h3 className="card-title">Work and Hardship Permits</h3>
                       <p className="card-text">In some cases, limited driving privileges may be available:</p>
                       <div className="list-group list-group-flush">
                         <div className="list-group-item"><strong>Ignition Interlock:</strong> May allow driving with device installed</div>
@@ -188,9 +178,11 @@ export default function SuspendedLicense() {
                     </div>
                   </div>
 
-                  <div className="card mb-4">
+                  <div className="card mb-4 shadow-sm">
+                    <div className="card-header text-white" style={{backgroundColor: '#d4af37'}}>
+                      <h3 className="card-title mb-0">Impact on Employment and Life</h3>
+                    </div>
                     <div className="card-body">
-                      <h3 className="card-title">Impact on Employment and Life</h3>
                       <p className="card-text">License suspension affects many aspects of daily life:</p>
                       <div className="list-group list-group-flush">
                         <div className="list-group-item"><strong>Job Loss:</strong> Many jobs require valid driver's license</div>
@@ -203,9 +195,11 @@ export default function SuspendedLicense() {
                     </div>
                   </div>
 
-                  <div className="card mb-4">
+                  <div className="card mb-4 shadow-sm">
+                    <div className="card-header text-white" style={{backgroundColor: '#d4af37'}}>
+                      <h3 className="card-title mb-0">Prevention and Risk Management</h3>
+                    </div>
                     <div className="card-body">
-                      <h3 className="card-title">Prevention and Risk Management</h3>
                       <p className="card-text">Protecting your license requires ongoing attention:</p>
                       <div className="list-group list-group-flush">
                         <div className="list-group-item"><strong>Monitor Demerit Points:</strong> Track your driving record regularly</div>
@@ -218,9 +212,11 @@ export default function SuspendedLicense() {
                     </div>
                   </div>
 
-                  <div className="card mb-4">
+                  <div className="card mb-4 shadow-sm">
+                    <div className="card-header text-white" style={{backgroundColor: '#d4af37'}}>
+                      <h3 className="card-title mb-0">How We Can Help</h3>
+                    </div>
                     <div className="card-body">
-                      <h3 className="card-title">How We Can Help</h3>
                       <p className="card-text">Our experienced team provides comprehensive assistance:</p>
                       <div className="list-group list-group-flush">
                         <div className="list-group-item">Review your driving record and suspension details</div>
@@ -234,9 +230,9 @@ export default function SuspendedLicense() {
                     </div>
                   </div>
 
-                  <div className="card bg-primary text-white">
+                  <div className="card text-white shadow-lg" style={{background: 'linear-gradient(135deg, rgba(26, 54, 93, 0.95), rgba(26, 54, 93, 0.8))', backdropFilter: 'blur(10px)'}}>
                     <div className="card-body text-center">
-                      <h2 className="card-title">Don't Let a License Suspension Control Your Life</h2>
+                      <h2 className="card-title" style={{color: '#d4af37'}}>Don't Let a License Suspension Control Your Life</h2>
                       <p className="card-text">
                         A suspended license doesn't have to mean the end of your mobility and independence. 
                         Our experienced legal team can help you understand your options, challenge unjust 
@@ -270,10 +266,10 @@ export default function SuspendedLicense() {
                         </div>
                       </div>
                       <div className="mt-4">
-                        <a href="tel:+1234567890" className="btn btn-light btn-lg me-3">
+                        <a href="tel:+1234567890" className="btn btn-lg me-3" style={{background: 'linear-gradient(135deg, #d4af37, #b8941f)', color: 'white', border: 'none', borderRadius: '25px', fontWeight: 'bold', boxShadow: '0 4px 15px rgba(212, 175, 55, 0.3)'}}>
                           Call Now: (123) 456-7890
                         </a>
-                        <a href="/contact" className="btn btn-outline-light btn-lg">
+                        <a href="/contact" className="btn btn-lg" style={{border: '2px solid #d4af37', color: '#d4af37', backgroundColor: 'transparent', borderRadius: '25px', fontWeight: 'bold'}}>
                           Free Consultation
                         </a>
                       </div>
@@ -284,37 +280,45 @@ export default function SuspendedLicense() {
 
               <div className="col-xl-4 col-lg-4">
                 <div className="sidebar">
-                  <div className="sidebar__single sidebar__services">
-                    <h3 className="sidebar__title">Related Services</h3>
-                    <ul className="sidebar__services-list">
-                      <li><Link href="/demerit-points">Demerit Points</Link></li>
-                      <li><Link href="/stunt-driving">Stunt Driving</Link></li>
-                      <li><Link href="/speeding-tickets">Speeding Tickets</Link></li>
-                      <li><Link href="/red-light-tickets">Red Light Tickets</Link></li>
-                      <li><Link href="/cell-phone-tickets">Cell Phone Tickets</Link></li>
-                    </ul>
+                  <div className="sidebar__single sidebar__services card shadow-sm">
+                    <div className="card-header text-white" style={{backgroundColor: '#1a365d'}}>
+                      <h3 className="sidebar__title mb-0" style={{color: '#d4af37'}}>Related Services</h3>
+                    </div>
+                    <div className="card-body">
+                      <ul className="sidebar__services-list list-unstyled">
+                        <li className="mb-2"><Link href="/demerit-points" style={{color: '#1a365d', textDecoration: 'none'}}>Demerit Points</Link></li>
+                        <li className="mb-2"><Link href="/stunt-driving" style={{color: '#1a365d', textDecoration: 'none'}}>Stunt Driving</Link></li>
+                        <li className="mb-2"><Link href="/speeding-tickets" style={{color: '#1a365d', textDecoration: 'none'}}>Speeding Tickets</Link></li>
+                        <li className="mb-2"><Link href="/red-light-tickets" style={{color: '#1a365d', textDecoration: 'none'}}>Red Light Tickets</Link></li>
+                        <li className="mb-2"><Link href="/cell-phone-tickets" style={{color: '#1a365d', textDecoration: 'none'}}>Cell Phone Tickets</Link></li>
+                      </ul>
+                    </div>
                   </div>
 
-                  <div className="sidebar__single sidebar__contact">
-                    <div className="sidebar__contact-bg" style={{backgroundImage: 'url(assets/images/resources/sidebar-contact-bg.jpg)'}}></div>
-                    <div className="sidebar__contact-content">
-                      <h3 className="sidebar__contact-title">Urgent Help Available</h3>
+                  <div className="sidebar__single sidebar__contact card shadow-sm" style={{background: 'linear-gradient(135deg, rgba(26, 54, 93, 0.95), rgba(26, 54, 93, 0.8))', color: 'white'}}>
+                    <div className="sidebar__contact-bg" style={{backgroundImage: 'url(assets/images/resources/sidebar-contact-bg.jpg)', opacity: 0.3}}></div>
+                    <div className="sidebar__contact-content card-body text-center">
+                      <h3 className="sidebar__contact-title" style={{color: '#d4af37'}}>Urgent Help Available</h3>
                       <p className="sidebar__contact-text">Get immediate assistance with your suspended license</p>
                       <div className="sidebar__contact-btn">
-                        <Link href="/contact" className="thm-btn">Contact Us</Link>
+                        <Link href="/contact" className="btn" style={{background: 'linear-gradient(135deg, #d4af37, #b8941f)', color: 'white', border: 'none', borderRadius: '25px', fontWeight: 'bold', padding: '10px 20px'}}>Contact Us</Link>
                       </div>
                     </div>
                   </div>
 
-                  <div className="sidebar__single sidebar__info">
-                    <h3 className="sidebar__title">Important Information</h3>
-                    <ul className="sidebar__info-list">
-                      <li><strong>Appeal Deadlines:</strong> Usually 15-30 days</li>
-                      <li><strong>Driving While Suspended:</strong> $1,000-$5,000 fine</li>
-                      <li><strong>Vehicle Impoundment:</strong> 45-90 days</li>
-                      <li><strong>Additional Suspension:</strong> 6-12 months</li>
-                      <li><strong>Reinstatement Fees:</strong> Varies by suspension type</li>
-                    </ul>
+                  <div className="sidebar__single sidebar__info card shadow-sm">
+                    <div className="card-header text-white" style={{backgroundColor: '#1a365d'}}>
+                      <h3 className="sidebar__title mb-0" style={{color: '#d4af37'}}>Important Information</h3>
+                    </div>
+                    <div className="card-body">
+                      <ul className="sidebar__info-list list-unstyled">
+                        <li className="mb-2"><strong style={{color: '#d4af37'}}>Appeal Deadlines:</strong> Usually 15-30 days</li>
+                        <li className="mb-2"><strong style={{color: '#d4af37'}}>Driving While Suspended:</strong> $1,000-$5,000 fine</li>
+                        <li className="mb-2"><strong style={{color: '#d4af37'}}>Vehicle Impoundment:</strong> 45-90 days</li>
+                        <li className="mb-2"><strong style={{color: '#d4af37'}}>Additional Suspension:</strong> 6-12 months</li>
+                        <li className="mb-2"><strong style={{color: '#d4af37'}}>Reinstatement Fees:</strong> Varies by suspension type</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -323,18 +327,18 @@ export default function SuspendedLicense() {
         </section>
 
         {/* Call to Action */}
-        <section className="cta-one">
+        <section className="cta-one" style={{background: '#1a365d', padding: '60px 0'}}>
           <div className="container">
             <div className="row">
               <div className="col-xl-12">
-                <div className="cta-one__inner">
-                  <div className="cta-one__bg" style={{backgroundImage: 'url(assets/images/resources/cta-one-bg.jpg)'}}></div>
+                <div className="cta-one__inner text-center" style={{background: 'rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(10px)', borderRadius: '15px', padding: '40px', boxShadow: '0 8px 32px rgba(0, 0, 0, 0.1)'}}>
+                  <div className="cta-one__bg" style={{backgroundImage: 'url(assets/images/resources/cta-one-bg.jpg)', opacity: 0.1}}></div>
                   <div className="cta-one__content">
-                    <h3 className="cta-one__title">Get Your License Back</h3>
-                    <p className="cta-one__text">Don't let a suspended license control your life. Get expert help to restore your driving privileges.</p>
+                    <h3 className="cta-one__title" style={{color: '#d4af37', fontSize: '2.5rem', fontWeight: 'bold', marginBottom: '20px'}}>Get Your License Back</h3>
+                    <p className="cta-one__text" style={{color: 'white', fontSize: '1.2rem', marginBottom: '30px'}}>Don't let a suspended license control your life. Get expert help to restore your driving privileges.</p>
                   </div>
                   <div className="cta-one__btn">
-                    <Link href="/contact" className="thm-btn cta-one__btn-1">Get Help Now</Link>
+                    <Link href="/contact" className="btn btn-lg" style={{background: 'linear-gradient(135deg, #d4af37, #b8941f)', color: 'white', border: 'none', borderRadius: '25px', fontWeight: 'bold', padding: '15px 40px', fontSize: '1.1rem', boxShadow: '0 4px 15px rgba(212, 175, 55, 0.3)'}}>Get Help Now</Link>
                   </div>
                 </div>
               </div>
