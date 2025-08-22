@@ -1,6 +1,10 @@
+import Layout from "@/components/layout/Layout";
+
 export default function RefugeeAppeals() {
     return (
-        <div className="service-details-area pt-120 pb-120" style={{backgroundColor: '#f8f9fa'}}>
+        <>
+            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Refugee Appeals">
+                <div className="service-details-area pt-120 pb-120" style={{backgroundColor: '#f8f9fa'}}>
             <div className="container">
                 <div className="row">
                     <div className="col-xl-8 col-lg-8">
@@ -110,6 +114,8 @@ export default function RefugeeAppeals() {
                     </div>
                 </div>
             </div>
-        </div>
+                </div>
+            </Layout>
+        </>
     );
 }

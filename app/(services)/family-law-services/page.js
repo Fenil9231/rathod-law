@@ -1,6 +1,10 @@
+import Layout from "@/components/layout/Layout";
+
 export default function FamilyLawServices() {
     return (
-        <div className="service-details-area pt-120 pb-120" style={{backgroundColor: '#f8f9fa', minHeight: '100vh'}}>
+        <>
+            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Family Law Services">
+                <div className="service-details-area pt-120 pb-120" style={{backgroundColor: '#f8f9fa', minHeight: '100vh'}}>
             <div className="container">
                 <div className="row">
                     <div className="col-xl-8 col-lg-8">
@@ -110,6 +114,8 @@ export default function FamilyLawServices() {
                     </div>
                 </div>
             </div>
-        </div>
+                </div>
+            </Layout>
+        </>
     );
 }
