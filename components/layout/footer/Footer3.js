@@ -193,13 +193,13 @@ const FooterOne = () => {
                         <div className="footer-bottom__menu">
                             <ul>
                                 <li>
-                                    <Link href="/about">Career</Link>
+                                    <Link href="/privacy-policy">Privacy Policy</Link>
                                 </li>
                                 <li>
-                                    <Link href="/about">Privacy & Policy</Link>
+                                    <Link href="/terms-and-conditions">Terms & Conditions</Link>
                                 </li>
                                 <li>
-                                    <Link href="/contact">Contact</Link>
+                                    <Link href="/cookie-policy">Cookie Policy</Link>
                                 </li>
                             </ul>
                         </div>

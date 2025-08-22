@@ -12,29 +12,7 @@ export default function CellPhoneTickets() {
   return (
     <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Cell Phone Tickets">
       <div>
-        {/* Hero Section */}
-        <section className="page-title">
-          <div className="page-title-bg" style={{backgroundImage: 'url(assets/images/backgrounds/page-title-bg.jpg)'}}>
-          </div>
-          <div className="page-title-bg-overly"></div>
-          <div className="container">
-            <div className="row">
-              <div className="col-xl-12">
-                <div className="page-title__wrapper">
-                  <div className="page-title__content">
-                    <h2 className="page-title__title">Cell Phone & Distracted Driving Defense</h2>
-                    <div className="page-title__menu">
-                      <ul>
-                        <li><Link href="/">Home</Link></li>
-                        <li>Cell Phone Tickets</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+
 
         {/* Main Content */}
         <section className="about-page">
@@ -80,7 +58,7 @@ export default function CellPhoneTickets() {
                   </div>
 
                   <div className="card mb-4 shadow-sm">
-                    <div className="card-header bg-danger text-white">
+                    <div className="card-header bg-primary text-white">
                       <h3 className="card-title mb-0">Penalties for Cell Phone Tickets</h3>
                     </div>
                     <div className="card-body">
@@ -117,7 +95,7 @@ export default function CellPhoneTickets() {
                   </div>
 
                   <div className="card mb-4 shadow-sm">
-                    <div className="card-header bg-success text-white">
+                    <div className="card-header bg-primary text-white">
                       <h3 className="card-title mb-0">Legal Exceptions and Hands-Free Use</h3>
                     </div>
                     <div className="card-body">
@@ -133,7 +111,7 @@ export default function CellPhoneTickets() {
                   </div>
 
                   <div className="card mb-4 shadow-sm">
-                    <div className="card-header bg-info text-white">
+                    <div className="card-header bg-primary text-white">
                       <h3 className="card-title mb-0">Common Defenses for Cell Phone Tickets</h3>
                     </div>
                     <div className="card-body">
@@ -150,7 +128,7 @@ export default function CellPhoneTickets() {
                   </div>
 
                   <div className="card mb-4 shadow-sm">
-                    <div className="card-header bg-warning text-dark">
+                    <div className="card-header bg-primary text-dark">
                       <h3 className="card-title mb-0">Impact on Insurance and Employment</h3>
                     </div>
                     <div className="card-body">
@@ -166,7 +144,7 @@ export default function CellPhoneTickets() {
                   </div>
 
                   <div className="card mb-4 shadow-sm">
-                    <div className="card-header bg-secondary text-white">
+                    <div className="card-header bg-primary text-white">
                       <h3 className="card-title mb-0">How We Can Help</h3>
                     </div>
                     <div className="card-body">
@@ -183,7 +161,7 @@ export default function CellPhoneTickets() {
                   </div>
 
                   <div className="card mb-4 shadow-sm">
-                    <div className="card-header bg-dark text-white">
+                    <div className="card-header bg-primary text-white">
                       <h3 className="card-title mb-0">Prevention and Safe Driving Tips</h3>
                     </div>
                     <div className="card-body">

@@ -1,6 +1,7 @@
 import "react-modal-video/css/modal-video.css";
 import "../public/assets/css/style.css";
 import "../public/assets/css/theme-override.css";
+import "../public/assets/css/custom-breadcrumb.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/free-mode";
@@ -96,6 +97,12 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
+        <script 
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+          crossOrigin="anonymous"
+          defer
+        ></script>
       </head>
       <body>{children}</body>
     </html>

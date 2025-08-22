@@ -52,9 +52,57 @@ export default function Testimonial() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState('');
+  const [submitSuccess, setSubmitSuccess] = useState(false);
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Form submitted
+    setIsSubmitting(true);
+    setSubmitError('');
+    setSubmitSuccess(false);
+
+    try {
+      const response = await fetch('/api/consultation', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.username,
+          email: formData.email,
+          phone: formData.phone,
+          service: formData.query,
+          preferredDate: new Date().toISOString().split('T')[0], // Default to today
+          preferredTime: '09:00', // Default time
+          message: formData.message
+        }),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setSubmitSuccess(true);
+        // Reset form
+        setFormData({
+          username: '',
+          email: '',
+          phone: '',
+          query: 'SELECT SERVICE*',
+          message: '',
+          smsConsent: false,
+          emailConsent: false,
+          marketingConsent: false,
+          dataProcessing: false
+        });
+      } else {
+        setSubmitError(result.error || 'Failed to submit consultation request');
+      }
+    } catch (error) {
+      setSubmitError('Network error. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -211,13 +259,25 @@ export default function Testimonial() {
                       </div>
                       <p style={{margin: '8px 0 0 0', fontSize: '10px', fontStyle: 'italic'}}>Note: This consultation request does not create an attorney-client relationship.</p>
                     </div>
+                    
+                    {submitError && (
+                      <div style={{color: 'red', fontSize: '14px', marginTop: '10px', padding: '10px', backgroundColor: '#ffe6e6', borderRadius: '3px'}}>
+                        {submitError}
+                      </div>
+                    )}
+                    
+                    {submitSuccess && (
+                      <div style={{color: 'green', fontSize: '14px', marginTop: '10px', padding: '10px', backgroundColor: '#e6ffe6', borderRadius: '3px'}}>
+                        Thank you! Your consultation request has been submitted successfully. We will contact you soon.
+                      </div>
+                    )}
                   </div>
                   
                   <div className="row">
                     <div className="col-xl-12">
                       <div className="button-box">
-                        <button className="thm-btn" type="submit" data-loading-text="Please wait...">
-                          Request Free Consultation
+                        <button className="thm-btn" type="submit" disabled={isSubmitting} data-loading-text="Please wait...">
+                          {isSubmitting ? 'Submitting...' : 'Request Free Consultation'}
                           <span className="thm-btn__icon">
                             <i className="icon-icon-8"></i>
                           </span>

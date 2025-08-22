@@ -4,17 +4,17 @@ import Layout from "@/components/layout/Layout";
 export default function CookiePolicy() {
   return (
     <Layout headerStyle={1} footerStyle={3} breadcrumbTitle="Cookie Policy">
-      <div className="container py-5">
+      <div className="container py-5" style={{backgroundColor: '#f8f9fa', minHeight: '100vh'}}>
         <div className="row justify-content-center">
           <div className="col-xl-10">
-            <div className="cookie-policy-content">
-              <div className="sec-title mb-4">
-                <h2>Cookie Policy</h2>
-                <p className="mt-3">Last Updated: June 2024</p>
+            <div className="cookie-policy-content" style={{backgroundColor: 'white', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)', border: '2px solid #d4af37', padding: '40px'}}>
+              <div className="sec-title mb-4" style={{textAlign: 'center', borderBottom: '3px solid #d4af37', paddingBottom: '20px', marginBottom: '40px'}}>
+                <h2 style={{color: '#1a365d', fontSize: '2.5rem', fontWeight: '700', marginBottom: '10px'}}>Cookie Policy</h2>
+                <p className="mt-3" style={{color: '#666', fontSize: '1rem', fontStyle: 'italic', margin: '0'}}>Last Updated: June 2024</p>
               </div>
 
-              <div className="cookie-section mb-5">
-                <h3 className="mb-3">1. Introduction</h3>
+              <div className="cookie-section mb-5" style={{padding: '20px 0', borderBottom: '1px solid #e9ecef'}}>
+                <h3 className="mb-3" style={{color: '#1a365d', fontSize: '1.5rem', fontWeight: '600', marginBottom: '15px'}}>1. Introduction</h3>
                 <p>
                   This Cookie Policy explains how Rathod Law Firm ("we," "our," or "us") uses cookies and similar technologies on our website www.rathodlaw.com ("Website"). This Cookie Policy should be read alongside our Privacy Policy, which explains how we use personal information.
                 </p>
@@ -23,15 +23,15 @@ export default function CookiePolicy() {
                 </p>
               </div>
 
-              <div className="cookie-section mb-5">
-                <h3 className="mb-3">2. What Are Cookies?</h3>
+              <div className="cookie-section mb-5" style={{padding: '20px 0', borderBottom: '1px solid #e9ecef'}}>
+                <h3 className="mb-3" style={{color: '#1a365d', fontSize: '1.5rem', fontWeight: '600', marginBottom: '15px'}}>2. What Are Cookies?</h3>
                 <p>
                   Cookies are small text files that are placed on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently and provide information to the website owners. Cookies can be "persistent" or "session" cookies. Persistent cookies remain on your device when you go offline, while session cookies are deleted as soon as you close your web browser.
                 </p>
               </div>
 
-              <div className="cookie-section mb-5">
-                <h3 className="mb-3">3. How We Use Cookies</h3>
+              <div className="cookie-section mb-5" style={{padding: '20px 0', borderBottom: '1px solid #e9ecef'}}>
+                <h3 className="mb-3" style={{color: '#1a365d', fontSize: '1.5rem', fontWeight: '600', marginBottom: '15px'}}>3. How We Use Cookies</h3>
                 <p>
                   We use cookies for several reasons, including to:
                 </p>
@@ -44,8 +44,8 @@ export default function CookiePolicy() {
                 </ul>
               </div>
 
-              <div className="cookie-section mb-5">
-                <h3 className="mb-3">4. Types of Cookies We Use</h3>
+              <div className="cookie-section mb-5" style={{padding: '20px 0', borderBottom: '1px solid #e9ecef'}}>
+                <h3 className="mb-3" style={{color: '#1a365d', fontSize: '1.5rem', fontWeight: '600', marginBottom: '15px'}}>4. Types of Cookies We Use</h3>
                 <p>
                   We use the following types of cookies:
                 </p>
@@ -69,8 +69,8 @@ export default function CookiePolicy() {
                 </ul>
               </div>
 
-              <div className="cookie-section mb-5">
-                <h3 className="mb-3">5. Third-Party Cookies</h3>
+              <div className="cookie-section mb-5" style={{padding: '20px 0', borderBottom: '1px solid #e9ecef'}}>
+                <h3 className="mb-3" style={{color: '#1a365d', fontSize: '1.5rem', fontWeight: '600', marginBottom: '15px'}}>5. Third-Party Cookies</h3>
                 <p>
                   In addition to our own cookies, we may also use various third-party cookies to report usage statistics of the Website and deliver advertisements on and through the Website. These third parties may include:
                 </p>
@@ -85,8 +85,8 @@ export default function CookiePolicy() {
                 </p>
               </div>
 
-              <div className="cookie-section mb-5">
-                <h3 className="mb-3">6. Managing Cookies</h3>
+              <div className="cookie-section mb-5" style={{padding: '20px 0', borderBottom: '1px solid #e9ecef'}}>
+                <h3 className="mb-3" style={{color: '#1a365d', fontSize: '1.5rem', fontWeight: '600', marginBottom: '15px'}}>6. Managing Cookies</h3>
                 <p>
                   Most web browsers allow you to manage your cookie preferences. You can set your browser to refuse cookies, or to alert you when cookies are being sent. The methods for doing so vary from browser to browser, and from version to version. You can obtain up-to-date information about blocking and deleting cookies via these links:
                 </p>
@@ -101,38 +101,40 @@ export default function CookiePolicy() {
                 </p>
               </div>
 
-              <div className="cookie-section mb-5">
-                <h3 className="mb-3">7. Do Not Track Signals</h3>
+              <div className="cookie-section mb-5" style={{padding: '20px 0', borderBottom: '1px solid #e9ecef'}}>
+                <h3 className="mb-3" style={{color: '#1a365d', fontSize: '1.5rem', fontWeight: '600', marginBottom: '15px'}}>7. Do Not Track Signals</h3>
                 <p>
                   Some browsers have a "Do Not Track" feature that lets you tell websites that you do not want to have your online activities tracked. At this time, we do not respond to browser "Do Not Track" signals.
                 </p>
               </div>
 
-              <div className="cookie-section mb-5">
-                <h3 className="mb-3">8. Changes to This Cookie Policy</h3>
+              <div className="cookie-section mb-5" style={{padding: '20px 0', borderBottom: '1px solid #e9ecef'}}>
+                <h3 className="mb-3" style={{color: '#1a365d', fontSize: '1.5rem', fontWeight: '600', marginBottom: '15px'}}>8. Changes to This Cookie Policy</h3>
                 <p>
                   We may update our Cookie Policy from time to time. We will notify you of any changes by posting the new Cookie Policy on this page and updating the "Last Updated" date at the top of this Cookie Policy. You are advised to review this Cookie Policy periodically for any changes.
                 </p>
               </div>
 
-              <div className="cookie-section mb-5">
-                <h3 className="mb-3">9. Contact Us</h3>
+              <div className="cookie-section mb-5" style={{padding: '20px 0'}}>
+                <h3 className="mb-3" style={{color: '#1a365d', fontSize: '1.5rem', fontWeight: '600', marginBottom: '15px'}}>9. Contact Us</h3>
                 <p>
                   If you have any questions about our Cookie Policy, please contact us at:
                 </p>
-                <p>
-                  <strong>Rathod Law Firm</strong><br />
-                  <strong>Brampton Office:</strong><br />
-                  106-2250 Bovaird Drive East<br />
-                  Brampton, Ontario L6R 0W3<br />
-                  Phone: (647) 654-9454<br /><br />
-                  <strong>Scarborough Office:</strong><br />
-                  122-1200 Markham Road<br />
-                  Scarborough, ON M1H 3C3<br />
-                  Phone: (437) 880-9656<br /><br />
-                  Email: rathod@hplaw.org<br />
-                  Hours: 9am to 5pm Toronto Time, Monday to Friday only
-                </p>
+                <div style={{backgroundColor: '#f8f9fa', padding: '20px', borderRadius: '8px', border: '2px solid #d4af37'}}>
+                  <p style={{margin: '0', lineHeight: '1.8', color: '#1a365d'}}>
+                    <strong>Rathod Law Firm</strong><br />
+                    <strong>Brampton Office:</strong><br />
+                    Unit 1B, 295 Queen Street East<br />
+                    Brampton, ON L6V 1B9<br />
+                    Phone: <a href="tel:+19054579200" style={{color: '#d4af37', textDecoration: 'none'}}>(905) 457-9200</a><br /><br />
+                    <strong>Scarborough Office:</strong><br />
+                    4168 Finch Avenue East, Unit 315<br />
+                    Scarborough, ON M1S 5H6<br />
+                    Phone: <a href="tel:+14164010078" style={{color: '#d4af37', textDecoration: 'none'}}>(416) 401-0078</a><br /><br />
+                    Email: <a href="mailto:rathod@hplaw.org" style={{color: '#d4af37', textDecoration: 'none'}}>rathod@hplaw.org</a><br />
+                    Hours: 9am to 5pm Toronto Time, Monday to Friday only
+                  </p>
+                </div>
               </div>
             </div>
           </div>

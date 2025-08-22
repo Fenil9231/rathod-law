@@ -1,185 +1,264 @@
+"use client"
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
-
-export const metadata = {
-  title: "Paralegal Services Ontario - Traffic Tickets, Small Claims & More | Rathod Law",
-  description: "Expert paralegal services in Ontario including traffic ticket defense, small claims court representation, landlord tenant disputes, and provincial offenses. Affordable legal help.",
-  keywords: "paralegal services ontario, traffic tickets, small claims court, landlord tenant disputes, provincial offenses, paralegal representation, affordable legal services",
-  openGraph: {
-    title: "Paralegal Services Ontario - Traffic Tickets, Small Claims & More | Rathod Law",
-    description: "Expert paralegal services in Ontario including traffic ticket defense, small claims court representation, landlord tenant disputes, and provincial offenses. Affordable legal help.",
-    type: "website",
-    url: "https://rathodlaw.com/paralegal-services"
-  }
-};
+import Head from "next/head"
 
 export default function ParalegalServices() {
 
+    const services = [
+        {
+            icon: "fas fa-car",
+            title: "Traffic Tickets",
+            description: "Expert defense for speeding tickets, red light violations, distracted driving, and other traffic offenses.",
+            features: ["Speeding Tickets", "Red Light Violations", "Distracted Driving", "Careless Driving"],
+            link: "/paralegal-services/speeding-tickets"
+        },
+        {
+            icon: "fas fa-ban",
+            title: "Stunt Driving & Suspended License",
+            description: "Specialized representation for serious driving offenses and license suspension cases.",
+            features: ["Stunt Driving Defense", "License Reinstatement", "Demerit Point Reduction", "Court Representation"],
+            link: "/paralegal-services/stunt-driving"
+        },
+        {
+            icon: "fas fa-gavel",
+            title: "Small Claims Court",
+            description: "Complete representation for disputes up to $35,000 in Ontario Small Claims Court.",
+            features: ["Debt Collection", "Contract Disputes", "Property Damage", "Consumer Protection"],
+            link: "/small-claims"
+        },
+        {
+            icon: "fas fa-home",
+            title: "Landlord-Tenant Disputes",
+            description: "Professional representation at the Landlord and Tenant Board for all rental disputes.",
+            features: ["Eviction Proceedings", "Rent Disputes", "Property Damage Claims", "Tenant Rights"],
+            link: "/paralegal-services/landlord-tenant"
+        },
+        {
+            icon: "fas fa-search",
+            title: "Legal Research",
+            description: "Comprehensive legal research and federal court file preparation services.",
+            features: ["Case Law Research", "Document Preparation", "Federal Court Files", "Legal Analysis"],
+            link: "/paralegal-services/legal-research"
+        },
+        {
+            icon: "fas fa-balance-scale",
+            title: "Tribunal Representation",
+            description: "Expert representation at various Ontario tribunals and administrative bodies.",
+            features: ["Human Rights Tribunal", "Workplace Safety", "Professional Licensing", "Administrative Appeals"],
+            link: "/paralegal-services/tribunal-representation"
+        }
+    ];
+
     return (
         <>
+            <Head>
+                <title>Paralegal Services Ontario - Traffic Tickets, Small Claims & More | Rathod Law</title>
+                <meta name="description" content="Expert paralegal services in Ontario including traffic ticket defense, small claims court representation, landlord tenant disputes, and provincial offenses. Affordable legal help." />
+                <meta name="keywords" content="paralegal services ontario, traffic tickets, small claims court, landlord tenant disputes, provincial offenses, paralegal representation, affordable legal services" />
+                <meta property="og:title" content="Paralegal Services Ontario - Traffic Tickets, Small Claims & More | Rathod Law" />
+                <meta property="og:description" content="Expert paralegal services in Ontario including traffic ticket defense, small claims court representation, landlord tenant disputes, and provincial offenses. Affordable legal help." />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://rathodlaw.com/paralegal-services" />
+                <style jsx>{`
+                    .service-card {
+                        transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    }
+                    .service-card:hover {
+                        transform: translateY(-5px);
+                        box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+                    }
+                `}</style>
+            </Head>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Paralegal Services">
                 <div>
-                    <section className="service-details">
+                    
+                    {/* Services Cards Section */}
+                    <section id="services" className="py-5">
                         <div className="container">
-                            <div className="row">
-                                <div className="col-xl-8 col-lg-7">
-                                    <div className="service-details__left">
-                                        <div className="service-details__img">
-                                            <img src="/assets/img/service/service-details-img3.jpg" alt="Paralegal Services" />
-                                        </div>
-                                        <div className="service-details__content">
-                                            <h3 className="service-details__title">Traffic Tickets</h3>
-                                            <p className="service-details__text-1">
-                                                Getting pulled over by Police and getting a Traffic Ticket is a cumbersome process. 
-                                                First, getting pulled over frightens you on what is going to happen next and how much 
-                                                you will end up paying and how the insurance will be affected. Losing demerit points is 
-                                                certainly a matter of worry as it affects your Driver's License in the long run. At our 
-                                                firm, we have a dedicated Paralegal, who handles traffic violations effectively.
-                                            </p>
-                                            
-                                            <h4>How to Fight a Traffic Ticket?</h4>
-                                            <p>
-                                                Fighting a traffic ticket in Ontario involves several steps. Here's a general outline of the process:
-                                            </p>
-                                            
-                                            <div className="service-details__points">
-                                                <div className="service-details__points-single">
-                                                    <div className="service-details__points-icon">
-                                                        <i className="icon-check"></i>
-                                                    </div>
-                                                    <div className="service-details__points-text">
-                                                        <h5>Review the Ticket</h5>
-                                                        <p>Check the Details: Verify that all information on the ticket (date, time, location, and your details) is correct. Any errors might help in your defense.</p>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div className="service-details__points-single">
-                                                    <div className="service-details__points-icon">
-                                                        <i className="icon-check"></i>
-                                                    </div>
-                                                    <div className="service-details__points-text">
-                                                        <h5>Request a Trial</h5>
-                                                        <p>Complete the Form: Follow the instructions on the back of your ticket or visit the Ontario Court of Justice website. You'll need to indicate that you wish to plead not guilty and request a trial.</p>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div className="service-details__points-single">
-                                                    <div className="service-details__points-icon">
-                                                        <i className="icon-check"></i>
-                                                    </div>
-                                                    <div className="service-details__points-text">
-                                                        <h5>Prepare Your Case</h5>
-                                                        <p>Gather Evidence: Collect any evidence that supports your case. This could include photographs, diagrams, witness statements, or any other relevant information.</p>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div className="service-details__points-single">
-                                                    <div className="service-details__points-icon">
-                                                        <i className="icon-check"></i>
-                                                    </div>
-                                                    <div className="service-details__points-text">
-                                                        <h5>Attend the Trial</h5>
-                                                        <p>Be on Time: Arrive at the courthouse on the date of your trial. Present your evidence and arguments clearly.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <h4>Small Claims Court Process</h4>
-                            <p>
-                                In Ontario, Small Claims Court handles disputes involving claims up to $35,000. The process is designed to be accessible and straightforward, allowing individuals and businesses to resolve financial disputes without requiring legal representation.
-                            </p>
-                            
-                            <div className="service-details__points">
-                                <div className="service-details__points-single">
-                                    <div className="service-details__points-icon">
-                                        <i className="icon-check"></i>
-                                    </div>
-                                    <div className="service-details__points-text">
-                                        <h5>Filing a Claim</h5>
-                                        <p>File a Plaintiff's Claim (Form 7A) with the court, outlining the details of your claim and paying the required filing fee.</p>
-                                    </div>
-                                </div>
-                                
-                                <div className="service-details__points-single">
-                                    <div className="service-details__points-icon">
-                                        <i className="icon-check"></i>
-                                    </div>
-                                    <div className="service-details__points-text">
-                                        <h5>Serving Documents</h5>
-                                        <p>Serve the defendant with the claim documents and file proof of service with the court.</p>
-                                    </div>
-                                </div>
-                                
-                                <div className="service-details__points-single">
-                                    <div className="service-details__points-icon">
-                                        <i className="icon-check"></i>
-                                    </div>
-                                    <div className="service-details__points-text">
-                                        <h5>Trial Preparation</h5>
-                                        <p>Organize evidence, prepare witnesses, and submit trial briefs as required.</p>
-                                    </div>
-                                </div>
-                                
-                                <div className="service-details__points-single">
-                                    <div className="service-details__points-icon">
-                                        <i className="icon-check"></i>
-                                    </div>
-                                    <div className="service-details__points-text">
-                                        <h5>Enforcement</h5>
-                                        <p>If successful, enforce the judgment through wage garnishment, asset seizure, or property liens.</p>
-                                    </div>
+                            <div className="row mb-5">
+                                <div className="col-lg-8 mx-auto text-center">
+                                    <h2 className="display-5 fw-bold mb-3" style={{color: '#1a365d'}}>Our Paralegal Services</h2>
+                                    <p className="lead" style={{color: '#1a365d', opacity: '0.8'}}>Comprehensive legal support across multiple practice areas with experienced, licensed paralegals.</p>
                                 </div>
                             </div>
                             
-                            <h4>Our Paralegal Services Include:</h4>
-                            <ul className="service-details__list">
-                                <li>Traffic Tickets (Speeding, Red Light, Distracted Driving)</li>
-                                <li>Stunt Driving and Suspended License Cases</li>
-                                <li>Small Claims Court Cases (up to $35,000)</li>
-                                <li>Landlord-Tenant Disputes</li>
-                                <li>Legal Research and Federal Court File Preparation</li>
-                                <li>Court Representation at Various Tribunals</li>
-                            </ul>
+                            <div className="row g-4">
+                                {services.map((service, index) => (
+                                    <div key={index} className="col-lg-4 col-md-6">
+                                        <div className="card h-100 shadow-sm border-0 service-card">
+                                            <div className="card-body p-4">
+                                                <div className="d-flex align-items-center mb-3">
+                                                    <div className="rounded-circle d-flex align-items-center justify-content-center me-3" 
+                                                         style={{width: '60px', height: '60px', background: 'linear-gradient(135deg, #d4af37, #b8941f)', color: 'white', boxShadow: '0 4px 15px rgba(212, 175, 55, 0.3)'}}>
+                                                        <i className={service.icon + " fa-lg"}></i>
+                                                    </div>
+                                                    <h4 className="card-title mb-0 fw-bold" style={{color: '#1a365d'}}>{service.title}</h4>
+                                                </div>
+                                                
+                                                <p className="card-text mb-3" style={{color: '#1a365d', opacity: '0.8'}}>{service.description}</p>
+                                                
+                                                <ul className="list-unstyled mb-4">
+                                                    {service.features.map((feature, idx) => (
+                                                        <li key={idx} className="d-flex align-items-center mb-2">
+                                                            <i className="fas fa-check-circle me-2" style={{color: '#d4af37'}}></i>
+                                                            <span style={{color: '#1a365d', opacity: '0.8'}}>{feature}</span>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                                
+                                                <Link href={service.link} className="btn w-100" style={{background: 'linear-gradient(135deg, #d4af37, #b8941f)', color: 'white', border: 'none', padding: '12px 24px', borderRadius: '8px', fontWeight: '600', transition: 'all 0.3s ease'}} onMouseEnter={(e) => e.target.style.transform = 'translateY(-2px)'} onMouseLeave={(e) => e.target.style.transform = 'translateY(0)'}>
+                                                    Learn More <i className="fas fa-arrow-right ms-2"></i>
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Process Section */}
+                    <section className="py-5" style={{backgroundColor: '#f8f9fa'}}>
+                        <div className="container">
+                            <div className="row mb-5">
+                                <div className="col-lg-8 mx-auto text-center">
+                                    <h2 className="display-5 fw-bold mb-3" style={{color: '#1a365d'}}>Our Process</h2>
+                                    <p className="lead" style={{color: '#1a365d', opacity: '0.8'}}>Simple, transparent steps to get the legal help you need.</p>
+                                </div>
+                            </div>
                             
-                            <p className="service-details__text-2">
-                                Our experienced paralegal team provides comprehensive representation at the Landlord and Tenant Board, Small Claims Court, and Ontario Court of Justice for Traffic Offences. We guide you through each step of the legal process to achieve the best possible outcome for your case.
-                            </p>
+                            <div className="row g-4">
+                                <div className="col-lg-3 col-md-6 text-center">
+                                    <div className="card border-0 bg-transparent">
+                                        <div className="card-body">
+                                            <div className="rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" 
+                                 style={{width: '80px', height: '80px', background: 'linear-gradient(135deg, #d4af37, #b8941f)', color: 'white', boxShadow: '0 4px 15px rgba(212, 175, 55, 0.3)'}}>
+                                <span className="fw-bold fs-3">1</span>
+                            </div>
+                            <h5 className="fw-bold mb-2" style={{color: '#1a365d'}}>Free Consultation</h5>
+                            <p style={{color: '#1a365d', opacity: '0.8'}}>Discuss your case with our experienced paralegals at no cost.</p>
                                         </div>
                                     </div>
                                 </div>
                                 
-                                <div className="col-xl-4 col-lg-5">
-                                    <div className="service-details__sidebar">
-                                        <div className="service-details__sidebar-service">
-                                            <h4 className="service-details__sidebar-service-title">All Services</h4>
-                                            <ul className="service-details__sidebar-service-list">
-                                                <li><Link href="/paralegal-services">Paralegal Services <span className="icon-right-arrow"></span></Link></li>
-                                                <li><Link href="/lawyer-services">Lawyer Services <span className="icon-right-arrow"></span></Link></li>
-                                                <li><Link href="/immigration">Immigration <span className="icon-right-arrow"></span></Link></li>
-                                                <li><Link href="/family-law">Family Law <span className="icon-right-arrow"></span></Link></li>
-                                                <li><Link href="/notarization">Notarization <span className="icon-right-arrow"></span></Link></li>
-                                            </ul>
+                                <div className="col-lg-3 col-md-6 text-center">
+                                    <div className="card border-0 bg-transparent">
+                                        <div className="card-body">
+                                            <div className="rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" 
+                                 style={{width: '80px', height: '80px', background: 'linear-gradient(135deg, #d4af37, #b8941f)', color: 'white', boxShadow: '0 4px 15px rgba(212, 175, 55, 0.3)'}}>
+                                <span className="fw-bold fs-3">2</span>
+                            </div>
+                            <h5 className="fw-bold mb-2" style={{color: '#1a365d'}}>Case Assessment</h5>
+                            <p style={{color: '#1a365d', opacity: '0.8'}}>We analyze your case and develop the best strategy for success.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div className="col-lg-3 col-md-6 text-center">
+                                    <div className="card border-0 bg-transparent">
+                                        <div className="card-body">
+                                            <div className="rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" 
+                                 style={{width: '80px', height: '80px', background: 'linear-gradient(135deg, #d4af37, #b8941f)', color: 'white', boxShadow: '0 4px 15px rgba(212, 175, 55, 0.3)'}}>
+                                <span className="fw-bold fs-3">3</span>
+                            </div>
+                            <h5 className="fw-bold mb-2" style={{color: '#1a365d'}}>Representation</h5>
+                            <p style={{color: '#1a365d', opacity: '0.8'}}>Professional representation in court or at tribunals.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div className="col-lg-3 col-md-6 text-center">
+                                    <div className="card border-0 bg-transparent">
+                                        <div className="card-body">
+                                            <div className="rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" 
+                                 style={{width: '80px', height: '80px', background: 'linear-gradient(135deg, #d4af37, #b8941f)', color: 'white', boxShadow: '0 4px 15px rgba(212, 175, 55, 0.3)'}}>
+                                <span className="fw-bold fs-3">4</span>
+                            </div>
+                            <h5 className="fw-bold mb-2" style={{color: '#1a365d'}}>Resolution</h5>
+                            <p style={{color: '#1a365d', opacity: '0.8'}}>Achieve the best possible outcome for your legal matter.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Why Choose Us Section */}
+                    <section className="py-5">
+                        <div className="container">
+                            <div className="row align-items-center">
+                                <div className="col-lg-6">
+                                    <h2 className="display-5 fw-bold mb-4" style={{color: '#1a365d'}}>Why Choose Rathod Law?</h2>
+                                    <div className="row g-4">
+                                        <div className="col-md-6">
+                                            <div className="d-flex align-items-start">
+                                                <i className="fas fa-certificate fa-2x me-3" style={{color: '#d4af37'}}></i>
+                                                <div>
+                                                    <h5 className="fw-bold mb-2" style={{color: '#1a365d'}}>Licensed Professionals</h5>
+                                                    <p style={{color: '#1a365d', opacity: '0.8'}}>All our paralegals are licensed by the Law Society of Ontario.</p>
+                                                </div>
+                                            </div>
                                         </div>
                                         
-                                        <div className="service-details__sidebar-contact">
-                                            <div className="service-details__sidebar-contact-bg" style={{backgroundImage: 'url(assets/images/backgrounds/service-details-contact-bg.jpg)'}}></div>
-                                            <div className="service-details__sidebar-contact-icon">
-                                                <span className="icon-telephone-call"></span>
-                                            </div>
-                                            <h4 className="service-details__sidebar-contact-title">Need Legal Help?</h4>
-                                            <p className="service-details__sidebar-contact-sub-title">Call us for consultation</p>
-                                            <div className="service-details__sidebar-contact-number">
-                                                <div style={{marginBottom: '10px'}}>
-                                                    <strong>Brampton Office:</strong><br/>
-                                                    <Link href="tel:(905) 793-7900">(905) 793-7900</Link><br/>
-                                                    <small>Mon-Fri: 9:00 AM - 6:00 PM</small>
-                                                </div>
+                                        <div className="col-md-6">
+                                            <div className="d-flex align-items-start">
+                                                <i className="fas fa-dollar-sign fa-2x me-3" style={{color: '#d4af37'}}></i>
                                                 <div>
-                                                    <strong>Scarborough Office:</strong><br/>
-                                                    <Link href="tel:(416) 298-3055">(416) 298-3055</Link><br/>
-                                                    <small>Mon-Fri: 9:00 AM - 6:00 PM</small>
+                                                    <h5 className="fw-bold mb-2" style={{color: '#1a365d'}}>Affordable Rates</h5>
+                                                    <p style={{color: '#1a365d', opacity: '0.8'}}>Cost-effective legal solutions without compromising quality.</p>
                                                 </div>
                                             </div>
+                                        </div>
+                                        
+                                        <div className="col-md-6">
+                                            <div className="d-flex align-items-start">
+                                                <i className="fas fa-clock fa-2x me-3" style={{color: '#d4af37'}}></i>
+                                                <div>
+                                                    <h5 className="fw-bold mb-2" style={{color: '#1a365d'}}>Quick Response</h5>
+                                                    <p style={{color: '#1a365d', opacity: '0.8'}}>Fast turnaround times and prompt communication.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div className="col-md-6">
+                                            <div className="d-flex align-items-start">
+                                                <i className="fas fa-trophy fa-2x me-3" style={{color: '#d4af37'}}></i>
+                                                <div>
+                                                    <h5 className="fw-bold mb-2" style={{color: '#1a365d'}}>Proven Results</h5>
+                                                    <p style={{color: '#1a365d', opacity: '0.8'}}>Track record of successful outcomes for our clients.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div className="col-lg-6">
+                                    <div className="card border-0 shadow-lg" style={{background: 'linear-gradient(135deg, #1a365d, #0f1f3a)'}}>
+                                        <div className="card-body p-5 text-center text-white">
+                                            <h3 className="fw-bold mb-4" style={{color: '#d4af37'}}>Ready to Get Started?</h3>
+                                            <p className="mb-4" style={{color: '#d4af37', opacity: '0.9'}}>Contact us today for a free consultation and let us help you resolve your legal matter efficiently and effectively.</p>
+                                            
+                                            <div className="row g-3 mb-4">
+                                                <div className="col-md-6">
+                                                    <div className="p-3 rounded" style={{backgroundColor: 'rgba(255,255,255,0.1)'}}>
+                                                        <h6 className="fw-bold text-white">Brampton Office</h6>
+                                                        <p className="mb-1 text-white">(905) 793-7900</p>
+                                                        <small className="text-white">Mon-Fri: 9:00 AM - 6:00 PM</small>
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-6">
+                                                    <div className="p-3 rounded" style={{backgroundColor: 'rgba(255,255,255,0.1)'}}>
+                                                        <h6 className="fw-bold text-white">Scarborough Office</h6>
+                                                        <p className="mb-1 text-white">(416) 298-3055</p>
+                                                        <small className="text-white">Mon-Fri: 9:00 AM - 6:00 PM</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <Link href="/contact" className="btn btn-lg px-4 py-2" style={{background: 'linear-gradient(135deg, #d4af37, #b8941f)', color: 'white', border: 'none', fontWeight: '600', borderRadius: '8px', transition: 'all 0.3s ease'}} onMouseEnter={(e) => e.target.style.transform = 'translateY(-2px)'} onMouseLeave={(e) => e.target.style.transform = 'translateY(0)'}>
+                                                Schedule Free Consultation
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>

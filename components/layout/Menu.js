@@ -81,6 +81,9 @@ export default function Menu() {
                         <Link href="/about-us">About Us</Link>
                     </li>
                     <li>
+                        <Link href="/contact">Contact Us</Link>
+                    </li>
+                    <li>
                         <Link href="/privacy-policy">Privacy Policy</Link>
                     </li>
                     <li>

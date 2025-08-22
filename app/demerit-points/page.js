@@ -76,7 +76,7 @@ export default function DemeritPoints() {
                   </div>
 
                   <div className="card mb-4">
-                    <div className="card-header bg-warning text-dark">
+                    <div className="card-header bg-primary text-dark">
                       <h3 className="card-title mb-0">Demerit Point Values for Common Violations</h3>
                     </div>
                     <div className="card-body">
@@ -118,7 +118,7 @@ export default function DemeritPoints() {
                   </div>
 
                   <div className="card mb-4">
-                    <div className="card-header bg-danger text-white">
+                    <div className="card-header bg-primary text-white">
                       <h3 className="card-title mb-0">License Suspension Thresholds</h3>
                     </div>
                     <div className="card-body">
@@ -158,7 +158,7 @@ export default function DemeritPoints() {
                    </div>
 
                   <div className="card mb-4">
-                    <div className="card-header bg-dark text-white">
+                    <div className="card-header bg-primary text-white">
                       <h3 className="card-title mb-0">Consequences of Point Accumulation</h3>
                     </div>
                     <div className="card-body">
@@ -175,7 +175,7 @@ export default function DemeritPoints() {
                   </div>
 
                   <div className="card mb-4">
-                    <div className="card-header bg-success text-white">
+                    <div className="card-header bg-primary text-white">
                       <h3 className="card-title mb-0">Point Removal and Record Cleaning</h3>
                     </div>
                     <div className="card-body">
@@ -192,7 +192,7 @@ export default function DemeritPoints() {
                   </div>
 
                   <div className="card mb-4">
-                    <div className="card-header bg-info text-white">
+                    <div className="card-header bg-primary text-white">
                       <h3 className="card-title mb-0">Strategies to Avoid Point Accumulation</h3>
                     </div>
                     <div className="card-body">
@@ -209,7 +209,7 @@ export default function DemeritPoints() {
                   </div>
 
                   <div className="card mb-4">
-                    <div className="card-header bg-warning text-dark">
+                    <div className="card-header bg-primary text-dark">
                       <h3 className="card-title mb-0">MTO Interview Process</h3>
                     </div>
                     <div className="card-body">
@@ -226,7 +226,7 @@ export default function DemeritPoints() {
                   </div>
 
                   <div className="card mb-4">
-                    <div className="card-header bg-secondary text-white">
+                    <div className="card-header bg-primary text-white">
                       <h3 className="card-title mb-0">Impact on Different License Classes</h3>
                     </div>
                     <div className="card-body">
@@ -242,7 +242,7 @@ export default function DemeritPoints() {
                   </div>
 
                   <div className="card mb-4">
-                    <div className="card-header bg-success text-white">
+                    <div className="card-header bg-primary text-white">
                       <h3 className="card-title mb-0">How Rathod Law Can Help</h3>
                     </div>
                     <div className="card-body">

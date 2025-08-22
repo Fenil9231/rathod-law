@@ -127,35 +127,40 @@ export default function Immigration() {
                                 </div>
                                 
                                 <div className="col-xl-4 col-lg-5">
-                                    <div className="service-details__sidebar">
-                                        <div className="service-details__sidebar-service">
-                                            <h4 className="service-details__sidebar-service-title">All Services</h4>
-                                            <ul className="service-details__sidebar-service-list">
-                                                <li><Link href="/paralegal-services">Paralegal Services <span className="icon-right-arrow"></span></Link></li>
-                                                <li><Link href="/lawyer-services">Lawyer Services <span className="icon-right-arrow"></span></Link></li>
-                                                <li><Link href="/immigration">Immigration <span className="icon-right-arrow"></span></Link></li>
-                                                <li><Link href="/family-law">Family Law <span className="icon-right-arrow"></span></Link></li>
-                                                <li><Link href="/notarization">Notarization <span className="icon-right-arrow"></span></Link></li>
-                                            </ul>
+                                    <div className="sidebar">
+                                        <div className="sidebar__single sidebar__services" style={{boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', backgroundColor: 'white', borderRadius: '8px', marginBottom: '20px'}}>
+                                            <div style={{backgroundColor: '#1a365d', color: 'white', padding: '15px', borderRadius: '8px 8px 0 0'}}>
+                                                <h4 className="sidebar__title" style={{margin: '0', color: 'white'}}>All Services</h4>
+                                            </div>
+                                            <div style={{padding: '20px'}}>
+                                                <ul className="sidebar__services-list" style={{listStyle: 'none', padding: '0', margin: '0'}}>
+                                                    <li style={{marginBottom: '10px'}}><Link href="/paralegal-services" style={{color: '#d4af37', textDecoration: 'none', fontWeight: '500'}}>Paralegal Services</Link></li>
+                                                    <li style={{marginBottom: '10px'}}><Link href="/lawyer-services" style={{color: '#d4af37', textDecoration: 'none', fontWeight: '500'}}>Lawyer Services</Link></li>
+                                                    <li style={{marginBottom: '10px'}}><Link href="/immigration" style={{color: '#d4af37', textDecoration: 'none', fontWeight: '500'}}>Immigration</Link></li>
+                                                    <li style={{marginBottom: '10px'}}><Link href="/family-law" style={{color: '#d4af37', textDecoration: 'none', fontWeight: '500'}}>Family Law</Link></li>
+                                                    <li><Link href="/notarization" style={{color: '#d4af37', textDecoration: 'none', fontWeight: '500'}}>Notarization</Link></li>
+                                                </ul>
+                                            </div>
                                         </div>
                                         
-                                        <div className="service-details__sidebar-contact">
-                                            <div className="service-details__sidebar-contact-bg" style={{backgroundImage: 'url(assets/images/backgrounds/service-details-contact-bg.jpg)'}}></div>
-                                            <div className="service-details__sidebar-contact-icon">
-                                                <span className="icon-telephone-call"></span>
-                                            </div>
-                                            <h4 className="service-details__sidebar-contact-title">Need Legal Help?</h4>
-                                            <p className="service-details__sidebar-contact-sub-title">Call us for consultation</p>
-                                            <div className="service-details__sidebar-contact-number">
-                                                <div style={{marginBottom: '10px'}}>
-                                                    <strong>Brampton Office:</strong><br/>
-                                                    <Link href="tel:(905) 793-7900">(905) 793-7900</Link><br/>
-                                                    <small>Mon-Fri: 9:00 AM - 6:00 PM</small>
-                                                </div>
-                                                <div>
-                                                    <strong>Scarborough Office:</strong><br/>
-                                                    <Link href="tel:(416) 298-3055">(416) 298-3055</Link><br/>
-                                                    <small>Mon-Fri: 9:00 AM - 6:00 PM</small>
+                                        <div className="sidebar__single sidebar__contact" style={{boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', backgroundColor: 'white', borderRadius: '8px', marginBottom: '20px', overflow: 'hidden'}}>
+                                            <div style={{background: 'linear-gradient(135deg, #1a3693 0%, #1a365d 100%)', padding: '30px', position: 'relative'}}>
+                                                <div style={{position: 'absolute', top: '0', left: '0', right: '0', bottom: '0', background: 'rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(10px)'}}></div>
+                                                <div style={{position: 'relative', zIndex: '2'}}>
+                                                    <h4 className="sidebar__contact-title" style={{color: '#d4af37', marginBottom: '15px', fontSize: '1.5rem', fontWeight: 'bold'}}>Need Legal Help?</h4>
+                                                    <p className="sidebar__contact-sub-title" style={{color: 'white', marginBottom: '20px', opacity: '0.9'}}>Call us for consultation</p>
+                                                    <div className="sidebar__contact-number" style={{background: 'rgba(255, 255, 255, 0.1)', padding: '20px', borderRadius: '10px', border: '1px solid rgba(212, 175, 55, 0.3)'}}>
+                                                        <div style={{marginBottom: '15px', color: 'white'}}>
+                                                            <strong style={{color: '#d4af37'}}>Brampton Office:</strong><br/>
+                                                            <Link href="tel:(905) 793-7900" style={{color: 'white', textDecoration: 'none', fontSize: '1.1rem', fontWeight: '600'}}>(905) 793-7900</Link><br/>
+                                                            <small style={{opacity: '0.8'}}>Mon-Fri: 9:00 AM - 6:00 PM</small>
+                                                        </div>
+                                                        <div style={{color: 'white'}}>
+                                                            <strong style={{color: '#d4af37'}}>Scarborough Office:</strong><br/>
+                                                            <Link href="tel:(416) 298-3055" style={{color: 'white', textDecoration: 'none', fontSize: '1.1rem', fontWeight: '600'}}>(416) 298-3055</Link><br/>
+                                                            <small style={{opacity: '0.8'}}>Mon-Fri: 9:00 AM - 6:00 PM</small>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

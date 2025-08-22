@@ -15,6 +15,8 @@ export default function ScheduleCall() {
   });
 
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -24,22 +26,50 @@ export default function ScheduleCall() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend or email service
-    // Form submitted
-    // For demo purposes,  just set formSubmitted to true
-    setFormSubmitted(true);
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      service: '',
-      preferredDate: '',
-      preferredTime: '',
-      message: ''
-    });
+    setIsSubmitting(true);
+    setSubmitError(null);
+
+    try {
+      const response = await fetch('/api/consultation', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          service: formData.service,
+          date: formData.preferredDate,
+          time: formData.preferredTime,
+          message: formData.message
+        }),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setFormSubmitted(true);
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          service: '',
+          preferredDate: '',
+          preferredTime: '',
+          message: ''
+        });
+      } else {
+        setSubmitError(result.message || 'Failed to submit consultation request. Please try again.');
+      }
+    } catch (error) {
+      setSubmitError('Network error. Please check your connection and try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -54,17 +84,17 @@ export default function ScheduleCall() {
                     <img src="/assets/img/icon/sec-title-img1.png" alt="Section Title Icon" />
                   </div>
                   <div className="text">
-                    <p>get in touch</p>
+                    <p style={{color: '#d4af37', fontWeight: 'bold'}}>Get In Touch</p>
                   </div>
                 </div>
-                <h2>Schedule a Consultation Call</h2>
-                <p className="mt-3">Book a free 15-minute consultation with our legal team to discuss your case.</p>
+                <h2 style={{color: '#1a365d', fontSize: '36px', fontWeight: 'bold', marginBottom: '20px'}}>Schedule a Consultation Call</h2>
+                <p className="mt-3" style={{color: '#666', fontSize: '18px', lineHeight: '1.6'}}>Book a free 15-minute consultation with our experienced legal team to discuss your case and explore your options.</p>
               </div>
 
               <div className="row">
                 <div className="col-lg-6 mb-5 mb-lg-0">
                   <div className="schedule-info">
-                    <h3 className="mb-4">Why Schedule a Call?</h3>
+                    <h3 className="mb-4" style={{color: '#1a365d', fontSize: '24px', fontWeight: 'bold'}}>Why Schedule a Call?</h3>
                     <p>
                       A consultation call allows us to understand your legal needs and determine how we can best assist you. During this call, you can:
                     </p>
@@ -87,7 +117,7 @@ export default function ScheduleCall() {
                       </li>
                     </ul>
 
-                    <h3 className="mt-5 mb-4">What to Prepare</h3>
+                    <h3 className="mt-5 mb-4" style={{color: '#1a365d', fontSize: '24px', fontWeight: 'bold'}}>What to Prepare</h3>
                     <p>
                       To make the most of your consultation, please be prepared to briefly explain:
                     </p>
@@ -107,7 +137,7 @@ export default function ScheduleCall() {
                     </ul>
 
                     <div className="contact-info mt-5">
-                      <h3 className="mb-4">Need Immediate Assistance?</h3>
+                      <h3 className="mb-4" style={{color: '#1a365d', fontSize: '24px', fontWeight: 'bold'}}>Need Immediate Assistance?</h3>
                       <p>If your matter is urgent, please contact us directly:</p>
                       <ul className="list-unstyled ps-0 mt-4">
                         <li className="d-flex mb-3">
@@ -157,11 +187,41 @@ export default function ScheduleCall() {
                         </button>
                       </div>
                     ) : (
-                      <form onSubmit={handleSubmit} className="schedule-form">
+                      <>
+                        {submitError && (
+                          <div className="alert alert-danger" style={{
+                            padding: '15px',
+                            marginBottom: '20px',
+                            borderRadius: '5px',
+                            backgroundColor: '#f8d7da',
+                            color: '#721c24',
+                            border: '1px solid #f5c6cb'
+                          }}>
+                            {submitError}
+                          </div>
+                        )}
+                        <form onSubmit={handleSubmit} className="schedule-form" style={{
+                          '& .form-label': {
+                            color: '#1a365d',
+                            fontWeight: '600',
+                            marginBottom: '8px'
+                          },
+                          '& .form-control, & .form-select': {
+                            border: '2px solid #e0e0e0',
+                            borderRadius: '5px',
+                            padding: '12px',
+                            fontSize: '16px',
+                            transition: 'border-color 0.3s'
+                          },
+                          '& .form-control:focus, & .form-select:focus': {
+                            borderColor: '#d4af37',
+                            boxShadow: '0 0 0 0.2rem rgba(212, 175, 55, 0.25)'
+                          }
+                        }}>
                         <div className="row">
                           <div className="col-md-6 mb-4">
                             <div className="form-group">
-                              <label htmlFor="name" className="form-label">Full Name *</label>
+                              <label htmlFor="name" className="form-label" style={{color: '#1a365d', fontWeight: '600', marginBottom: '8px'}}>Full Name *</label>
                               <input 
                                 type="text" 
                                 className="form-control" 
@@ -170,12 +230,15 @@ export default function ScheduleCall() {
                                 value={formData.name} 
                                 onChange={handleChange} 
                                 required 
+                                style={{border: '2px solid #e0e0e0', borderRadius: '5px', padding: '12px', fontSize: '16px', transition: 'border-color 0.3s'}}
+                                onFocus={(e) => e.target.style.borderColor = '#d4af37'}
+                                onBlur={(e) => e.target.style.borderColor = '#e0e0e0'}
                               />
                             </div>
                           </div>
                           <div className="col-md-6 mb-4">
                             <div className="form-group">
-                              <label htmlFor="email" className="form-label">Email Address *</label>
+                              <label htmlFor="email" className="form-label" style={{color: '#1a365d', fontWeight: '600', marginBottom: '8px'}}>Email Address *</label>
                               <input 
                                 type="email" 
                                 className="form-control" 
@@ -184,6 +247,9 @@ export default function ScheduleCall() {
                                 value={formData.email} 
                                 onChange={handleChange} 
                                 required 
+                                style={{border: '2px solid #e0e0e0', borderRadius: '5px', padding: '12px', fontSize: '16px', transition: 'border-color 0.3s'}}
+                                onFocus={(e) => e.target.style.borderColor = '#d4af37'}
+                                onBlur={(e) => e.target.style.borderColor = '#e0e0e0'}
                               />
                             </div>
                           </div>
@@ -192,7 +258,7 @@ export default function ScheduleCall() {
                         <div className="row">
                           <div className="col-md-6 mb-4">
                             <div className="form-group">
-                              <label htmlFor="phone" className="form-label">Phone Number *</label>
+                              <label htmlFor="phone" className="form-label" style={{color: '#1a365d', fontWeight: '600', marginBottom: '8px'}}>Phone Number *</label>
                               <input 
                                 type="tel" 
                                 className="form-control" 
@@ -201,12 +267,15 @@ export default function ScheduleCall() {
                                 value={formData.phone} 
                                 onChange={handleChange} 
                                 required 
+                                style={{border: '2px solid #e0e0e0', borderRadius: '5px', padding: '12px', fontSize: '16px', transition: 'border-color 0.3s'}}
+                                onFocus={(e) => e.target.style.borderColor = '#d4af37'}
+                                onBlur={(e) => e.target.style.borderColor = '#e0e0e0'}
                               />
                             </div>
                           </div>
                           <div className="col-md-6 mb-4">
                             <div className="form-group">
-                              <label htmlFor="service" className="form-label">Service Needed *</label>
+                              <label htmlFor="service" className="form-label" style={{color: '#1a365d', fontWeight: '600', marginBottom: '8px'}}>Service Needed *</label>
                               <select 
                                 className="form-select" 
                                 id="service" 
@@ -214,6 +283,9 @@ export default function ScheduleCall() {
                                 value={formData.service} 
                                 onChange={handleChange} 
                                 required
+                                style={{border: '2px solid #e0e0e0', borderRadius: '5px', padding: '12px', fontSize: '16px', transition: 'border-color 0.3s'}}
+                                onFocus={(e) => e.target.style.borderColor = '#d4af37'}
+                                onBlur={(e) => e.target.style.borderColor = '#e0e0e0'}
                               >
                                 <option value="" disabled>Select a service</option>
                                 <option value="Immigration Appeals">Immigration Appeals</option>
@@ -230,7 +302,7 @@ export default function ScheduleCall() {
                         <div className="row">
                           <div className="col-md-6 mb-4">
                             <div className="form-group">
-                              <label htmlFor="preferredDate" className="form-label">Preferred Date *</label>
+                              <label htmlFor="preferredDate" className="form-label" style={{color: '#1a365d', fontWeight: '600', marginBottom: '8px'}}>Preferred Date *</label>
                               <input 
                                 type="date" 
                                 className="form-control" 
@@ -239,12 +311,15 @@ export default function ScheduleCall() {
                                 value={formData.preferredDate} 
                                 onChange={handleChange} 
                                 required 
+                                style={{border: '2px solid #e0e0e0', borderRadius: '5px', padding: '12px', fontSize: '16px', transition: 'border-color 0.3s'}}
+                                onFocus={(e) => e.target.style.borderColor = '#d4af37'}
+                                onBlur={(e) => e.target.style.borderColor = '#e0e0e0'}
                               />
                             </div>
                           </div>
                           <div className="col-md-6 mb-4">
                             <div className="form-group">
-                              <label htmlFor="preferredTime" className="form-label">Preferred Time *</label>
+                              <label htmlFor="preferredTime" className="form-label" style={{color: '#1a365d', fontWeight: '600', marginBottom: '8px'}}>Preferred Time *</label>
                               <select 
                                 className="form-select" 
                                 id="preferredTime" 
@@ -252,6 +327,9 @@ export default function ScheduleCall() {
                                 value={formData.preferredTime} 
                                 onChange={handleChange} 
                                 required
+                                style={{border: '2px solid #e0e0e0', borderRadius: '5px', padding: '12px', fontSize: '16px', transition: 'border-color 0.3s'}}
+                                onFocus={(e) => e.target.style.borderColor = '#d4af37'}
+                                onBlur={(e) => e.target.style.borderColor = '#e0e0e0'}
                               >
                                 <option value="" disabled>Select a time</option>
                                 <option value="9:00 AM - 10:00 AM">9:00 AM - 10:00 AM</option>
@@ -267,7 +345,7 @@ export default function ScheduleCall() {
                         </div>
 
                         <div className="form-group mb-4">
-                          <label htmlFor="message" className="form-label">Brief Description of Your Case</label>
+                          <label htmlFor="message" className="form-label" style={{color: '#1a365d', fontWeight: '600', marginBottom: '8px'}}>Brief Description of Your Case</label>
                           <textarea 
                             className="form-control" 
                             id="message" 
@@ -276,6 +354,9 @@ export default function ScheduleCall() {
                             value={formData.message} 
                             onChange={handleChange} 
                             placeholder="Please provide a brief overview of your legal matter to help us prepare for the call."
+                            style={{border: '2px solid #e0e0e0', borderRadius: '5px', padding: '12px', fontSize: '16px', width: '100%', minHeight: '120px', resize: 'vertical', transition: 'border-color 0.3s'}}
+                            onFocus={(e) => e.target.style.borderColor = '#d4af37'}
+                            onBlur={(e) => e.target.style.borderColor = '#e0e0e0'}
                           ></textarea>
                         </div>
 
@@ -323,8 +404,35 @@ export default function ScheduleCall() {
                         </div>
 
                         <div className="text-center">
-                          <button type="submit" className="thm-btn">
-                            Schedule Consultation
+                          <button 
+                            type="submit" 
+                            className="thm-btn" 
+                            disabled={isSubmitting}
+                            style={{
+                              backgroundColor: '#d4af37',
+                              border: 'none',
+                              padding: '15px 30px',
+                              fontSize: '16px',
+                              fontWeight: '600',
+                              borderRadius: '5px',
+                              cursor: isSubmitting ? 'not-allowed' : 'pointer',
+                              transition: 'all 0.3s ease',
+                              opacity: isSubmitting ? 0.7 : 1
+                            }}
+                            onMouseEnter={(e) => {
+                              if (!isSubmitting) {
+                                e.target.style.backgroundColor = '#b8941f';
+                                e.target.style.transform = 'translateY(-2px)';
+                              }
+                            }}
+                            onMouseLeave={(e) => {
+                              if (!isSubmitting) {
+                                e.target.style.backgroundColor = '#d4af37';
+                                e.target.style.transform = 'translateY(0)';
+                              }
+                            }}
+                          >
+                            {isSubmitting ? 'Submitting...' : 'Schedule Consultation'}
                             <span className="thm-btn__icon">
                               <i className="icon-icon-8"></i>
                             </span>
@@ -337,6 +445,7 @@ export default function ScheduleCall() {
                           </button>
                         </div>
                       </form>
+                      </>
                     )}
                   </div>
                 </div>

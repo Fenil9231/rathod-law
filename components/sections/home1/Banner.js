@@ -38,7 +38,7 @@ export default function Banner() {
                     <div className="container">
                         <div className="banner-one__content-inner">
                             <div className="banner-one__content-left">
-                                <h2>RATHOD LAW <br /> PROFESSIONAL CORPORATION</h2>
+                                <h2>RATHOD LAW <br /> PROFESSIONAL <br /> CORPORATION</h2>
                             </div>
                             <div className="banner-one__content-right">
                                 <p>{bannerContent.description}</p>

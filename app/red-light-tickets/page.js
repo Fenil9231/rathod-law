@@ -12,29 +12,7 @@ export default function RedLightTickets() {
   return (
     <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Red Light Tickets">
       <div>
-        {/* Hero Section */}
-        <section className="page-title">
-          <div className="page-title-bg" style={{backgroundImage: 'url(assets/images/backgrounds/page-title-bg.jpg)'}}>
-          </div>
-          <div className="page-title-bg-overly"></div>
-          <div className="container">
-            <div className="row">
-              <div className="col-xl-12">
-                <div className="page-title__wrapper">
-                  <div className="page-title__content">
-                    <h2 className="page-title__title">Red Light Violation Defense</h2>
-                    <div className="page-title__menu">
-                      <ul>
-                        <li><Link href="/">Home</Link></li>
-                        <li>Red Light Tickets</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        
 
         {/* Main Content */}
         <section className="about-page">
@@ -80,7 +58,7 @@ export default function RedLightTickets() {
                   </div>
 
                   <div className="card mb-4 shadow-sm">
-                    <div className="card-header bg-danger text-white">
+                    <div className="card-header bg-primary text-white">
                       <h3 className="card-title mb-0">Penalties for Red Light Violations</h3>
                     </div>
                     <div className="card-body">
@@ -110,7 +88,7 @@ export default function RedLightTickets() {
                   </div>
 
                   <div className="card mb-4 shadow-sm">
-                    <div className="card-header bg-info text-white">
+                    <div className="card-header bg-primary text-white">
                       <h3 className="card-title mb-0">Red Light Camera System</h3>
                     </div>
                     <div className="card-body">
@@ -127,7 +105,7 @@ export default function RedLightTickets() {
                   </div>
 
                   <div className="card mb-4 shadow-sm">
-                    <div className="card-header bg-success text-white">
+                    <div className="card-header bg-primary text-white">
                       <h3 className="card-title mb-0">Common Defenses for Red Light Tickets</h3>
                     </div>
                     <div className="card-body">
@@ -145,7 +123,7 @@ export default function RedLightTickets() {
                   </div>
 
                   <div className="card mb-4 shadow-sm">
-                    <div className="card-header bg-warning text-dark">
+                    <div className="card-header bg-primary text-dark">
                       <h3 className="card-title mb-0">Right Turn on Red Rules</h3>
                     </div>
                     <div className="card-body">
@@ -162,7 +140,7 @@ export default function RedLightTickets() {
                   </div>
 
                   <div className="card mb-4 shadow-sm">
-                    <div className="card-header bg-secondary text-white">
+                    <div className="card-header bg-primary text-white">
                       <h3 className="card-title mb-0">Impact on Insurance and Driving Record</h3>
                     </div>
                     <div className="card-body">
@@ -179,7 +157,7 @@ export default function RedLightTickets() {
                   </div>
 
                   <div className="card mb-4 shadow-sm">
-                    <div className="card-header bg-dark text-white">
+                    <div className="card-header bg-primary text-white">
                       <h3 className="card-title mb-0">Safety Considerations</h3>
                     </div>
                     <div className="card-body">
@@ -212,7 +190,7 @@ export default function RedLightTickets() {
                   </div>
 
                   <div className="card mb-4 shadow-sm">
-                    <div className="card-header bg-success text-white">
+                    <div className="card-header bg-primary text-white">
                       <h3 className="card-title mb-0">How We Can Help</h3>
                     </div>
                     <div className="card-body">
@@ -278,7 +256,7 @@ export default function RedLightTickets() {
             <div className="row">
               <div className="col-xl-12">
                 <div className="card shadow-lg border-0">
-                  <div className="card-header bg-danger text-white text-center py-4">
+                  <div className="card-header bg-primary text-white text-center py-4">
                     <h3 className="card-title mb-2">Fight Your Red Light Ticket</h3>
                     <p className="card-text mb-0">Don't let a red light violation affect your driving record. Contact us for expert legal representation.</p>
                   </div>

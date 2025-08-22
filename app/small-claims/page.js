@@ -12,29 +12,7 @@ export default function SmallClaims() {
   return (
     <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Small Claims Court">
       <div>
-        {/* Hero Section */}
-        <section className="page-title">
-          <div className="page-title-bg" style={{backgroundImage: 'url(assets/images/backgrounds/page-title-bg.jpg)'}}>
-          </div>
-          <div className="page-title-bg-overly"></div>
-          <div className="container">
-            <div className="row">
-              <div className="col-xl-12">
-                <div className="page-title__wrapper">
-                  <div className="page-title__content">
-                    <h2 className="page-title__title">Small Claims Court Representation</h2>
-                    <div className="page-title__menu">
-                      <ul>
-                        <li><Link href="/">Home</Link></li>
-                        <li>Small Claims</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+      
 
         {/* Main Content */}
         <section className="about-page">
@@ -53,8 +31,8 @@ export default function SmallClaims() {
                     court process, whether you're pursuing a claim or defending against one.
                   </p>
 
-                  <div className="card mb-4">
-                    <div className="card-header bg-primary text-white">
+                  <div className="card mb-4" style={{boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'}}>
+                    <div className="card-header text-white" style={{backgroundColor: '#d4af37'}}>
                       <h3 className="card-title mb-0">What is Small Claims Court?</h3>
                     </div>
                     <div className="card-body">
@@ -76,8 +54,8 @@ export default function SmallClaims() {
                     </div>
                   </div>
 
-                  <div className="card mb-4">
-                    <div className="card-header bg-info text-white">
+                  <div className="card mb-4" style={{boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'}}>
+                    <div className="card-header text-white" style={{backgroundColor: '#d4af37'}}>
                       <h3 className="card-title mb-0">Types of Claims Handled</h3>
                     </div>
                     <div className="card-body">
@@ -106,8 +84,8 @@ export default function SmallClaims() {
                     </div>
                   </div>
 
-                  <div className="card mb-4">
-                    <div className="card-header bg-success text-white">
+                  <div className="card mb-4" style={{boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'}}>
+                    <div className="card-header text-white" style={{backgroundColor: '#d4af37'}}>
                       <h3 className="card-title mb-0">The Small Claims Process</h3>
                     </div>
                     <div className="card-body">
@@ -172,8 +150,8 @@ export default function SmallClaims() {
                     </div>
                   </div>
 
-                  <div className="card mb-4">
-                    <div className="card-header bg-warning text-dark">
+                  <div className="card mb-4" style={{boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'}}>
+                    <div className="card-header text-white" style={{backgroundColor: '#d4af37'}}>
                       <h3 className="card-title mb-0">Costs and Fees</h3>
                     </div>
                     <div className="card-body">
@@ -215,8 +193,8 @@ export default function SmallClaims() {
                     </div>
                   </div>
 
-                  <div className="card mb-4">
-                    <div className="card-header bg-primary text-white">
+                  <div className="card mb-4" style={{boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'}}>
+                    <div className="card-header text-white" style={{backgroundColor: '#d4af37'}}>
                       <h3 className="card-title mb-0">Benefits of Paralegal Representation</h3>
                     </div>
                     <div className="card-body">
@@ -259,8 +237,8 @@ export default function SmallClaims() {
                     </div>
                   </div>
 
-                  <div className="card mb-4">
-                    <div className="card-header bg-danger text-white">
+                  <div className="card mb-4" style={{boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'}}>
+                    <div className="card-header text-white" style={{backgroundColor: '#d4af37'}}>
                       <h3 className="card-title mb-0">Enforcement of Judgments</h3>
                     </div>
                     <div className="card-body">
@@ -292,8 +270,8 @@ export default function SmallClaims() {
                     </div>
                   </div>
 
-                  <div className="card mb-4">
-                    <div className="card-header bg-secondary text-white">
+                  <div className="card mb-4" style={{boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'}}>
+                    <div className="card-header text-white" style={{backgroundColor: '#d4af37'}}>
                       <h3 className="card-title mb-0">Defending Against Claims</h3>
                     </div>
                     <div className="card-body">
@@ -327,8 +305,8 @@ export default function SmallClaims() {
                     </div>
                   </div>
 
-                  <div className="card mb-4">
-                    <div className="card-header bg-success text-white">
+                  <div className="card mb-4" style={{boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'}}>
+                    <div className="card-header text-white" style={{backgroundColor: '#d4af37'}}>
                       <h3 className="card-title mb-0">How We Can Help</h3>
                     </div>
                     <div className="card-body">
@@ -347,8 +325,8 @@ export default function SmallClaims() {
                     </div>
                   </div>
 
-                  <div className="card mb-4">
-                    <div className="card-header bg-info text-white">
+                  <div className="card mb-4" style={{boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'}}>
+                    <div className="card-header text-white" style={{backgroundColor: '#d4af37'}}>
                       <h3 className="card-title mb-0">Why Choose Rathod Law for Small Claims?</h3>
                     </div>
                     <div className="card-body">
@@ -370,36 +348,46 @@ export default function SmallClaims() {
 
               <div className="col-xl-4 col-lg-4">
                 <div className="sidebar">
-                  <div className="sidebar__single sidebar__services">
-                    <h3 className="sidebar__title">Related Services</h3>
-                    <ul className="sidebar__services-list">
-                      <li><Link href="/paralegal-services">Paralegal Services</Link></li>
-                      <li><Link href="/lawyer-services">Lawyer Services</Link></li>
-                      <li><Link href="/notary-services">Notary Services</Link></li>
-                      <li><Link href="/contact">Legal Consultation</Link></li>
-                    </ul>
+                  <div className="sidebar__single sidebar__services" style={{boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', backgroundColor: 'white', borderRadius: '8px', marginBottom: '20px'}}>
+                    <div style={{backgroundColor: '#1a365d', color: 'white', padding: '15px', borderRadius: '8px 8px 0 0'}}>
+                      <h3 className="sidebar__title" style={{margin: '0', color: 'white'}}>Related Services</h3>
+                    </div>
+                    <div style={{padding: '20px'}}>
+                      <ul className="sidebar__services-list" style={{listStyle: 'none', padding: '0', margin: '0'}}>
+                        <li style={{marginBottom: '10px'}}><Link href="/paralegal-services" style={{color: '#d4af37', textDecoration: 'none', fontWeight: '500'}}>Paralegal Services</Link></li>
+                        <li style={{marginBottom: '10px'}}><Link href="/lawyer-services" style={{color: '#d4af37', textDecoration: 'none', fontWeight: '500'}}>Lawyer Services</Link></li>
+                        <li style={{marginBottom: '10px'}}><Link href="/notary-services" style={{color: '#d4af37', textDecoration: 'none', fontWeight: '500'}}>Notary Services</Link></li>
+                        <li><Link href="/contact" style={{color: '#d4af37', textDecoration: 'none', fontWeight: '500'}}>Legal Consultation</Link></li>
+                      </ul>
+                    </div>
                   </div>
 
-                  <div className="sidebar__single sidebar__contact">
-                    <div className="sidebar__contact-bg" style={{backgroundImage: 'url(assets/images/resources/sidebar-contact-bg.jpg)'}}></div>
-                    <div className="sidebar__contact-content">
-                      <h3 className="sidebar__contact-title">Need Legal Help?</h3>
-                      <p className="sidebar__contact-text">Get expert representation for your Small Claims matter</p>
-                      <div className="sidebar__contact-btn">
-                        <Link href="/contact" className="thm-btn">Contact Us</Link>
+                  <div className="sidebar__single sidebar__contact" style={{boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', backgroundColor: 'white', borderRadius: '8px', marginBottom: '20px', overflow: 'hidden'}}>
+                    <div style={{background: 'linear-gradient(135deg, #1a3693 0%, #1a365d 100%)', padding: '30px', position: 'relative'}}>
+                      <div style={{position: 'absolute', top: '0', left: '0', right: '0', bottom: '0', background: 'rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(10px)'}}></div>
+                      <div style={{position: 'relative', zIndex: '2'}}>
+                        <h3 className="sidebar__contact-title" style={{color: '#d4af37', marginBottom: '15px', fontSize: '1.5rem', fontWeight: 'bold'}}>Need Legal Help?</h3>
+                        <p className="sidebar__contact-text" style={{color: 'white', marginBottom: '20px', lineHeight: '1.6'}}>Get expert representation for your Small Claims matter</p>
+                        <div className="sidebar__contact-btn">
+                          <Link href="/contact" className="thm-btn" style={{background: 'linear-gradient(135deg, #d4af37 0%, #f4d03f 100%)', color: '#1a365d', padding: '12px 25px', borderRadius: '25px', textDecoration: 'none', fontWeight: 'bold', display: 'inline-block', transition: 'all 0.3s ease'}}>Contact Us</Link>
+                        </div>
                       </div>
                     </div>
                   </div>
 
-                  <div className="sidebar__single sidebar__info">
-                    <h3 className="sidebar__title">Small Claims Facts</h3>
-                    <ul className="sidebar__info-list">
-                      <li><strong>Claim Limit:</strong> Up to $35,000</li>
-                      <li><strong>Filing Fee:</strong> $102 - $258</li>
-                      <li><strong>Time Limit:</strong> Usually 2 years</li>
-                      <li><strong>Settlement Conference:</strong> Mandatory</li>
-                      <li><strong>Appeals:</strong> Very limited</li>
-                    </ul>
+                  <div className="sidebar__single sidebar__info" style={{boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', backgroundColor: 'white', borderRadius: '8px', marginBottom: '20px'}}>
+                    <div style={{backgroundColor: '#1a365d', color: 'white', padding: '15px', borderRadius: '8px 8px 0 0'}}>
+                      <h3 className="sidebar__title" style={{margin: '0', color: 'white'}}>Small Claims Facts</h3>
+                    </div>
+                    <div style={{padding: '20px'}}>
+                      <ul className="sidebar__info-list" style={{listStyle: 'none', padding: '0', margin: '0'}}>
+                        <li style={{marginBottom: '12px', padding: '8px 0', borderBottom: '1px solid #f0f0f0'}}><strong style={{color: '#d4af37'}}>Claim Limit:</strong> Up to $35,000</li>
+                        <li style={{marginBottom: '12px', padding: '8px 0', borderBottom: '1px solid #f0f0f0'}}><strong style={{color: '#d4af37'}}>Filing Fee:</strong> $102 - $258</li>
+                        <li style={{marginBottom: '12px', padding: '8px 0', borderBottom: '1px solid #f0f0f0'}}><strong style={{color: '#d4af37'}}>Time Limit:</strong> Usually 2 years</li>
+                        <li style={{marginBottom: '12px', padding: '8px 0', borderBottom: '1px solid #f0f0f0'}}><strong style={{color: '#d4af37'}}>Settlement Conference:</strong> Mandatory</li>
+                        <li style={{padding: '8px 0'}}><strong style={{color: '#d4af37'}}>Appeals:</strong> Very limited</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -412,60 +400,65 @@ export default function SmallClaims() {
           <div className="container">
             <div className="row">
               <div className="col-xl-12">
-                <div className="card mb-4 border-primary">
-                  <div className="card-header bg-primary text-white text-center">
-                    <h3 className="card-title mb-0">Get Expert Small Claims Court Representation</h3>
-                  </div>
-                  <div className="card-body text-center">
-                    <p className="card-text lead">Don't navigate Small Claims Court alone. Our experienced paralegals provide the expertise and representation you need for the best possible outcome.</p>
-                    
-                    <div className="row mb-4">
-                      <div className="col-md-3 mb-2">
-                        <div className="text-primary">
-                          <i className="fas fa-comments fa-2x mb-2"></i>
-                          <h5>Free Consultation</h5>
-                          <p className="small">Discuss your case with no obligation</p>
+                <div className="card mb-4" style={{boxShadow: '0 8px 16px rgba(0, 0, 0, 0.15)', border: 'none', borderRadius: '12px', overflow: 'hidden'}}>
+                  <div style={{background: 'linear-gradient(135deg, #1a3693 0%, #1a365d 100%)', padding: '40px', position: 'relative'}}>
+                    <div style={{position: 'absolute', top: '0', left: '0', right: '0', bottom: '0', background: 'rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(10px)'}}></div>
+                    <div style={{position: 'relative', zIndex: '2'}}>
+                      <div className="text-center">
+                        <h3 className="card-title mb-4" style={{color: '#d4af37', fontSize: '2.5rem', fontWeight: 'bold', marginBottom: '0'}}>Get Expert Small Claims Court Representation</h3>
+                      </div>
+                      <div className="card-body text-center" style={{padding: '0'}}>
+                        <p className="card-text lead" style={{color: 'white', fontSize: '1.2rem', marginBottom: '30px'}}>Don't navigate Small Claims Court alone. Our experienced paralegals provide the expertise and representation you need for the best possible outcome.</p>
+                        
+                        <div className="row mb-4">
+                          <div className="col-md-3 mb-2">
+                            <div style={{color: '#d4af37'}}>
+                              <i className="fas fa-comments fa-2x mb-2"></i>
+                              <h5 style={{color: 'white', fontWeight: 'bold'}}>Free Consultation</h5>
+                              <p className="small" style={{color: 'rgba(255, 255, 255, 0.9)'}}>Discuss your case with no obligation</p>
+                            </div>
+                          </div>
+                          <div className="col-md-3 mb-2">
+                            <div style={{color: '#d4af37'}}>
+                              <i className="fas fa-dollar-sign fa-2x mb-2"></i>
+                              <h5 style={{color: 'white', fontWeight: 'bold'}}>Affordable Rates</h5>
+                              <p className="small" style={{color: 'rgba(255, 255, 255, 0.9)'}}>Cost-effective paralegal representation</p>
+                            </div>
+                          </div>
+                          <div className="col-md-3 mb-2">
+                            <div style={{color: '#d4af37'}}>
+                              <i className="fas fa-trophy fa-2x mb-2"></i>
+                              <h5 style={{color: 'white', fontWeight: 'bold'}}>Proven Results</h5>
+                              <p className="small" style={{color: 'rgba(255, 255, 255, 0.9)'}}>Track record of successful outcomes</p>
+                            </div>
+                          </div>
+                          <div className="col-md-3 mb-2">
+                            <div style={{color: '#d4af37'}}>
+                              <i className="fas fa-cogs fa-2x mb-2"></i>
+                              <h5 style={{color: 'white', fontWeight: 'bold'}}>Full Service</h5>
+                              <p className="small" style={{color: 'rgba(255, 255, 255, 0.9)'}}>From filing to enforcement</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <p className="lead font-weight-bold mb-4" style={{color: '#d4af37', fontSize: '1.3rem'}}>Contact us today to protect your interests in Small Claims Court.</p>
+                        
+                        <div className="row mb-4">
+                          <div className="col-md-4 mb-2">
+                            <p style={{color: 'white'}}><i className="fas fa-phone" style={{color: '#d4af37'}}></i> <strong>Call:</strong> (647) 490-7113</p>
+                          </div>
+                          <div className="col-md-4 mb-2">
+                            <p style={{color: 'white'}}><i className="fas fa-envelope" style={{color: '#d4af37'}}></i> <strong>Email:</strong> info@rathodlaw.com</p>
+                          </div>
+                          <div className="col-md-4 mb-2">
+                            <p style={{color: 'white'}}><i className="fas fa-calendar" style={{color: '#d4af37'}}></i> <strong>Online:</strong> Schedule your free consultation</p>
+                          </div>
+                        </div>
+                        
+                        <div className="text-center">
+                          <Link href="/contact" className="btn btn-lg" style={{background: 'linear-gradient(135deg, #d4af37 0%, #f4d03f 100%)', color: '#1a365d', padding: '15px 40px', borderRadius: '30px', textDecoration: 'none', fontWeight: 'bold', fontSize: '1.1rem', border: 'none', transition: 'all 0.3s ease'}}>Get Started Today</Link>
                         </div>
                       </div>
-                      <div className="col-md-3 mb-2">
-                        <div className="text-success">
-                          <i className="fas fa-dollar-sign fa-2x mb-2"></i>
-                          <h5>Affordable Rates</h5>
-                          <p className="small">Cost-effective paralegal representation</p>
-                        </div>
-                      </div>
-                      <div className="col-md-3 mb-2">
-                        <div className="text-warning">
-                          <i className="fas fa-trophy fa-2x mb-2"></i>
-                          <h5>Proven Results</h5>
-                          <p className="small">Track record of successful outcomes</p>
-                        </div>
-                      </div>
-                      <div className="col-md-3 mb-2">
-                        <div className="text-info">
-                          <i className="fas fa-cogs fa-2x mb-2"></i>
-                          <h5>Full Service</h5>
-                          <p className="small">From filing to enforcement</p>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <p className="lead font-weight-bold mb-4">Contact us today to protect your interests in Small Claims Court.</p>
-                    
-                    <div className="row mb-4">
-                      <div className="col-md-4 mb-2">
-                        <p><i className="fas fa-phone text-primary"></i> <strong>Call:</strong> (647) 490-7113</p>
-                      </div>
-                      <div className="col-md-4 mb-2">
-                        <p><i className="fas fa-envelope text-primary"></i> <strong>Email:</strong> info@rathodlaw.com</p>
-                      </div>
-                      <div className="col-md-4 mb-2">
-                        <p><i className="fas fa-calendar text-primary"></i> <strong>Online:</strong> Schedule your free consultation</p>
-                      </div>
-                    </div>
-                    
-                    <div className="text-center">
-                      <Link href="/contact" className="btn btn-primary btn-lg">Get Started Today</Link>
                     </div>
                   </div>
                 </div>

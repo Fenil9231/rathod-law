@@ -12,29 +12,7 @@ export default function SeatBeltTickets() {
   return (
     <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Seat Belt Tickets">
       <div>
-        {/* Hero Section */}
-        <section className="page-title">
-          <div className="page-title-bg" style={{backgroundImage: 'url(assets/images/backgrounds/page-title-bg.jpg)'}}>
-          </div>
-          <div className="page-title-bg-overly"></div>
-          <div className="container">
-            <div className="row">
-              <div className="col-xl-12">
-                <div className="page-title__wrapper">
-                  <div className="page-title__content">
-                    <h2 className="page-title__title">Seat Belt Violation Defense</h2>
-                    <div className="page-title__menu">
-                      <ul>
-                        <li><Link href="/">Home</Link></li>
-                        <li>Seat Belt Tickets</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        
 
         {/* Main Content */}
         <section className="about-page">
@@ -80,7 +58,7 @@ export default function SeatBeltTickets() {
                   </div>
 
                   <div className="card mb-4 shadow-sm">
-                    <div className="card-header bg-danger text-white">
+                    <div className="card-header bg-primary text-white">
                       <h3 className="card-title mb-0">Penalties for Seat Belt Violations</h3>
                     </div>
                     <div className="card-body">
@@ -108,7 +86,7 @@ export default function SeatBeltTickets() {
                   </div>
 
                   <div className="card mb-4 shadow-sm">
-                    <div className="card-header bg-success text-white">
+                    <div className="card-header bg-primary text-white">
                       <h3 className="card-title mb-0">Medical and Legal Exemptions</h3>
                     </div>
                     <div className="card-body">
@@ -124,7 +102,7 @@ export default function SeatBeltTickets() {
                   </div>
 
                   <div className="card mb-4 shadow-sm">
-                    <div className="card-header bg-info text-white">
+                    <div className="card-header bg-primary text-white">
                       <h3 className="card-title mb-0">Common Defenses for Seat Belt Tickets</h3>
                     </div>
                     <div className="card-body">
@@ -141,7 +119,7 @@ export default function SeatBeltTickets() {
                   </div>
 
                   <div className="card mb-4 shadow-sm">
-                    <div className="card-header bg-warning text-dark">
+                    <div className="card-header bg-primary text-dark">
                       <h3 className="card-title mb-0">Impact on Insurance and Driving Record</h3>
                     </div>
                     <div className="card-body">
@@ -157,7 +135,7 @@ export default function SeatBeltTickets() {
                   </div>
 
                   <div className="card mb-4 shadow-sm">
-                    <div className="card-header bg-secondary text-white">
+                    <div className="card-header bg-primary text-white">
                       <h3 className="card-title mb-0">Child Car Seat and Booster Seat Requirements</h3>
                     </div>
                     <div className="card-body">
@@ -173,7 +151,7 @@ export default function SeatBeltTickets() {
                   </div>
 
                   <div className="card mb-4 shadow-sm">
-                    <div className="card-header bg-dark text-white">
+                    <div className="card-header bg-primary text-white">
                       <h3 className="card-title mb-0">How We Can Help</h3>
                     </div>
                     <div className="card-body">
@@ -190,7 +168,7 @@ export default function SeatBeltTickets() {
                   </div>
 
                   <div className="card mb-4 shadow-sm">
-                    <div className="card-header bg-success text-white">
+                    <div className="card-header bg-primary text-white">
                       <h3 className="card-title mb-0">Safety and Legal Compliance</h3>
                     </div>
                     <div className="card-body">
