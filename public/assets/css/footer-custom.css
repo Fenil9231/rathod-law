@@ -1,0 +1,65 @@
+/* Custom Footer Policy Links Styling */
+.footer-policy-link a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  opacity: 0.75;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 8px 12px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.footer-policy-link a:hover {
+  opacity: 1 !important;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.footer-policy-link a:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 2px;
+}
+
+.f-bottom-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.f-bottom-list li {
+  margin: 0;
+  padding: 0;
+}
+
+.f-bottom-list .text-muted {
+  color: rgba(255, 255, 255, 0.4) !important;
+  font-weight: 300;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .f-bottom-list {
+    flex-direction: column;
+    gap: 8px !important;
+    text-align: center;
+  }
+  
+  .f-bottom-list .text-muted {
+    display: none;
+  }
+  
+  .footer-policy-link a {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-policy-link a {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+}

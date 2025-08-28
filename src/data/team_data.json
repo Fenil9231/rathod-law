@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "image":"assets/images/bg/attorney1.png",
+        "name":"Kapil Rathod",
+        "designation":"Barrister & Solicitor, Principal Lawyer",
+        "link":"/kapil-rathod"
+    },
+    {
+        "id":2,
+        "image":"assets/images/bg/attorney2.png",
+        "name":"Saleema Panjwani",
+        "designation":"Licensed Paralegal & Notary Public",
+        "link":"/saleema-panjwani"
+    },
+    {
+        "id":3,
+        "image":"assets/images/bg/attorney3.png",
+        "name":"Lincy Gomez",
+        "designation":"Immigration Specialist & Educational Counselor",
+        "link":"/lincy-gomez"
+    }
+]
