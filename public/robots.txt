@@ -1,0 +1,57 @@
+User-agent: *
+Allow: /
+
+# Block demo and template pages
+Disallow: /index2
+Disallow: /index3
+Disallow: /index4
+Disallow: /blog-details
+Disallow: /blog-grid
+Disallow: /blog-standard
+Disallow: /blog
+Disallow: /case-study1
+Disallow: /case-study2
+Disallow: /casestudy-details
+Disallow: /lawyer-details
+Disallow: /practice-details
+Disallow: /error
+Disallow: /404
+
+# Block admin and development files
+Disallow: /_next/
+Disallow: /api/
+Disallow: /.next/
+Disallow: /node_modules/
+
+# Allow important pages
+Allow: /
+Allow: /about
+Allow: /contact
+Allow: /team
+Allow: /practice-area
+Allow: /speeding-tickets
+Allow: /red-light-tickets
+Allow: /seat-belt-tickets
+Allow: /cell-phone-tickets
+Allow: /stunt-driving
+Allow: /license-suspension
+Allow: /demerit-points
+Allow: /small-claims-court
+Allow: /immigration-applications
+Allow: /immigration-appeals
+Allow: /refugee-appeals
+Allow: /family-law
+Allow: /notarization
+Allow: /kapil-rathod
+Allow: /saleema-panjwani
+Allow: /lincy-gomez
+Allow: /schedule-call
+Allow: /faq
+Allow: /privacy-policy
+Allow: /terms-conditions
+
+# Sitemap location
+Sitemap: https://rathodlaw.com/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1

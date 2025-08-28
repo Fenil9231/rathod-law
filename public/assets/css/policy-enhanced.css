@@ -1,0 +1,365 @@
+/* Enhanced Policy Pages Styling - Rathod Law Firm */
+
+/* Policy Section Container */
+.policy-container {
+  background: linear-gradient(135deg, #fbf8f6 0%, #f8f4ef 100%);
+  min-height: 100vh;
+  position: relative;
+}
+
+.policy-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color1), var(--primary-color2));
+  z-index: 1;
+}
+
+/* Enhanced Policy Content */
+.policy-content {
+  background: var(--white);
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(222, 160, 87, 0.1);
+  padding: 60px;
+  margin: 40px 0;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(222, 160, 87, 0.1);
+}
+
+.policy-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(135deg, var(--primary-color1), var(--primary-color2));
+}
+
+/* Policy Header */
+.policy-header {
+  text-align: center;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid rgba(222, 160, 87, 0.1);
+  position: relative;
+}
+
+.policy-header::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 2px;
+  background: var(--primary-color1);
+}
+
+.policy-title {
+  font-family: var(--font-lora);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-color1);
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.policy-subtitle {
+  font-family: var(--font-exo);
+  font-size: 1.1rem;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+/* Policy Sections */
+.policy-section {
+  margin-bottom: 45px;
+  padding: 30px;
+  background: #fbf8f6;
+  border-radius: 12px;
+  border-left: 5px solid var(--primary-color1);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.policy-section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(222, 160, 87, 0.15);
+  background: #f8f4ef;
+}
+
+.policy-section h3 {
+  font-family: var(--font-lora);
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--primary-color1);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.policy-section h3::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: var(--primary-color1);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.policy-section h4 {
+  font-family: var(--font-lora);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-color1);
+  margin: 25px 0 15px 0;
+  padding-left: 20px;
+  border-left: 3px solid var(--primary-color2);
+}
+
+.policy-section p {
+  font-family: var(--font-exo);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-color2);
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Enhanced Lists */
+.policy-section ul {
+  margin: 20px 0;
+  padding-left: 0;
+}
+
+.policy-section ul li {
+  font-family: var(--font-exo);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-color2);
+  margin-bottom: 12px;
+  padding-left: 35px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.policy-section ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--primary-color1);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.policy-section ul li:hover {
+  color: var(--primary-color1);
+  transform: translateX(5px);
+}
+
+/* Contact Information Card */
+.contact-info {
+  background: linear-gradient(135deg, var(--primary-color1), var(--primary-color2));
+  color: var(--white);
+  padding: 40px;
+  border-radius: 15px;
+  margin-top: 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-info::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(180deg); }
+}
+
+.contact-info h3 {
+  font-family: var(--font-lora);
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-info p {
+  font-family: var(--font-exo);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-info a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-info a:hover {
+  color: #f0e6d6;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+  
+/* Responsive Design */
+@media (max-width: 1199px) {
+  .policy-content {
+    padding: 50px;
+  }
+  
+  .policy-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .policy-content {
+    padding: 40px;
+    margin: 20px 0;
+  }
+  
+  .policy-title {
+    font-size: 2.2rem;
+  }
+  
+  .policy-section {
+    padding: 25px;
+  }
+  
+  .policy-section h3 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .policy-content {
+    padding: 30px 20px;
+    border-radius: 10px;
+  }
+  
+  .policy-title {
+    font-size: 1.9rem;
+  }
+  
+  .policy-section {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .policy-section h3 {
+    font-size: 1.4rem;
+  }
+  
+  .policy-section h4 {
+    font-size: 1.2rem;
+  }
+  
+  .contact-info {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .policy-content {
+    padding: 25px 15px;
+  }
+  
+  .policy-title {
+    font-size: 1.7rem;
+  }
+  
+  .policy-section {
+    padding: 15px;
+  }
+  
+  .policy-section ul li {
+    padding-left: 25px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .policy-container {
+    background: white;
+  }
+  
+  .policy-content {
+    box-shadow: none;
+    border: 1px solid #ccc;
+  }
+  
+  .policy-section {
+    background: white;
+    box-shadow: none;
+  }
+  
+  .contact-info {
+    background: white;
+    color: black;
+    border: 2px solid var(--primary-color1);
+  }
+}
+
+/* Accessibility Enhancements */
+.policy-section:focus-within {
+  outline: 2px solid var(--primary-color1);
+  outline-offset: 2px;
+}
+
+.contact-info a:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+/* Loading Animation */
+.policy-content.loading {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scroll Progress Indicator */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color1), var(--primary-color2));
+  z-index: 9999;
+  transition: width 0.3s ease;
+}
