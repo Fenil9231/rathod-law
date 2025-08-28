@@ -1,19 +1,9 @@
 {
   "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "package.json",
-      "use": "@vercel/next"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/sitemap.xml",
-      "dest": "/api/sitemap"
-    },
-    {
-      "src": "/robots.txt",
-      "dest": "/robots.txt"
+      "source": "/sitemap.xml",
+      "destination": "/api/sitemap"
     }
   ],
   "headers": [
