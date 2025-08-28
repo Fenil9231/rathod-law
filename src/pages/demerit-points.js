@@ -326,7 +326,7 @@ function DemeritPoints() {
                         <div className="body">
                           <p>Don't let demerit points affect your driving privileges. Our experienced traffic lawyers can help you understand your options and fight for the best possible outcome.</p>
                           <div className="mt-4">
-                            <Link href="/contact"><a className="eg-btn btn--primary btn--lg me-3">Contact Us Today</a></Link>
+                            <a href="/contact" className="eg-btn btn--primary btn--lg me-3">Contact Us Today</a>
                 <a href="tel:+1234567890" className="eg-btn btn--outline btn--lg">Call Now</a>
                           </div>
                         </div>

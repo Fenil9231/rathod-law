@@ -220,7 +220,7 @@ function ImmigrationApplications() {
                     <h3 style={{ color: '#2c3e50', margin: 0, fontSize: '24px', fontWeight: '600' }}>Student Visa</h3>
                   </div>
                   
-                  <p style={{ color: '#666', lineHeight: '1.6', marginBottom: '20px', fontSize: '15px' }}>A lot of study permit applications from outside of Canada get refused every year. A successful application needs strong attention on assessment of candidate&apos;s profile, selection of appropriate course, demonstrating intentions via a strong Statement of Purpose (SOP), and a convincing Submission Letter.</p>
+                  <p style={{ color: '#666', lineHeight: '1.6', marginBottom: '20px', fontSize: '15px' }}>A lot of study permit applications from outside of Canada get refused every year. A successful application needs strong attention on assessment of candidate's profile, selection of appropriate course, demonstrating intentions via a strong Statement of Purpose (SOP), and a convincing Submission Letter.</p>
                   
                   <div style={{
                     backgroundColor: '#fff8f0',
@@ -402,7 +402,7 @@ function ImmigrationApplications() {
                     <h3 style={{ color: '#2c3e50', margin: 0, fontSize: '24px', fontWeight: '600' }}>Visitor Visa</h3>
                   </div>
                   
-                  <p style={{ color: '#666', lineHeight: '1.6', marginBottom: '20px', fontSize: '15px' }}>Every year, a lot of people visit Canada; however, in such applications, specific attention must be paid to the &apos;return&apos; of the applicants to their home country. Ties to home country must be established and a detailed submission letter as well as Invitation Letter must be written.</p>
+                  <p style={{ color: '#666', lineHeight: '1.6', marginBottom: '20px', fontSize: '15px' }}>Every year, a lot of people visit Canada; however, in such applications, specific attention must be paid to the 'return' of the applicants to their home country. Ties to home country must be established and a detailed submission letter as well as Invitation Letter must be written.</p>
                   
                   <div style={{
                     backgroundColor: '#fff8f0',
@@ -534,7 +534,7 @@ function ImmigrationApplications() {
                      <h3 style={{ color: '#2c3e50', margin: 0, fontSize: '24px', fontWeight: '600' }}>Permanent Residence Applications</h3>
                    </div>
                    
-                   <p style={{ color: '#666', lineHeight: '1.6', marginBottom: '20px', fontSize: '15px' }}>Express Entry has been constantly evolving and so as Provincial Nominee Class applications. In the constantly changing rules, Mr. Rathod ensures that the candidate &apos;actually&apos; qualifies and advises the clients on best possible ways of becoming a permanent resident of Canada.</p>
+                   <p style={{ color: '#666', lineHeight: '1.6', marginBottom: '20px', fontSize: '15px' }}>Express Entry has been constantly evolving and so as Provincial Nominee Class applications. In the constantly changing rules, Mr. Rathod ensures that the candidate 'actually' qualifies and advises the clients on best possible ways of becoming a permanent resident of Canada.</p>
                    
                    <div style={{
                      backgroundColor: '#fff8f0',
