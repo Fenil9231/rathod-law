@@ -1,31 +1,36 @@
-import { useEffect } from 'react';
-import Script from 'next/script';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/globals.css';
 
-// Override console.log in production
-if (typeof window !== 'undefined' && process.env.NODE_ENV === 'production') {
-  console.log = () => {};
-}
-
-export default function MyApp({ Component, pageProps }) {
+import Script from "next/script"
+import "../../public/assets/css/animate.css"
+import "../../public/assets/css/all.css"
+import "../../public/assets/css/bootstrap.min.css"
+import "../../public/assets/css/boxicons.min.css"
+import "../../public/assets/css/bootstrap-icons.css"
+import "../../public/assets/css/bootstrap-icons.css"
+import "../../public/assets/css/swiper-bundle.css"
+import "../../public/assets/css/style.css"
+import { useEffect } from "react"
+//Default Warniing Error Hide
+console.log = console.warn = console.error = () => {};
+function MyApp({ Component, pageProps }) {
   useEffect(() => {
-    // Import Bootstrap JS only on client side
-    import('bootstrap/dist/js/bootstrap.bundle.min.js');
+    import("bootstrap/dist/js/bootstrap");
   }, []);
-
   return (
     <>
       <Component {...pageProps} />
-      <Script
-        src="/js/wow.min.js"
-        strategy="afterInteractive"
+      <Script 
+        id="wow" 
+        src="/js/wow.min.js" 
+        strategy="beforeInteractive"
         onLoad={() => {
           if (typeof window !== 'undefined' && window.WOW) {
             new window.WOW().init();
           }
         }}
       />
+      
     </>
   );
 }
+
+export default MyApp;

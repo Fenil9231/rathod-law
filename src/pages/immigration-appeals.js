@@ -151,7 +151,7 @@ function ImmigrationAppeals() {
                     <h4><Link href="/immigration-appeals"><a>Mandamus Applications</a></Link></h4>
                   </div>
                   <div className="body">
-                    <p>Address unreasonable immigration processing delays through Mandamus applications at the Federal Court of Canada. When applications exceed IRCC&apos;s suggested processing times, our legal team files Writ of Mandamus to compel timely processing. Upon successful application, the Federal Court directs IRCC to process within specific timelines.</p>
+                    <p>Address unreasonable immigration processing delays through Mandamus applications at the Federal Court of Canada. When applications exceed IRCC's suggested processing times, our legal team files Writ of Mandamus to compel timely processing. Upon successful application, the Federal Court directs IRCC to process within specific timelines.</p>
                     <Link href="/contact" className="details-btn"><a className="details-btn">Get Consultation</a></Link>
                   </div>
                 </div>

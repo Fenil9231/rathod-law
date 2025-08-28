@@ -377,7 +377,7 @@ function SmallClaimsCourt() {
                       </div>
                       <div className="body text-center">
                         <p>Our experienced legal team can guide you through the Small Claims Court process and help protect your interests.</p>
-                        <Link href="/contact"><a className="eg-btn btn--primary btn--lg me-3">Contact Us Today</a></Link>
+                        <a href="/contact" className="eg-btn btn--primary btn--lg me-3">Contact Us Today</a>
                 <a href="tel:+1234567890" className="eg-btn btn--outline btn--lg">Call Now</a>
                       </div>
                     </div>

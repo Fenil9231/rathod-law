@@ -120,7 +120,7 @@ function FamilyLaw() {
                   </div>
                   <div>
                     <h4 className="mb-4 text-center" style={{color: '#333', fontSize: '24px'}}>Understanding Divorce Applications</h4>
-                    <p className="mb-4" style={{fontSize: '16px', lineHeight: '1.6', textAlign: 'center', maxWidth: '800px', margin: '0 auto 30px'}}>Getting separated is an unfortunate event in anyone&apos;s life. A couple faces issues of Properties, Income, Support and Children in such an unfortunate event. At Rathod Law Firm, we take special care of the issues that revolve around your separation with your spouse.</p>
+                    <p className="mb-4" style={{fontSize: '16px', lineHeight: '1.6', textAlign: 'center', maxWidth: '800px', margin: '0 auto 30px'}}>Getting separated is an unfortunate event in anyone's life. A couple faces issues of Properties, Income, Support and Children in such an unfortunate event. At Rathod Law Firm, we take special care of the issues that revolve around your separation with your spouse.</p>
                     
                     <div style={{background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)', border: '1px solid #dee2e6', borderRadius: '8px', padding: '25px', marginBottom: '30px', textAlign: 'center'}}>
                       <h6 style={{color: '#B8860B', marginBottom: '15px', fontSize: '18px'}}>Key Areas We Handle</h6>

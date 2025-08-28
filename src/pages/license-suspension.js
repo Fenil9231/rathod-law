@@ -333,7 +333,7 @@ function LicenseSuspension() {
                         <div className="body">
                           <p>Don't let a license suspension derail your life. Our experienced traffic lawyers can help you understand your options, navigate the appeals process, and work toward the best possible outcome for your case.</p>
                           <div className="cta-buttons mt-4">
-                            <Link href="/contact"><a className="eg-btn btn--primary btn--lg me-3">Contact Us Today</a></Link>
+                            <a href="/contact" className="eg-btn btn--primary btn--lg me-3">Contact Us Today</a>
                 <a href="tel:+1234567890" className="eg-btn btn--outline btn--lg">Call Now</a>
                           </div>
                         </div>
