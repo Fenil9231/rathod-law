@@ -3,13 +3,9 @@
 
 import nodemailer from 'nodemailer';
 import emailConfig from '../../config/email';
+import { withApiMiddleware } from '../../middleware/apiMiddleware';
 
-export default async function handler(req, res) {
-  // Only allow POST requests
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
-  }
-
+async function handler(req, res) {
   try {
     // Create transporter with current config
     const transporter = nodemailer.createTransporter(emailConfig.smtp);
@@ -66,3 +62,7 @@ export default async function handler(req, res) {
     });
   }
 }
+
+export default withApiMiddleware(handler, {
+  methods: ['POST']
+});
