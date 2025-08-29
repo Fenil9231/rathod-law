@@ -90,7 +90,7 @@ function SpeedingTickets() {
                           <li><strong>Minor speeding:</strong> 1-15 km/h over the limit</li>
                           <li><strong>Major speeding:</strong> 16-29 km/h over the limit</li>
                           <li><strong>Serious speeding:</strong> 30-49 km/h over the limit</li>
-                          <li><strong>Stunt driving:</strong> 50+ km/h over the limit - <Link href="/stunt-driving"><a>Learn more about stunt driving charges</a></Link></li>
+                          <li><strong>Stunt driving:</strong> 50+ km/h over the limit - <Link href="/stunt-driving">Learn more about stunt driving charges</Link></li>
                         </ul>
                       </div>
                     </div>
@@ -183,7 +183,7 @@ function SpeedingTickets() {
                         <h4>Points Reduction Programs</h4>
                       </div>
                       <div className="body">
-                        <p>Ontario offers driver improvement courses that can help reduce <Link href="/demerit-points"><a>demerit points</a></Link> on your record. Completing an approved course may result in a reduction of up to 2 demerit points. If you accumulate too many points, you may face <Link href="/license-suspension"><a>license suspension</a></Link>.</p>
+                        <p>Ontario offers driver improvement courses that can help reduce <Link href="/demerit-points">demerit points</Link> on your record. Completing an approved course may result in a reduction of up to 2 demerit points. If you accumulate too many points, you may face <Link href="/license-suspension">license suspension</Link>.</p>
                       </div>
                     </div>
                   </div>

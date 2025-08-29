@@ -58,13 +58,13 @@ function ImmigrationApplications() {
                         <path d="M14 12h10v2H14zm0 4h10v2H14zm0 4h6v2h-6z"/>
                         <path d="M26 18l-4 4-2-2" fill="none" stroke="currentColor" strokeWidth="2"/>
                       </svg>
-                      <Link href="/immigration-applications"><a className="eg-btn btn--primary btn--outline btn--sm capsule">Study Permits</a></Link>
+                      <Link href="/immigration-applications" className="eg-btn btn--primary btn--outline btn--sm capsule">Study Permits</Link>
                     </div>
-                    <h4><Link href="/immigration-applications"><a>Study Permits & Student Visas</a></Link></h4>
+                    <h4><Link href="/immigration-applications">Study Permits & Student Visas</Link></h4>
                   </div>
                   <div className="body">
                     <p>Expert assistance with study permit applications for international students planning to study in Canada. We help with initial applications, extensions, and pathway planning to permanent residence through post-graduation work permits.</p>
-                    <Link href="/contact" className="details-btn"><a className="details-btn">Get Consultation</a></Link>
+                    <Link href="/contact" className="details-btn">Get Consultation</Link>
                   </div>
                 </div>
               </div>
@@ -77,13 +77,13 @@ function ImmigrationApplications() {
                         <path d="M15 12h8v2h-8zm0 4h8v2h-8zm0 4h8v2h-8z"/>
                         <path d="M26 18l-4 4-2-2" fill="none" stroke="currentColor" strokeWidth="2"/>
                       </svg>
-                      <Link href="/immigration-applications"><a className="eg-btn btn--primary btn--outline style-2 btn--sm capsule">Work Permits</a></Link>
+                      <Link href="/immigration-applications" className="eg-btn btn--primary btn--outline style-2 btn--sm capsule">Work Permits</Link>
                     </div>
-                    <h4><Link href="/immigration-applications"><a>Work Permits & LMIA</a></Link></h4>
+                    <h4><Link href="/immigration-applications">Work Permits & LMIA</Link></h4>
                   </div>
                   <div className="body">
                     <p>Comprehensive work permit services including closed and open work permits, Labour Market Impact Assessments (LMIA), employer compliance, and applications for temporary foreign workers seeking employment in Canada.</p>
-                    <Link href="/contact" className="details-btn"><a className="details-btn">Get Consultation</a></Link>
+                    <Link href="/contact" className="details-btn">Get Consultation</Link>
                   </div>
                 </div>
               </div>
@@ -96,13 +96,13 @@ function ImmigrationApplications() {
                         <path d="M12 14h14v2H12zm0 4h14v2H12zm0 4h10v2H12z"/>
                         <path d="M8 10h22c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2V12c0-1.1.9-2 2-2z" fill="none" stroke="currentColor" strokeWidth="2"/>
                       </svg>
-                      <Link href="/immigration-applications"><a className="eg-btn btn--primary btn--outline btn--sm capsule">Visitor Visas</a></Link>
+                      <Link href="/immigration-applications" className="eg-btn btn--primary btn--outline btn--sm capsule">Visitor Visas</Link>
                     </div>
-                    <h4><Link href="/immigration-applications"><a>Visitor Visas & TRV</a></Link></h4>
+                    <h4><Link href="/immigration-applications">Visitor Visas & TRV</Link></h4>
                   </div>
                   <div className="body">
                     <p>Professional visitor visa services for individuals seeking to visit Canada for tourism, business, or family visits. We assist with temporary resident visa applications, extensions, and super visa applications for parents and grandparents.</p>
-                    <Link href="/contact" className="details-btn"><a className="details-btn">Get Consultation</a></Link>
+                    <Link href="/contact" className="details-btn">Get Consultation</Link>
                   </div>
                 </div>
               </div>
@@ -115,13 +115,13 @@ function ImmigrationApplications() {
                         <path d="M19 8c-1.1 0-2 0.9-2 2v8c0 1.1 0.9 2 2 2s2-0.9 2-2v-8c0-1.1-0.9-2-2-2z"/>
                         <circle cx="19" cy="26" r="2"/>
                       </svg>
-                      <Link href="/immigration-applications"><a className="eg-btn btn--primary btn--outline style-2 btn--sm capsule">Permanent Residence</a></Link>
+                      <Link href="/immigration-applications" className="eg-btn btn--primary btn--outline style-2 btn--sm capsule">Permanent Residence</Link>
                     </div>
-                    <h4><Link href="/immigration-applications"><a>Permanent Residence Applications</a></Link></h4>
+                    <h4><Link href="/immigration-applications">Permanent Residence Applications</Link></h4>
                   </div>
                   <div className="body">
                     <p>Expert guidance with permanent residence applications through various immigration programs including Express Entry (Federal Skilled Worker, Canadian Experience Class, Federal Skilled Trades), Provincial Nominee Programs, and Quebec immigration programs.</p>
-                    <Link href="/contact" className="details-btn"><a className="details-btn">Get Consultation</a></Link>
+                    <Link href="/contact" className="details-btn">Get Consultation</Link>
                   </div>
                 </div>
               </div>
@@ -134,13 +134,13 @@ function ImmigrationApplications() {
                         <path d="M14 12h10v2H14zm0 4h10v2H14zm0 4h6v2h-6z"/>
                         <path d="M26 18l-4 4-2-2" fill="none" stroke="currentColor" strokeWidth="2"/>
                       </svg>
-                      <Link href="/family-law"><a className="eg-btn btn--primary btn--outline btn--sm capsule">Family Sponsorship</a></Link>
+                      <Link href="/family-law" className="eg-btn btn--primary btn--outline btn--sm capsule">Family Sponsorship</Link>
                     </div>
-                    <h4><Link href="/family-law"><a>Family Sponsorship</a></Link></h4>
+                    <h4><Link href="/family-law">Family Sponsorship</Link></h4>
                   </div>
                   <div className="body">
                     <p>Expert assistance with sponsoring spouses, children, parents, and grandparents to immigrate to Canada through family class immigration programs.</p>
-                    <Link href="/family-law" className="details-btn"><a className="details-btn">Learn More</a></Link>
+                    <Link href="/family-law" className="details-btn">Learn More</Link>
                   </div>
                 </div>
               </div>
@@ -153,13 +153,13 @@ function ImmigrationApplications() {
                         <path d="M14 12h10v2H14zm0 4h10v2H14zm0 4h6v2h-6z"/>
                         <path d="M26 18l-4 4-2-2" fill="none" stroke="currentColor" strokeWidth="2"/>
                       </svg>
-                      <Link href="/immigration-appeals"><a className="eg-btn btn--primary btn--outline style-2 btn--sm capsule">Appeals & Reviews</a></Link>
+                      <Link href="/immigration-appeals" className="eg-btn btn--primary btn--outline style-2 btn--sm capsule">Appeals & Reviews</Link>
                     </div>
-                    <h4><Link href="/immigration-appeals"><a>Immigration Appeals</a></Link></h4>
+                    <h4><Link href="/immigration-appeals">Immigration Appeals</Link></h4>
                   </div>
                   <div className="body">
                     <p>Professional representation for immigration appeals, judicial reviews, and Federal Court applications for refused immigration applications.</p>
-                    <Link href="/immigration-appeals" className="details-btn"><a className="details-btn">Learn More</a></Link>
+                    <Link href="/immigration-appeals" className="details-btn">Learn More</Link>
                   </div>
                 </div>
               </div>

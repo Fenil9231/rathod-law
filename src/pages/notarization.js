@@ -37,13 +37,13 @@ function Notarization() {
                         <path d="M14 12h10v2H14zm0 4h10v2H14zm0 4h6v2h-6z"/>
                         <path d="M26 18l-4 4-2-2" fill="none" stroke="currentColor" strokeWidth="2"/>
                       </svg>
-                      <Link href="/notarization"><a className="eg-btn btn--primary btn--outline btn--sm capsule">Document Authentication</a></Link>
+                      <Link href="/notarization" className="eg-btn btn--primary btn--outline btn--sm capsule">Document Authentication</Link>
                     </div>
-                    <h4><Link href="/notarization"><a>Document Authentication</a></Link></h4>
+                    <h4><Link href="/notarization">Document Authentication</Link></h4>
                   </div>
                   <div className="body">
                     <p>Expert authentication and notarization of legal documents, contracts, agreements, and official papers. We provide proper notarial certification for domestic use and international requirements with official notary seal and signature.</p>
-                    <Link href="/contact" className="details-btn"><a className="details-btn">Get Service</a></Link>
+                    <Link href="/contact" className="details-btn">Get Service</Link>
                   </div>
                 </div>
               </div>
@@ -56,13 +56,13 @@ function Notarization() {
                         <path d="M15 12h8v2h-8zm0 4h8v2h-8zm0 4h8v2h-8z"/>
                         <path d="M26 18l-4 4-2-2" fill="none" stroke="currentColor" strokeWidth="2"/>
                       </svg>
-                      <Link href="/notarization"><a className="eg-btn btn--primary btn--outline style-2 btn--sm capsule">Affidavits & Oaths</a></Link>
+                      <Link href="/notarization" className="eg-btn btn--primary btn--outline style-2 btn--sm capsule">Affidavits & Oaths</Link>
                     </div>
-                    <h4><Link href="/notarization"><a>Affidavits & Sworn Statements</a></Link></h4>
+                    <h4><Link href="/notarization">Affidavits & Sworn Statements</Link></h4>
                   </div>
                   <div className="body">
                     <p>Professional administration of oaths and affirmations for affidavits, sworn statements, and statutory declarations. We provide proper legal witnessing, certification, and notarization with official notary seal for legal validity.</p>
-                    <Link href="/contact" className="details-btn"><a className="details-btn">Get Service</a></Link>
+                    <Link href="/contact" className="details-btn">Get Service</Link>
                   </div>
                 </div>
               </div>
@@ -75,13 +75,13 @@ function Notarization() {
                         <path d="M12 14h14v2H12zm0 4h14v2H12zm0 4h10v2H12z"/>
                         <path d="M8 10h22c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2V12c0-1.1.9-2 2-2z" fill="none" stroke="currentColor" strokeWidth="2"/>
                       </svg>
-                      <Link href="/notarization"><a className="eg-btn btn--primary btn--outline btn--sm capsule">Certified Copies</a></Link>
+                      <Link href="/notarization" className="eg-btn btn--primary btn--outline btn--sm capsule">Certified Copies</Link>
                     </div>
-                    <h4><Link href="/notarization"><a>Certified True Copies</a></Link></h4>
+                    <h4><Link href="/notarization">Certified True Copies</Link></h4>
                   </div>
                   <div className="body">
                     <p>Official certification of true copies for original documents including passports, birth certificates, diplomas, transcripts, marriage certificates, and other important personal and business documents with notary seal and signature.</p>
-                    <Link href="/contact" className="details-btn"><a className="details-btn">Get Service</a></Link>
+                    <Link href="/contact" className="details-btn">Get Service</Link>
                   </div>
                 </div>
               </div>
@@ -94,13 +94,13 @@ function Notarization() {
                         <path d="M19 8c-1.1 0-2 0.9-2 2v8c0 1.1 0.9 2 2 2s2-0.9 2-2v-8c0-1.1-0.9-2-2-2z"/>
                         <circle cx="19" cy="26" r="2"/>
                       </svg>
-                      <Link href="/notarization"><a className="eg-btn btn--primary btn--outline style-2 btn--sm capsule">International Documents</a></Link>
+                      <Link href="/notarization" className="eg-btn btn--primary btn--outline style-2 btn--sm capsule">International Documents</Link>
                     </div>
-                    <h4><Link href="/notarization"><a>International Document Services</a></Link></h4>
+                    <h4><Link href="/notarization">International Document Services</Link></h4>
                   </div>
                   <div className="body">
                     <p>Specialized notarization services for international document use, including preparation for apostille certification, embassy legalization, and authentication requirements for foreign jurisdictions and international legal proceedings.</p>
-                    <Link href="/contact" className="details-btn"><a className="details-btn">Get Service</a></Link>
+                    <Link href="/contact" className="details-btn">Get Service</Link>
                   </div>
                 </div>
               </div>
@@ -113,13 +113,13 @@ function Notarization() {
                         <path d="M14 12h10v2H14zm0 4h10v2H14zm0 4h6v2h-6z"/>
                         <path d="M26 18l-4 4-2-2" fill="none" stroke="currentColor" strokeWidth="2"/>
                       </svg>
-                      <Link href="/notarization"><a className="eg-btn btn--primary btn--outline btn--sm capsule">Business Documents</a></Link>
+                      <Link href="/notarization" className="eg-btn btn--primary btn--outline btn--sm capsule">Business Documents</Link>
                     </div>
-                    <h4><Link href="/notarization"><a>Business Document Notarization</a></Link></h4>
+                    <h4><Link href="/notarization">Business Document Notarization</Link></h4>
                   </div>
                   <div className="body">
                     <p>Comprehensive business document notarization including corporate contracts, board resolutions, powers of attorney, commercial agreements, and other business-related documents requiring notarial certification and authentication.</p>
-                    <Link href="/contact" className="details-btn"><a className="details-btn">Get Service</a></Link>
+                    <Link href="/contact" className="details-btn">Get Service</Link>
                   </div>
                 </div>
               </div>
@@ -132,13 +132,13 @@ function Notarization() {
                         <path d="M14 12h10v2H14zm0 4h10v2H14zm0 4h6v2h-6z"/>
                         <path d="M26 18l-4 4-2-2" fill="none" stroke="currentColor" strokeWidth="2"/>
                       </svg>
-                      <Link href="/immigration-applications"><a className="eg-btn btn--primary btn--outline style-2 btn--sm capsule">Immigration Services</a></Link>
+                      <Link href="/immigration-applications" className="eg-btn btn--primary btn--outline style-2 btn--sm capsule">Immigration Services</Link>
                     </div>
-                    <h4><Link href="/immigration-applications"><a>Immigration Applications</a></Link></h4>
+                    <h4><Link href="/immigration-applications">Immigration Applications</Link></h4>
                   </div>
                   <div className="body">
                     <p>Comprehensive immigration application services including study permits, work permits, visitor visas, and permanent residence applications.</p>
-                    <Link href="/immigration-applications" className="details-btn"><a className="details-btn">Learn More</a></Link>
+                    <Link href="/immigration-applications" className="details-btn">Learn More</Link>
                   </div>
                 </div>
               </div>
