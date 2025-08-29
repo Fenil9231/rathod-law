@@ -42,13 +42,13 @@ function PracticeArea() {
                 <path d="M19 8c-6.1 0-11 4.9-11 11s4.9 11 11 11 11-4.9 11-11S25.1 8 19 8zm0 18c-3.9 0-7-3.1-7-7s3.1-7 7-7 7 3.1 7 7-3.1 7-7 7z"/>
                 <circle cx="19" cy="19" r="3"/>
               </svg>
-              <Link href ="/speeding-tickets" ><a className="eg-btn btn--primary btn--outline btn--sm capsule">Traffic Violations</a></Link>
+              <Link href="/speeding-tickets" className="eg-btn btn--primary btn--outline btn--sm capsule">Traffic Violations</Link>
             </div>
-            <h4><Link href ="/speeding-tickets"><a>Speeding Tickets</a></Link></h4>
+            <h4><Link href="/speeding-tickets">Speeding Tickets</Link></h4>
           </div>
           <div className="body">
             <p>Expert representation for speeding violations, including penalty reduction, demerit point management, and court proceedings.</p>
-            <Link href ="/speeding-tickets" className="details-btn"><a className="details-btn">Learn More</a></Link>
+            <Link href="/speeding-tickets" className="details-btn">Learn More</Link>
           </div>
         </div>
       </div>
@@ -71,13 +71,13 @@ function PracticeArea() {
                 <path d="M29.6506 27.884C29.1682 28.0102 29.0049 28.6113 29.3612 28.9527C29.5244 29.1086 29.6209 29.1309 30.1108 29.1309C30.6303 29.1309 30.6748 29.116 30.8455 28.923C31.0682 28.6633 31.0756 28.3441 30.853 28.0918C30.7194 27.9285 30.6155 27.8914 30.2444 27.8691C29.9994 27.8543 29.7323 27.8617 29.6506 27.884Z" />
                 <path d="M32.6866 27.9359C32.1819 28.1585 32.1968 28.8562 32.7014 29.064C33.5253 29.4054 34.4085 28.9156 34.1339 28.2699C33.9706 27.8691 33.2284 27.6984 32.6866 27.9359Z" />
               </svg>
-              <Link href ="/demerit-points" ><a className="eg-btn btn--primary btn--outline style-2 btn--sm capsule">Point Reduction</a></Link>
+              <Link href="/demerit-points" className="eg-btn btn--primary btn--outline style-2 btn--sm capsule">Point Reduction</Link>
             </div>
-            <h4><Link href ="/demerit-points"><a>Demerit Points</a></Link></h4>
+            <h4><Link href="/demerit-points">Demerit Points</Link></h4>
           </div>
           <div className="body">
             <p>Understanding Ontario's demerit point system, accumulation thresholds, and strategies to reduce points and protect your driving record.</p>
-            <Link href ="/demerit-points" ><a className="details-btn">Learn More</a></Link>
+            <Link href="/demerit-points" className="details-btn">Learn More</Link>
           </div>
         </div>
       </div>
@@ -90,13 +90,13 @@ function PracticeArea() {
                 <path d="M19 8c-1.1 0-2 0.9-2 2v8c0 1.1 0.9 2 2 2s2-0.9 2-2v-8c0-1.1-0.9-2-2-2z"/>
                 <circle cx="19" cy="26" r="2"/>
               </svg>
-              <Link href ="/red-light-tickets" ><a className="eg-btn btn--primary btn--outline btn--sm capsule">Traffic Cameras</a></Link>
+              <Link href="/red-light-tickets" className="eg-btn btn--primary btn--outline btn--sm capsule">Traffic Cameras</Link>
             </div>
-            <h4><Link href ="/red-light-tickets"><a>Red Light Tickets</a></Link></h4>
+            <h4><Link href="/red-light-tickets">Red Light Tickets</Link></h4>
           </div>
           <div className="body">
             <p>Comprehensive defense for red light violations, camera tickets, and intersection safety violations with expert legal representation.</p>
-            <Link href ="/red-light-tickets"><a className="details-btn">Learn More</a></Link>
+            <Link href="/red-light-tickets" className="details-btn">Learn More</Link>
           </div>
         </div>
       </div>
@@ -113,13 +113,13 @@ function PracticeArea() {
                 <path d="M4.19359 32.5745C3.74085 32.7601 3.59984 33.3761 3.9264 33.7249C4.51273 34.3484 5.46273 33.6953 5.10648 32.916C4.95804 32.5894 4.54241 32.4335 4.19359 32.5745Z" />
                 <path d="M15.4226 6.33084C14.903 6.81327 15.2296 7.61483 15.9421 7.59256C16.2612 7.58514 16.6249 7.23631 16.6249 6.93202C16.6249 6.29374 15.8679 5.91522 15.4226 6.33084Z" />
               </svg>
-              <Link href ="/small-claims-court" ><a className="eg-btn btn--primary btn--outline style-2 btn--sm capsule">Court Filing</a></Link>
+              <Link href="/small-claims-court" className="eg-btn btn--primary btn--outline style-2 btn--sm capsule">Court Filing</Link>
             </div>
-            <h4><Link href ="/stunt-driving"><a>Stunt Driving</a></Link></h4>
+            <h4><Link href="/stunt-driving">Stunt Driving</Link></h4>
           </div>
           <div className="body">
             <p>Expert defense for stunt driving charges including excessive speeding, racing, and dangerous driving with immediate license suspension.</p>
-            <Link href ="/stunt-driving" ><a className="details-btn">Learn More</a></Link>
+            <Link href="/stunt-driving" className="details-btn">Learn More</Link>
           </div>
         </div>
       </div>
@@ -146,13 +146,13 @@ function PracticeArea() {
                 <path d="M16.4766 31.0234V31.6914H17.1074H17.7383V31.0234V30.3555H17.1074H16.4766V31.0234Z" />
                 <path d="M15.2148 33.584V34.2148H15.8457H16.4766V34.8457V35.4766H17.1074H17.7383V34.8457V34.2148H17.1074H16.4766V33.584V32.9531H15.8457H15.2148V33.584Z" />
               </svg>
-              <Link href ="/license-suspension" ><a className="eg-btn btn--primary btn--outline btn--sm capsule">Reinstatement Help</a></Link>
+              <Link href="/license-suspension" className="eg-btn btn--primary btn--outline btn--sm capsule">Reinstatement Help</Link>
             </div>
-            <h4><Link href ="/license-suspension"><a>License Suspension</a></Link></h4>
+            <h4><Link href="/license-suspension">License Suspension</Link></h4>
           </div>
           <div className="body">
             <p>Professional assistance with license suspension appeals, reinstatement procedures, and defending against administrative penalties.</p>
-            <Link href ="/license-suspension" ><a className="details-btn">Learn More</a></Link>
+            <Link href="/license-suspension" className="details-btn">Learn More</Link>
           </div>
         </div>
       </div>
@@ -170,13 +170,13 @@ function PracticeArea() {
                   </clipPath>
                 </defs>
               </svg>                                    
-              <Link href ="/practice-details" ><a className="eg-btn btn--primary btn--outline style-2 btn--sm capsule">Completed Case (12)</a></Link>
+              <Link href="/practice-details" className="eg-btn btn--primary btn--outline style-2 btn--sm capsule">Completed Case (12)</Link>
             </div>
-            <h4><Link href ="/small-claims-court"><a>Small Claims Court</a></Link></h4>
+            <h4><Link href="/small-claims-court">Small Claims Court</Link></h4>
           </div>
           <div className="body">
             <p>Professional representation for small claims court matters including debt collection, contract disputes, and property damage claims.</p>
-            <Link href ="/small-claims-court" ><a className="details-btn">Learn More</a></Link>
+            <Link href="/small-claims-court" className="details-btn">Learn More</Link>
           </div>
         </div>
       </div>
@@ -204,13 +204,13 @@ function PracticeArea() {
                 <path d="M19 8c-6.1 0-11 4.9-11 11s4.9 11 11 11 11-4.9 11-11S25.1 8 19 8zm0 18c-3.9 0-7-3.1-7-7s3.1-7 7-7 7 3.1 7 7-3.1 7-7 7z"/>
                 <circle cx="19" cy="19" r="3"/>
               </svg>
-              <Link href="/immigration-appeals"><a className="eg-btn btn--primary btn--outline btn--sm capsule">Judicial Review</a></Link>
+              <Link href="/immigration-appeals" className="eg-btn btn--primary btn--outline btn--sm capsule">Judicial Review</Link>
             </div>
-            <h4><Link href="/immigration-appeals"><a>Immigration Appeals</a></Link></h4>
+            <h4><Link href="/immigration-appeals">Immigration Appeals</Link></h4>
           </div>
           <div className="body">
             <p>Expert representation for immigration appeals, judicial reviews, and mandamus applications to challenge immigration decisions.</p>
-            <Link href="/immigration-appeals"><a className="details-btn">Learn More</a></Link>
+            <Link href="/immigration-appeals" className="details-btn">Learn More</Link>
           </div>
         </div>
       </div>
@@ -223,13 +223,13 @@ function PracticeArea() {
                 <path d="M12 14h14v2H12zm0 4h14v2H12zm0 4h10v2H12z"/>
                 <path d="M8 10h22c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2V12c0-1.1.9-2 2-2z" fill="none" stroke="currentColor" strokeWidth="2"/>
               </svg>
-              <Link href="/refugee-appeals"><a className="eg-btn btn--primary btn--outline style-2 btn--sm capsule">Protection Claims</a></Link>
+              <Link href="/refugee-appeals" className="eg-btn btn--primary btn--outline style-2 btn--sm capsule">Protection Claims</Link>
             </div>
-            <h4><Link href="/refugee-appeals"><a>Refugee Appeals</a></Link></h4>
+            <h4><Link href="/refugee-appeals">Refugee Appeals</Link></h4>
           </div>
           <div className="body">
             <p>Comprehensive legal assistance for refugee claims, protection applications, and appeals to the Refugee Appeal Division.</p>
-            <Link href="/refugee-appeals"><a className="details-btn">Learn More</a></Link>
+            <Link href="/refugee-appeals" className="details-btn">Learn More</Link>
           </div>
         </div>
       </div>
@@ -242,13 +242,13 @@ function PracticeArea() {
                 <path d="M19 8c-1.1 0-2 0.9-2 2v8c0 1.1 0.9 2 2 2s2-0.9 2-2v-8c0-1.1-0.9-2-2-2z"/>
                 <circle cx="19" cy="26" r="2"/>
               </svg>
-              <Link href="/immigration-applications"><a className="eg-btn btn--primary btn--outline btn--sm capsule">Visa Applications</a></Link>
+              <Link href="/immigration-applications" className="eg-btn btn--primary btn--outline btn--sm capsule">Visa Applications</Link>
             </div>
-            <h4><Link href="/immigration-applications"><a>Immigration Applications</a></Link></h4>
+            <h4><Link href="/immigration-applications">Immigration Applications</Link></h4>
           </div>
           <div className="body">
             <p>Professional assistance with student visas, work permits, LMIA applications, visitor visas, and permanent residence applications.</p>
-            <Link href="/immigration-applications"><a className="details-btn">Learn More</a></Link>
+            <Link href="/immigration-applications" className="details-btn">Learn More</Link>
           </div>
         </div>
       </div>
@@ -261,13 +261,13 @@ function PracticeArea() {
                 <path d="M14 12h10v2H14zm0 4h10v2H14zm0 4h6v2h-6z"/>
                 <path d="M26 18l-4 4-2-2" fill="none" stroke="currentColor" strokeWidth="2"/>
               </svg>
-              <Link href="/family-law"><a className="eg-btn btn--primary btn--outline style-2 btn--sm capsule">Family Matters</a></Link>
+              <Link href="/family-law" className="eg-btn btn--primary btn--outline style-2 btn--sm capsule">Family Matters</Link>
             </div>
-            <h4><Link href="/family-law"><a>Family Law</a></Link></h4>
+            <h4><Link href="/family-law">Family Law</Link></h4>
           </div>
           <div className="body">
             <p>Expert legal services for family sponsorship, divorce applications, separation agreements, and child custody matters.</p>
-            <Link href="/family-law"><a className="details-btn">Learn More</a></Link>
+            <Link href="/family-law" className="details-btn">Learn More</Link>
           </div>
         </div>
       </div>
@@ -280,13 +280,13 @@ function PracticeArea() {
                 <path d="M15 12h8v2h-8zm0 4h8v2h-8zm0 4h8v2h-8zm0 4h5v2h-5z"/>
                 <path d="M26 20l-3 3-1.5-1.5" fill="none" stroke="currentColor" strokeWidth="2"/>
               </svg>
-              <Link href="/notarization"><a className="eg-btn btn--primary btn--outline btn--sm capsule">Document Authentication</a></Link>
+              <Link href="/notarization" className="eg-btn btn--primary btn--outline btn--sm capsule">Document Authentication</Link>
             </div>
-            <h4><Link href="/notarization"><a>Notarization Services</a></Link></h4>
+            <h4><Link href="/notarization">Notarization Services</Link></h4>
           </div>
           <div className="body">
             <p>Professional notarization and document authentication services for affidavits, certified copies, and international documents.</p>
-            <Link href="/notarization"><a className="details-btn">Learn More</a></Link>
+            <Link href="/notarization" className="details-btn">Learn More</Link>
           </div>
         </div>
       </div>

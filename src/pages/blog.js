@@ -29,53 +29,53 @@ function Blog() {
         <div className="blog-single1 style-2">
           <div className="image">
             <span className="blog-badge">Violence</span>
-            <Link href="/blog-details"><a><img src="assets/images/blog/bgrid-1.png" className="img-fluid" alt="image" /></a></Link>
+            <Link href="/blog-details"><img src="assets/images/blog/bgrid-1.png" className="img-fluid" alt="image" /></Link>
           </div>
           <div className="text">
             <div className="post-meta">
               <div className="date">20 May, 2022</div>
-              <Link href="/blog-details" className="comment"><a>Comments (20)</a></Link>
+              <Link href="/blog-details" className="comment">Comments (20)</Link>
             </div>
-            <h4><Link href="/blog-details"><a>In a augue sit amet erat Suspe eleifend suscipit issen.</a></Link></h4>
+            <h4><Link href="/blog-details">In a augue sit amet erat Suspe eleifend suscipit issen.</Link></h4>
           </div>
         </div>
         <div className="blog-single1 style-2">
           <div className="image">
             <span className="blog-badge">Helth Care</span>
-            <Link href="/blog-details"><a><img src="assets/images/blog/bgrid-2.png" className="img-fluid" alt="image" /></a></Link>
+            <Link href="/blog-details"><img src="assets/images/blog/bgrid-2.png" className="img-fluid" alt="image" /></Link>
           </div>
           <div className="text">
             <div className="post-meta">
               <div className="date">20 May, 2022</div>
-              <Link href="/blog-details" className="comment"><a>Comments (20)</a></Link>
+              <Link href="/blog-details" className="comment">Comments (20)</Link>
             </div>
-            <h4><Link href="/blog-details"><a>In a augue sit amet erat Suspe eleifend suscipit issen.</a></Link></h4>
+            <h4><Link href="/blog-details">In a augue sit amet erat Suspe eleifend suscipit issen.</Link></h4>
           </div>
         </div>
         <div className="blog-single1 style-2">
           <div className="image">
             <span className="blog-badge">Insurance</span>
-            <Link href="/blog-details"><a><img src="assets/images/blog/bgrid-3.png" className="img-fluid" alt="image" /></a></Link>
+            <Link href="/blog-details"><img src="assets/images/blog/bgrid-3.png" className="img-fluid" alt="image" /></Link>
           </div>
           <div className="text">
             <div className="post-meta">
               <div className="date">20 May, 2022</div>
-              <Link href="/blog-details" className="comment"><a>Comments (20)</a></Link>
+              <Link href="/blog-details" className="comment">Comments (20)</Link>
             </div>
-            <h4><Link href="/blog-details"><a>In a augue sit amet erat Suspe eleifend suscipit issen.</a></Link></h4>
+            <h4><Link href="/blog-details">In a augue sit amet erat Suspe eleifend suscipit issen.</Link></h4>
           </div>
         </div>
         <div className="blog-single1 style-2">
           <div className="image">
             <span className="blog-badge">Injury</span>
-            <Link href="/blog-details"><a><img src="assets/images/blog/bgrid-4.png" className="img-fluid" alt="image" /></a></Link>
+            <Link href="/blog-details"><img src="assets/images/blog/bgrid-4.png" className="img-fluid" alt="image" /></Link>
           </div>
           <div className="text">
             <div className="post-meta">
               <div className="date">20 May, 2022</div>
-              <Link href="/blog-details" className="comment"><a>Comments (20)</a></Link>
+              <Link href="/blog-details" className="comment">Comments (20)</Link>
             </div>
-            <h4><Link href="/blog-details"><a>In a augue sit amet erat Suspe eleifend suscipit issen.</a></Link></h4>
+            <h4><Link href="/blog-details">In a augue sit amet erat Suspe eleifend suscipit issen.</Link></h4>
           </div>
         </div>
       </div>
@@ -83,40 +83,40 @@ function Blog() {
         <div className="blog-single1 style-2">
           <div className="image">
             <span className="blog-badge">Education</span>
-            <Link href="/blog-details"><a><img src="assets/images/blog/bgrid-5.png" className="img-fluid" alt="image" /></a></Link>
+            <Link href="/blog-details"><img src="assets/images/blog/bgrid-5.png" className="img-fluid" alt="image" /></Link>
           </div>
           <div className="text">
             <div className="post-meta">
               <div className="date">20 May, 2022</div>
-              <Link href="/blog-details" className="comment"><a>Comments (20)</a></Link>
+              <Link href="/blog-details" className="comment">Comments (20)</Link>
             </div>
-            <h4><Link href="/blog-details"><a>In a augue sit amet erat Suspe eleifend suscipit issen.</a></Link></h4>
+            <h4><Link href="/blog-details">In a augue sit amet erat Suspe eleifend suscipit issen.</Link></h4>
           </div>
         </div>
         <div className="blog-single1 style-2">
           <div className="image">
             <span className="blog-badge">Real Estate</span>
-            <Link href="/blog-details"><a><img src="assets/images/blog/bgrid-6.png" className="img-fluid" alt="image" /></a></Link>
+            <Link href="/blog-details"><img src="assets/images/blog/bgrid-6.png" className="img-fluid" alt="image" /></Link>
           </div>
           <div className="text">
             <div className="post-meta">
               <div className="date">20 May, 2022</div>
-              <Link href="/blog-details" className="comment"><a>Comments (20)</a></Link>
+              <Link href="/blog-details" className="comment">Comments (20)</Link>
             </div>
-            <h4><Link href="/blog-details"><a>In a augue sit amet erat Suspe eleifend suscipit issen.</a></Link></h4>
+            <h4><Link href="/blog-details">In a augue sit amet erat Suspe eleifend suscipit issen.</Link></h4>
           </div>
         </div>
         <div className="blog-single1 style-2">
           <div className="image">
             <span className="blog-badge">Attorney</span>
-            <Link href="/blog-details"><a><img src="assets/images/blog/bgrid-7.png" className="img-fluid" alt="image" /></a></Link>
+            <Link href="/blog-details"><img src="assets/images/blog/bgrid-7.png" className="img-fluid" alt="image" /></Link>
           </div>
           <div className="text">
             <div className="post-meta">
               <div className="date">20 May, 2022</div>
-              <Link href="/blog-details" className="comment"><a>Comments (20)</a></Link>
+              <Link href="/blog-details" className="comment">Comments (20)</Link>
             </div>
-            <h4><Link href="/blog-details"><a>In a augue sit amet erat Suspe eleifend suscipit issen.</a></Link></h4>
+            <h4><Link href="/blog-details">In a augue sit amet erat Suspe eleifend suscipit issen.</Link></h4>
           </div>
         </div>
       </div>
@@ -126,27 +126,27 @@ function Blog() {
             <div className="blog-single1 style-2">
               <div className="image">
                 <span className="blog-badge">Financial</span>
-                <Link href="/blog-details"><a><img src="assets/images/blog/bgrid-8.png" className="img-fluid" alt="image" /></a></Link>
+                <Link href="/blog-details"><img src="assets/images/blog/bgrid-8.png" className="img-fluid" alt="image" /></Link>
               </div>
               <div className="text">
                 <div className="post-meta">
                   <div className="date">20 May, 2022</div>
-                  <Link href="/blog-details" className="comment"><a>Comments (20)</a></Link>
+                  <Link href="/blog-details" className="comment">Comments (20)</Link>
                 </div>
-                <h4><Link href="/blog-details"><a>In a augue sit amet erat Suspe eleifend suscipit issen.</a></Link></h4>
+                <h4><Link href="/blog-details">In a augue sit amet erat Suspe eleifend suscipit issen.</Link></h4>
               </div>
             </div>
             <div className="blog-single1 style-2">
               <div className="image">
                 <span className="blog-badge">Drug</span>
-                <Link href="/blog-details"><a><img src="assets/images/blog/bgrid-9.png" className="img-fluid" alt="image" /></a></Link>
+                <Link href="/blog-details"><img src="assets/images/blog/bgrid-9.png" className="img-fluid" alt="image" /></Link>
               </div>
               <div className="text">
                 <div className="post-meta">
                   <div className="date">20 May, 2022</div>
-                  <Link href="/blog-details" className="comment"><a>Comments (20)</a></Link>
+                  <Link href="/blog-details" className="comment">Comments (20)</Link>
                 </div>
-                <h4><Link href="/blog-details"><a>In a augue sit amet erat Suspe eleifend suscipit issen.</a></Link></h4>
+                <h4><Link href="/blog-details">In a augue sit amet erat Suspe eleifend suscipit issen.</Link></h4>
               </div>
             </div>
           </div>
@@ -154,27 +154,27 @@ function Blog() {
             <div className="blog-single1 style-2">
               <div className="image">
                 <span className="blog-badge">Offence</span>
-                <Link href="/blog-details"><a><img src="assets/images/blog/bgrid-10.png" className="img-fluid" alt="image" /></a></Link>
+                <Link href="/blog-details"><img src="assets/images/blog/bgrid-10.png" className="img-fluid" alt="image" /></Link>
               </div>
               <div className="text">
                 <div className="post-meta">
                   <div className="date">20 May, 2022</div>
-                  <Link href="/blog-details" className="comment"><a>Comments (20)</a></Link>
+                  <Link href="/blog-details" className="comment">Comments (20)</Link>
                 </div>
-                <h4><Link href="/blog-details"><a>In a augue sit amet erat Suspe eleifend suscipit issen.</a></Link></h4>
+                <h4><Link href="/blog-details">In a augue sit amet erat Suspe eleifend suscipit issen.</Link></h4>
               </div>
             </div>
             <div className="blog-single1 style-2">
               <div className="image">
                 <span className="blog-badge">Violence</span>
-                <Link href="/blog-details"><a><img src="assets/images/blog/bgrid-11.png" className="img-fluid" alt="image" /></a></Link>
+                <Link href="/blog-details"><img src="assets/images/blog/bgrid-11.png" className="img-fluid" alt="image" /></Link>
               </div>
               <div className="text">
                 <div className="post-meta">
                   <div className="date">20 May, 2022</div>
-                  <Link href="/blog-details" className="comment"><a>Comments (20)</a></Link>
+                  <Link href="/blog-details" className="comment">Comments (20)</Link>
                 </div>
-                <h4><Link href="/blog-details"><a>In a augue sit amet erat Suspe eleifend suscipit issen.</a></Link></h4>
+                <h4><Link href="/blog-details">In a augue sit amet erat Suspe eleifend suscipit issen.</Link></h4>
               </div>
             </div>
           </div>

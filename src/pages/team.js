@@ -48,7 +48,7 @@ function Team() {
                       />
                       <div className="content">
                         <h4>
-                          <Link href={item.link}><a>{item.name}</a></Link>
+                          <Link href={item.link}>{item.name}</Link>
                         </h4>
                         <p>{item.designation}</p>
                       </div>

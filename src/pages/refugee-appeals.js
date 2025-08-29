@@ -78,13 +78,13 @@ function RefugeeAppeals() {
                         <path d="M14 12h10v2H14zm0 4h10v2H14zm0 4h6v2h-6z"/>
                         <path d="M26 18l-4 4-2-2" fill="none" stroke="currentColor" strokeWidth="2"/>
                       </svg>
-                      <Link href="/refugee-appeals"><a className="eg-btn btn--primary btn--outline btn--sm capsule">Protection Claims</a></Link>
+                      <Link href="/refugee-appeals" className="eg-btn btn--primary btn--outline btn--sm capsule">Protection Claims</Link>
                     </div>
-                    <h4><Link href="/refugee-appeals"><a>Refugee Protection Claims</a></Link></h4>
+                    <h4><Link href="/refugee-appeals">Refugee Protection Claims</Link></h4>
                   </div>
                   <div className="body">
                     <p>We assist individuals who cannot return to their home countries due to well-founded fear of persecution based on race, religion, nationality, political opinion, or membership in a particular social group. Our services include preparing detailed Personal Information Forms (PIF) and supporting documentation.</p>
-                    <Link href="/contact" className="details-btn"><a className="details-btn">Get Consultation</a></Link>
+                    <Link href="/contact" className="details-btn">Get Consultation</Link>
                   </div>
                 </div>
               </div>
@@ -97,13 +97,13 @@ function RefugeeAppeals() {
                         <path d="M15 12h8v2h-8zm0 4h8v2h-8zm0 4h8v2h-8z"/>
                         <path d="M26 18l-4 4-2-2" fill="none" stroke="currentColor" strokeWidth="2"/>
                       </svg>
-                      <Link href="/refugee-appeals"><a className="eg-btn btn--primary btn--outline style-2 btn--sm capsule">RPD Hearings</a></Link>
+                      <Link href="/refugee-appeals" className="eg-btn btn--primary btn--outline style-2 btn--sm capsule">RPD Hearings</Link>
                     </div>
-                    <h4><Link href="/refugee-appeals"><a>Refugee Protection Division</a></Link></h4>
+                    <h4><Link href="/refugee-appeals">Refugee Protection Division</Link></h4>
                   </div>
                   <div className="body">
                     <p>Expert representation at Immigration and Refugee Board (IRB) hearings before the Refugee Protection Division. We prepare comprehensive submissions, gather country condition evidence, and provide skilled advocacy to present your case effectively before the Board.</p>
-                    <Link href="/contact" className="details-btn"><a className="details-btn">Get Consultation</a></Link>
+                    <Link href="/contact" className="details-btn">Get Consultation</Link>
                   </div>
                 </div>
               </div>
@@ -116,13 +116,13 @@ function RefugeeAppeals() {
                         <path d="M12 14h14v2H12zm0 4h14v2H12zm0 4h10v2H12z"/>
                         <path d="M8 10h22c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2V12c0-1.1.9-2 2-2z" fill="none" stroke="currentColor" strokeWidth="2"/>
                       </svg>
-                      <Link href="/refugee-appeals"><a className="eg-btn btn--primary btn--outline btn--sm capsule">RAD Appeals</a></Link>
+                      <Link href="/refugee-appeals" className="eg-btn btn--primary btn--outline btn--sm capsule">RAD Appeals</Link>
                     </div>
-                    <h4><Link href="/refugee-appeals"><a>Refugee Appeal Division</a></Link></h4>
+                    <h4><Link href="/refugee-appeals">Refugee Appeal Division</Link></h4>
                   </div>
                   <div className="body">
                     <p>If your refugee claim is rejected by the RPD, you may be eligible to appeal to the Refugee Appeal Division (RAD). We file comprehensive appeals with detailed legal arguments, new evidence where permitted, and written submissions to challenge negative decisions within strict deadlines.</p>
-                    <Link href="/contact" className="details-btn"><a className="details-btn">Get Consultation</a></Link>
+                    <Link href="/contact" className="details-btn">Get Consultation</Link>
                   </div>
                 </div>
               </div>
@@ -135,13 +135,13 @@ function RefugeeAppeals() {
                         <path d="M19 8c-1.1 0-2 0.9-2 2v8c0 1.1 0.9 2 2 2s2-0.9 2-2v-8c0-1.1-0.9-2-2-2z"/>
                         <circle cx="19" cy="26" r="2"/>
                       </svg>
-                      <Link href="/immigration-appeals"><a className="eg-btn btn--primary btn--outline style-2 btn--sm capsule">Federal Court</a></Link>
+                      <Link href="/immigration-appeals" className="eg-btn btn--primary btn--outline style-2 btn--sm capsule">Federal Court</Link>
                     </div>
-                    <h4><Link href="/immigration-appeals"><a>Federal Court Appeals</a></Link></h4>
+                    <h4><Link href="/immigration-appeals">Federal Court Appeals</Link></h4>
                   </div>
                   <div className="body">
                     <p>When RAD appeals are unsuccessful or unavailable, judicial review at the Federal Court of Canada may be an option. We represent clients in Federal Court proceedings to challenge negative refugee decisions based on legal errors, procedural fairness, or unreasonable findings.</p>
-                    <Link href="/immigration-appeals" className="details-btn"><a className="details-btn">Learn More</a></Link>
+                    <Link href="/immigration-appeals" className="details-btn">Learn More</Link>
                   </div>
                 </div>
               </div>
@@ -154,13 +154,13 @@ function RefugeeAppeals() {
                         <path d="M14 12h10v2H14zm0 4h10v2H14zm0 4h6v2h-6z"/>
                         <path d="M26 18l-4 4-2-2" fill="none" stroke="currentColor" strokeWidth="2"/>
                       </svg>
-                      <Link href="/immigration-applications"><a className="eg-btn btn--primary btn--outline btn--sm capsule">Immigration Services</a></Link>
+                      <Link href="/immigration-applications" className="eg-btn btn--primary btn--outline btn--sm capsule">Immigration Services</Link>
                     </div>
-                    <h4><Link href="/immigration-applications"><a>Immigration Applications</a></Link></h4>
+                    <h4><Link href="/immigration-applications">Immigration Applications</Link></h4>
                   </div>
                   <div className="body">
                     <p>Comprehensive immigration services including work permits, study permits, visitor visas, and permanent residence applications.</p>
-                    <Link href="/immigration-applications" className="details-btn"><a className="details-btn">Learn More</a></Link>
+                    <Link href="/immigration-applications" className="details-btn">Learn More</Link>
                   </div>
                 </div>
               </div>
@@ -173,13 +173,13 @@ function RefugeeAppeals() {
                         <path d="M14 12h10v2H14zm0 4h10v2H14zm0 4h6v2h-6z"/>
                         <path d="M26 18l-4 4-2-2" fill="none" stroke="currentColor" strokeWidth="2"/>
                       </svg>
-                      <Link href="/family-law"><a className="eg-btn btn--primary btn--outline style-2 btn--sm capsule">Family Matters</a></Link>
+                      <Link href="/family-law" className="eg-btn btn--primary btn--outline style-2 btn--sm capsule">Family Matters</Link>
                     </div>
-                    <h4><Link href="/family-law"><a>Family Law Services</a></Link></h4>
+                    <h4><Link href="/family-law">Family Law Services</Link></h4>
                   </div>
                   <div className="body">
                     <p>Expert legal services for family sponsorship, divorce applications, separation agreements, and child custody matters.</p>
-                    <Link href="/family-law" className="details-btn"><a className="details-btn">Learn More</a></Link>
+                    <Link href="/family-law" className="details-btn">Learn More</Link>
                   </div>
                 </div>
               </div>

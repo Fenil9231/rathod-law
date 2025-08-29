@@ -85,15 +85,15 @@ function CaseStudy2() {
               <img src={item.image} className="casestudy1" alt="image" />
               <div className="text">
                 <span>{item.tag}</span>
-                <h3><Link href="/casestudy-details"><a>{item.title}</a></Link></h3>
+                <h3><Link href="/casestudy-details">{item.title}</Link></h3>
               </div>
               <div className="content-wrapper">
                 <div className="content">
                   <span>{item.tag}</span>
-                  <h3><Link href="/casestudy-details"><a>{item.title}</a></Link></h3>
-                  <p><a>{item.details}</a></p>
+                  <h3><Link href="/casestudy-details">{item.title}</Link></h3>
+                  <p>{item.details}</p>
                   
-                  <Link href="/casestudy-details" ><a className="details-btn">Read More</a></Link>
+                  <Link href="/casestudy-details" className="details-btn">Read More</Link>
                 </div>
               </div>
             </div>

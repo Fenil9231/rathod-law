@@ -38,13 +38,13 @@ function FamilyLaw() {
                         <path d="M14 12h10v2H14zm0 4h10v2H14zm0 4h6v2h-6z"/>
                         <path d="M26 18l-4 4-2-2" fill="none" stroke="currentColor" strokeWidth="2"/>
                       </svg>
-                      <Link href="/family-law"><a className="eg-btn btn--primary btn--outline btn--sm capsule">Spouse Sponsorship</a></Link>
+                      <Link href="/family-law" className="eg-btn btn--primary btn--outline btn--sm capsule">Spouse Sponsorship</Link>
                     </div>
-                    <h4><Link href="/family-law"><a>Spouse & Partner Sponsorship</a></Link></h4>
+                    <h4><Link href="/family-law">Spouse & Partner Sponsorship</Link></h4>
                   </div>
                   <div className="body">
                     <p>Expert assistance with spousal sponsorship applications for Canadian citizens and permanent residents seeking to sponsor their spouse, common-law partner, or conjugal partner for permanent residence in Canada.</p>
-                    <Link href="/contact" className="details-btn"><a className="details-btn">Get Consultation</a></Link>
+                    <Link href="/contact" className="details-btn">Get Consultation</Link>
                   </div>
                 </div>
               </div>
@@ -57,13 +57,13 @@ function FamilyLaw() {
                         <path d="M15 12h8v2h-8zm0 4h8v2h-8zm0 4h8v2h-8z"/>
                         <path d="M26 18l-4 4-2-2" fill="none" stroke="currentColor" strokeWidth="2"/>
                       </svg>
-                      <Link href="/family-law"><a className="eg-btn btn--primary btn--outline style-2 btn--sm capsule">Child Sponsorship</a></Link>
+                      <Link href="/family-law" className="eg-btn btn--primary btn--outline style-2 btn--sm capsule">Child Sponsorship</Link>
                     </div>
-                    <h4><Link href="/family-law"><a>Dependent Children Sponsorship</a></Link></h4>
+                    <h4><Link href="/family-law">Dependent Children Sponsorship</Link></h4>
                   </div>
                   <div className="body">
                     <p>Comprehensive support for sponsoring dependent children under 22 years of age, including adopted children and children with disabilities over 22 who are financially dependent due to physical or mental condition.</p>
-                    <Link href="/contact"><a className="details-btn">Get Consultation</a></Link>
+                    <Link href="/contact" className="details-btn">Get Consultation</Link>
                   </div>
                 </div>
               </div>
@@ -76,13 +76,13 @@ function FamilyLaw() {
                         <path d="M12 14h14v2H12zm0 4h14v2H12zm0 4h10v2H12z"/>
                         <path d="M26 18l-4 4-2-2" fill="none" stroke="currentColor" strokeWidth="2"/>
                       </svg>
-                      <Link href="/family-law"><a className="eg-btn btn--primary btn--outline style-3 btn--sm capsule">Parent Sponsorship</a></Link>
+                      <Link href="/family-law" className="eg-btn btn--primary btn--outline style-3 btn--sm capsule">Parent Sponsorship</Link>
                     </div>
-                    <h4><Link href="/family-law"><a>Parent & Grandparent Program</a></Link></h4>
+                    <h4><Link href="/family-law">Parent & Grandparent Program</Link></h4>
                   </div>
                   <div className="body">
                     <p>Navigate the Parent and Grandparent Program (PGP) application process, including meeting income requirements, providing financial support commitments, and ensuring successful family reunification.</p>
-                    <Link href="/contact"><a className="details-btn">Learn More</a></Link>
+                    <Link href="/contact" className="details-btn">Learn More</Link>
                   </div>
                 </div>
               </div>
