@@ -5,6 +5,7 @@ import nodemailer from 'nodemailer';
 import emailConfig from '../../config/email';
 import { getAdminEmailTemplate } from '../../templates/adminEmailTemplate';
 import { getCustomerEmailTemplate } from '../../templates/customerEmailTemplate';
+import { withApiMiddleware } from '../../middleware/apiMiddleware';
 
 // Create transporter
 const createTransporter = () => {
@@ -12,11 +13,7 @@ const createTransporter = () => {
 };
 
 // Main API handler
-export default async function handler(req, res) {
-  // Only allow POST requests
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
-  }
+async function handler(req, res) {
 
   // Check if email is enabled
   if (!emailConfig.settings.enabled) {
@@ -44,10 +41,10 @@ export default async function handler(req, res) {
     const formData = req.body;
     const formType = formData.formType || 'contact';
 
-    // Validate required fields
-    if (!formData.email || !formData.name) {
+    // Additional validation beyond middleware
+    if (!formData.message && !formData.phone && !formData.subject) {
       return res.status(400).json({ 
-        error: 'Missing required fields: name and email are required' 
+        error: 'At least one of message, phone, or subject is required' 
       });
     }
 
@@ -101,3 +98,13 @@ export default async function handler(req, res) {
     });
   }
 }
+
+// Export with middleware
+export default withApiMiddleware(handler, {
+  methods: ['POST'],
+  rateLimit: { limit: 5, windowMs: 60000 }, // 5 emails per minute
+  validation: {
+    required: ['name', 'email'],
+    email: true
+  }
+});

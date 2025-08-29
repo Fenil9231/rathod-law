@@ -2,26 +2,28 @@
 // This file manages all email-related settings and credentials
 // Update this file to change email settings for both development and production
 
+const { config: envConfig } = require('./env');
+
 const emailConfig = {
   // SMTP Configuration
   smtp: {
-    host: process.env.SMTP_HOST || 'smtp.gmail.com', // Corrected from smatp.gmail.com
-    port: parseInt(process.env.SMTP_PORT) || 587,
-    secure: process.env.SMTP_SECURE === 'true' || false, // true for 465, false for other ports
+    host: envConfig.SMTP_HOST || 'smtp.gmail.com',
+    port: parseInt(envConfig.SMTP_PORT) || 587,
+    secure: envConfig.SMTP_SECURE === 'true',
     auth: {
-      user: process.env.SMTP_USER || 'fenil.kothiya88@gmail.com',
-      pass: process.env.SMTP_PASS || process.env.SMTP_PASSWORD || 'your-app-password'
+      user: envConfig.SMTP_USER,
+      pass: envConfig.SMTP_PASS
     }
   },
 
   // Email Addresses
   addresses: {
     // Admin email where form submissions will be sent
-    admin: process.env.ADMIN_EMAIL || 'rathod@hplaw.org',
+    admin: envConfig.ADMIN_EMAIL,
     // From address for outgoing emails (should match SMTP_USER for Gmail)
-    from: process.env.FROM_EMAIL || process.env.SMTP_USER || 'fenil.kothiya88@gmail.com',
+    from: envConfig.FROM_EMAIL || envConfig.SMTP_USER,
     // Support email for customer inquiries
-    support: process.env.SUPPORT_EMAIL || 'rathod@hplaw.org'
+    support: envConfig.SUPPORT_EMAIL
   },
 
   // Email Templates Configuration
@@ -59,11 +61,11 @@ const emailConfig = {
   // Email Settings
   settings: {
     // Enable/disable email sending (enabled by default in production, can be disabled with EMAIL_ENABLED=false)
-    enabled: process.env.EMAIL_ENABLED !== 'false' && (process.env.NODE_ENV === 'production' || process.env.VERCEL === '1'),
+    enabled: envConfig.EMAIL_ENABLED !== 'false' && (envConfig.NODE_ENV === 'production' || process.env.VERCEL === '1'),
     // Send copy to customer
-    sendCustomerCopy: process.env.SEND_CUSTOMER_COPY !== 'false',
+    sendCustomerCopy: envConfig.SEND_CUSTOMER_COPY !== 'false',
     // Rate limiting (emails per minute)
-    rateLimit: parseInt(process.env.EMAIL_RATE_LIMIT) || 10
+    rateLimit: parseInt(envConfig.EMAIL_RATE_LIMIT) || 10
   }
 };
 
