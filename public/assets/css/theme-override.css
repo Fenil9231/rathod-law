@@ -1,0 +1,79 @@
+:root {
+  /* Override Bootstrap primary color to match maplemaid.ca theme */
+  --bs-primary: #cb9930;
+  --bs-primary-rgb: 203, 153, 48;
+  
+  /* Secondary gold color from maplemaid.ca */
+  --bs-secondary: #e6c16b;
+  --bs-secondary-rgb: 230, 193, 107;
+  
+  /* Override other Bootstrap colors to match maplemaid.ca theme */
+  --bs-dark: #1f2b3e;
+  --bs-dark-rgb: 31, 43, 62;
+  --bs-light: #F7F7F7;
+  --bs-light-rgb: 247, 247, 247;
+  --bs-body-color: #3a5576;
+  --bs-body-color-rgb: 58, 85, 118;
+}
+
+/* Ensure primary button styles use maplemaid.ca theme colors */
+.btn-primary {
+  --bs-btn-color: #ffffff;
+  --bs-btn-bg: #cb9930;
+  --bs-btn-border-color: #cb9930;
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #b8862a;
+  --bs-btn-hover-border-color: #b8862a;
+  --bs-btn-focus-shadow-rgb: 203, 153, 48;
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: #a57324;
+  --bs-btn-active-border-color: #a57324;
+  --bs-btn-disabled-color: #ffffff;
+  --bs-btn-disabled-bg: #cb9930;
+  --bs-btn-disabled-border-color: #cb9930;
+}
+
+/* Ensure card headers with bg-primary use maplemaid.ca theme colors */
+.bg-primary {
+  background-color: #cb9930 !important;
+  color: #ffffff !important;
+}
+
+.text-primary {
+  color: #cb9930 !important;
+}
+
+.border-primary {
+  border-color: #cb9930 !important;
+}
+
+/* Secondary color styles */
+.bg-secondary {
+  background-color: #e6c16b !important;
+  color: #1f2b3e !important;
+}
+
+.text-secondary {
+  color: #e6c16b !important;
+}
+
+.border-secondary {
+  border-color: #e6c16b !important;
+}
+
+/* Ensure text is readable on yellow background */
+.bg-primary .text-white,
+.card-header.bg-primary .text-white,
+.card-header.bg-primary h1,
+.card-header.bg-primary h2,
+.card-header.bg-primary h3,
+.card-header.bg-primary h4,
+.card-header.bg-primary h5,
+.card-header.bg-primary h6 {
+  color: #121213 !important;
+}
+
+/* Fix any white text on yellow background for better readability */
+.bg-primary.text-white {
+  color: #121213 !important;
+}

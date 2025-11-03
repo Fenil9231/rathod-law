@@ -1,0 +1,114 @@
+/* Custom breadcrumb styling for white font color */
+.page-title {
+    position: relative;
+    display: block;
+    background: var(--thm-black-bg);
+    padding: 120px 0px 120px;
+    z-index: 1;
+}
+
+.page-title-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: -2;
+}
+
+.page-title-bg-overly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 16, 38, 0.7);
+    z-index: -1;
+}
+
+.page-title__wrapper {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+.page-title__content {
+    position: relative;
+    display: block;
+}
+
+.page-title__title {
+    color: var(--thm-white) !important;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.page-title__menu {
+    position: relative;
+    display: block;
+}
+
+.page-title__menu ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.page-title__menu ul li {
+    position: relative;
+    display: inline-block;
+    color: var(--thm-white) !important;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-right: 10px;
+}
+
+.page-title__menu ul li:last-child {
+    margin-right: 0;
+}
+
+.page-title__menu ul li::after {
+    content: "/";
+    position: relative;
+    color: var(--thm-white) !important;
+    margin-left: 10px;
+}
+
+.page-title__menu ul li:last-child::after {
+    display: none;
+}
+
+.page-title__menu ul li a {
+    color: var(--thm-white) !important;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.page-title__menu ul li a:hover {
+    color: var(--thm-primary) !important;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+    .page-title__title {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    
+    .page-title__menu ul li {
+        font-size: 14px;
+    }
+}
