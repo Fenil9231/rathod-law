@@ -4,12 +4,9 @@ import FeautureOne from "@/components/sections/home1/FeautureOne"
 import About from "@/components/sections/home1/About"
 import ChooseOne from "@/components/sections/home1/ChooseOne"
 import ServicesOne from "@/components/sections/home1/ServicesOne"
-import Brand from "@/components/sections/home1/Brand"
-import CaseOne from "@/components/sections/home1/CaseOne"
 import Testimonial from "@/components/sections/home1/Testimonial"
 import Team from "@/components/sections/home1/Team"
 import Cta from "@/components/sections/home1/Cta"
-import Blog from "@/components/sections/home1/Blog"
 
 export const metadata = {
   title: "Rathod Law Firm | Expert Immigration Lawyer & Paralegal Services in Brampton",
@@ -34,12 +31,9 @@ export default function Home() {
                 <About />
                 <ChooseOne />
                 <ServicesOne />
-                <Brand /> 
-                <CaseOne /> 
                 <Testimonial />
                 <Team />
                 <Cta/>
-                <Blog />
             </Layout>
         </>
     )

@@ -23,12 +23,20 @@ export default function TeamOne({ teamData, sectionTitle, subTitle, className })
                 <div className="team-one__single-img">
                   <div className="round-box"></div>
                   <div className="inner">
-                    <img src={member.image} alt={member.name} />
+                    {member.link ? (
+                      <Link href={member.link}>
+                        <img src={member.image} alt={member.name} />
+                      </Link>
+                    ) : (
+                      <img src={member.image} alt={member.name} />
+                    )}
                   </div>
                 </div>
                 <div className="team-one__single-content">
                   <p>{member.position}</p>
-                  <h2><Link href="#">{member.name}</Link></h2>
+                  <h2>
+                    <Link href={member.link || '#'}>{member.name}</Link>
+                  </h2>
                   <div className="social-links">
                     {member.social.map((socialLink, index) => (
                       <a key={index} href={socialLink.url}>

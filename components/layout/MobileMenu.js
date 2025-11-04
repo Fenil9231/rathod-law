@@ -56,7 +56,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
               <li className={isActive.key === 2 ? "menu-item-has-children active" : "menu-item-has-children"}>
                 <Link href="#" onClick={handleMobileMenu}>Paralegal Services</Link>
                 <ul className="sub-menu" style={{ display: isActive.key === 2 ? "block" : "none" }}>
-                  <li><Link href="/paralegal-services" onClick={handleMobileMenu}>All Paralegal Services</Link></li>
+                  {/* <li><Link href="/paralegal-services" onClick={handleMobileMenu}>All Paralegal Services</Link></li> */}
                   <li><Link href="/speeding-tickets" onClick={handleMobileMenu}>Speeding Tickets</Link></li>
                   <li><Link href="/cell-phone-tickets" onClick={handleMobileMenu}>Cell Phone Tickets</Link></li>
                   <li><Link href="/seat-belt-tickets" onClick={handleMobileMenu}>Seat Belt Tickets</Link></li>
@@ -97,9 +97,9 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                 <ul className="sub-menu" style={{ display: isActive.key === 4 ? "block" : "none" }}>
                   <li><Link href="/about-us" onClick={handleMobileMenu}>About Us</Link></li>
                   <li><Link href="/contact" onClick={handleMobileMenu}>Contact Us</Link></li>
-                  <li><Link href="/privacy-policy" onClick={handleMobileMenu}>Privacy Policy</Link></li>
-                  <li><Link href="/terms-conditions" onClick={handleMobileMenu}>Terms & Conditions</Link></li>
-                  <li><Link href="/cookie-policy" onClick={handleMobileMenu}>Cookie Policy</Link></li>
+                  {/* <li><Link href="/privacy-policy" onClick={handleMobileMenu}>Privacy Policy</Link></li> */}
+                  {/* <li><Link href="/terms-conditions" onClick={handleMobileMenu}>Terms & Conditions</Link></li> */}
+                  {/* <li><Link href="/cookie-policy" onClick={handleMobileMenu}>Cookie Policy</Link></li> */}
                   <li><Link href="/schedule-call" onClick={handleMobileMenu}>Schedule a Call</Link></li>
                 </ul>
                 <div className={isActive.key === 4 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(4)}>
@@ -114,8 +114,13 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
             <div className="icon-box">
               <span className="icon-icon-48"></span>
             </div>
-            <p><a href="tel:+16476549454">Brampton: (647) 654-9454</a></p>
-            <p><a href="tel:+14378809656">Scarborough: (437) 880-9656</a></p>
+            <p><a href="tel:+16476549454">Brampton:<br /> (647) 654-9454</a></p>
+            {/* <p><a href="tel:+14378809656">Scarborough: (437) 880-9656</a></p> */}
+          </div>
+          <div  className="contact-info">
+            <div className="icon-box">
+               <span className="icon-icon-25"></span>
+            </div>
             <p><a href="mailto:info@rathodlaw.ca">info@rathodlaw.ca</a></p>
           </div>
 

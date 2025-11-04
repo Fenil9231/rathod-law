@@ -20,9 +20,9 @@ export default function Menu() {
             <li className="dropdown menu-item-has-children">
                 <Link href="#">Paralegal Services</Link>
                 <ul className="sub-menu">
-                    <li>
+                    {/* <li>
                         <Link href="/paralegal-services">All Paralegal Services</Link>
-                    </li>
+                    </li> */}
                     <li>
                         <Link href="/speeding-tickets">Speeding Tickets</Link>
                     </li>
@@ -83,15 +83,15 @@ export default function Menu() {
                     <li>
                         <Link href="/contact">Contact Us</Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link href="/privacy-policy">Privacy Policy</Link>
-                    </li>
-                    <li>
+                    </li> */}
+                    {/* <li>
                         <Link href="/terms-conditions">Terms & Conditions</Link>
-                    </li>
-                    <li>
+                    </li> */}
+                    {/* <li>
                         <Link href="/cookie-policy">Cookie Policy</Link>
-                    </li>
+                    </li> */}
                     <li>
                         <Link href="/schedule-call">Schedule a Call</Link>
                     </li>

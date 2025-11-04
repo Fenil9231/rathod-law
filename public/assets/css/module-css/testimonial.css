@@ -226,6 +226,31 @@ Testimonials One Css
     font-weight: 500;
 }
 
+/* Ensure PHONE NUMBER* placeholder matches FULL NAME* and EMAIL styles */
+.testimonials-one__form form input[type="tel"]::-webkit-input-placeholder {
+    color: rgba(var(--thm-white-rgb), 0.9);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.testimonials-one__form form input[type="tel"]:-moz-placeholder {
+    color: rgba(var(--thm-white-rgb), 0.9);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.testimonials-one__form form input[type="tel"]::-moz-placeholder {
+    color: rgba(var(--thm-white-rgb), 0.9);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.testimonials-one__form form input[type="tel"]:-ms-input-placeholder {
+    color: rgba(var(--thm-white-rgb), 0.9);
+    font-size: 14px;
+    font-weight: 500;
+}
+
 .testimonials-one__form form textarea::-webkit-input-placeholder {
     color: rgba(var(--thm-white-rgb), 0.9);
     font-size: 14px;

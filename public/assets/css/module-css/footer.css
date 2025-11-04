@@ -152,6 +152,7 @@
 
 .footer-widget__about-inner .text-box2 p {
     color: #B3B7BB;
+    margin-bottom: 8px;
 }
 
 .footer-widget__contact {
@@ -194,6 +195,11 @@
     line-height: 15px;
     top: 1px;
     margin-right: 4px;
+}
+
+/* Explicit golden icon color utility */
+.iconcol {
+    color: #cb9930 !important;
 }
 
 .footer-widget__contact-list ul li .text2 {
@@ -910,4 +916,13 @@
 
 .footer-one.style3 .footer-main {
     padding: 109px 0px 82px;
+}
+
+/* Address links within 'Our Offices' locations block */
+.footer-widget__locations a {
+    color: #B3B7BB;
+}
+
+.footer-widget__locations a:hover {
+    color: var(--thm-white);
 }

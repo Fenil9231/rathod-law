@@ -35,8 +35,8 @@
 
 .page-header .shape2 {
     position: absolute;
-    left: 740px;
-    bottom: 5px;
+    right:30px;
+    bottom: -20px;
     z-index: -1;
 }
 
@@ -50,7 +50,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    padding-left: 35px;
+    justify-content: center;
 }
 
 .thm-breadcrumb__outer .round-box {
@@ -142,4 +142,5 @@
     font-weight: 400;
     text-transform: uppercase;
     margin-top: 11px;
+    text-align: center;
 }

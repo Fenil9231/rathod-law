@@ -1,7 +1,7 @@
+"use client";
 import { useState } from 'react';
 import Link from 'next/link';
 import ModalVideo from 'react-modal-video';
-import 'react-modal-video/css/modal-video.min.css';
 
 const ServiceDetails = ({ serviceDetails }) => {
   const [isOpen, setIsOpen] = useState(false);

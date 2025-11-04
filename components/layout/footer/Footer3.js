@@ -55,6 +55,37 @@ const FooterOne = () => {
                                             <h3>Open Hours</h3>
                                             <p>Sunday To Thursday: 10:30AM - 5:30PM</p>
                                         </div>
+
+                                        {/* Offices placed directly after Open Hours with Google Maps links */}
+                                        <div className="text-box3 footer-widget__locations" style={{ marginTop: '12px' }}>
+                                            <h3>Our Offices</h3>
+                                            <ul>
+                                                <li>
+                                                    <p className="text1"><span className="icon-icon-24"></span> Brampton Office</p>
+                                                    <p className="text2">
+                                                        <a
+                                                            href="https://www.google.com/maps/search/?api=1&query=106-2250%20Bovaird%20Drive%20East%2C%20Brampton%2C%20Ontario%20L6R%200W3"
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                        >
+                                                            106-2250 Bovaird Drive East <br /> Brampton, Ontario L6R 0W3
+                                                        </a>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p className="text1"><span className="icon-icon-24"></span> Scarborough Office</p>
+                                                    <p className="text2">
+                                                        <a
+                                                            href="https://www.google.com/maps/search/?api=1&query=122-1200%20Markham%20Road%2C%20Scarborough%2C%20ON%20M1H%203C3"
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                        >
+                                                            122-1200 Markham Road <br /> Scarborough, ON M1H 3C3
+                                                        </a>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -70,11 +101,11 @@ const FooterOne = () => {
                                         <ul>
                                             <li>
                                                 <p className="text1"><span className="icon-icon-24"></span> Brampton Office</p>
-                                                <p className="text2">106-2250 Bovaird Drive East <br /> Brampton, Ontario L6R 0W3</p>
+                                        <p className="text2" style={{ color: '#B3B7BB' }}>106-2250 Bovaird Drive East <br /> Brampton, Ontario L6R 0W3</p>
                                             </li>
                                             <li>
                                                 <p className="text1"><span className="icon-icon-24"></span> Scarborough Office</p>
-                                                <p className="text2">122-1200 Markham Road <br /> Scarborough, ON M1H 3C3</p>
+                                        <p className="text2" style={{ color: '#B3B7BB' }}>122-1200 Markham Road <br /> Scarborough, ON M1H 3C3</p>
                                             </li>
                                             <li>
                                                 <p className="text1"><span className="icon-icon-25"></span> Email Us</p>
@@ -105,33 +136,28 @@ const FooterOne = () => {
                                     <div className="footer-widget__service-box">
                                         <ul>
                                             <li>
-                                                <Link href="/criminal-case">
-                                                    <span className="icon-icon-501"></span> Corporate Law
+                                                <Link href="/immigration-appeals">
+                                                    <span className="icon-icon-501"></span> Immigration Appeals
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link href="/insurance-law">
-                                                    <span className="icon-icon-501"></span> Insurance Law
+                                                <Link href="/refugee-appeals">
+                                                    <span className="icon-icon-501"></span> Refugee Appeals
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link href="/family-violence">
-                                                    <span className="icon-icon-501"></span> Family Law
+                                                <Link href="/immigration-applications">
+                                                    <span className="icon-icon-501"></span> Immigration Applications
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link href="/business-law">
-                                                    <span className="icon-icon-501"></span> Car Accident
+                                                <Link href="/family-law-services">
+                                                    <span className="icon-icon-501"></span> Family Law Services
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link href="/health-care">
-                                                    <span className="icon-icon-501"></span> Health Care
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/real-estate">
-                                                    <span className="icon-icon-501"></span> Real Estate Law
+                                                <Link href="/notarization">
+                                                    <span className="icon-icon-501"></span> Notarization
                                                 </Link>
                                             </li>
                                         </ul>

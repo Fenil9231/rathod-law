@@ -493,7 +493,9 @@ h6 {
     transition-delay: 0.1s;
 }
 
-.owl-carousel.owl-dot-style1 .owl-dots .owl-dot.active {}
+.owl-carousel.owl-dot-style1 .owl-dots .owl-dot.active {
+    color: var(--thm-primary);
+}
 
 .owl-carousel.owl-dot-style1 .owl-dots .owl-dot::before {
     content: "";
@@ -3969,9 +3971,9 @@ Faq Page
 
 	.testimonials-one__form {
 		padding: 80px 80px 90px;
-		width: 635px;
+		width: auto;
 		margin-right: 0px;
-		margin-left: 0px;
+		margin-left: 80px;
 	}
 
 	.testimonials-one__content {
@@ -5091,33 +5093,6 @@ Faq Page
 	.company-history .border-box {
 		display: none;
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
 

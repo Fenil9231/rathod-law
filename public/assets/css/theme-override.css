@@ -77,3 +77,129 @@
 .bg-primary.text-white {
   color: #121213 !important;
 }
+
+/* Flip footer phone icon to face right (no layout changes) */
+.footer-widget__contact-list ul li .text1 .icon-icon-37 {
+  display: inline-block;
+  transform: scaleX(-1);
+}
+
+/* Desktop/Laptop: keep Service Area items in one line */
+@media (min-width: 992px) {
+  /* Desktop/Laptop: stack Service Area items in one column */
+  .footer-widget__service-box ul {
+    display: block; /* revert to vertical list */
+  }
+
+  .footer-widget__service-box ul li {
+    display: block;
+    margin-bottom: 9px; /* keep original spacing */
+  }
+
+  .footer-widget__service-box ul li a {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap; /* keep label on a single line */
+    word-break: keep-all;
+  }
+
+  .footer-widget__service-box ul li a .icon-icon-501 {
+    margin-right: 8px; /* readable spacing before text */
+  }
+}
+
+/* =============================
+   Team Details (Kapil Profile) Overrides
+============================== */
+.team-details {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.team-details .sec-title h2 {
+  color: var(--thm-black);
+}
+
+.team-details__photo-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.team-details__card {
+  background: var(--thm-white);
+  border: 1px solid #e7e7e7;
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  margin-bottom: 28px;
+}
+
+.team-details__card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--thm-black);
+  border-bottom: 2px solid var(--thm-primary);
+  padding-bottom: 10px;
+  margin-bottom: 18px;
+}
+
+.team-details__text p {
+  color: var(--thm-body-color);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.team-details__list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.team-details__list li {
+  color: var(--thm-body-color);
+  border-bottom: 1px solid #f0f0f0;
+  padding: 10px 0;
+}
+
+.team-details__list li:last-child {
+  border-bottom: 0;
+}
+
+.team-details__list--compact li {
+  padding: 6px 0;
+}
+
+.team-details__subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--thm-black);
+  margin-bottom: 8px;
+}
+
+.team-details__contact-info a {
+  color: var(--thm-primary);
+}
+
+.team-details__note {
+  background: #f7f8fa;
+  border-left: 3px solid var(--thm-primary);
+  padding: 12px;
+  border-radius: 8px;
+  color: var(--thm-body-color);
+}
+
+/* Sidebar tweaks using existing theme blocks */
+.sidebar__single.sidebar__single-service {
+  margin-bottom: 28px;
+}
+
+.sidebar__single-service-list li a.active {
+  color: var(--thm-primary);
+}
+
+.sidebar__single.sidebar__single-contact .btn-box a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}

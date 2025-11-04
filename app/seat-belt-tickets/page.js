@@ -1,272 +1,107 @@
 import React from 'react';
 import Layout from '@/components/layout/Layout';
-import Link from 'next/link';
+import ServiceDetails from '@/components/common/ServiceDetails';
 
 export const metadata = {
-  title: 'Seat Belt Tickets Ontario | Seat Belt Violation Defense | Rathod Law',
-  description: 'Expert defense for seat belt tickets in Ontario. Fight fines, demerit points, and protect your driving record. Free consultation available.',
-  keywords: 'seat belt tickets Ontario, seat belt violations, traffic violation defense, demerit points, Highway Traffic Act',
+  title: 'Seat Belt Tickets Ontario | Fight Fines & Points | Rathod Law',
+  description:
+    'Ontario seat belt ticket defense: fight $240 fines, 2 demerit points, and insurance impact. Clear options, strong representation, free consultation.',
+  keywords:
+    'seat belt tickets Ontario, seat belt violation defense, Highway Traffic Act, demerit points, trial request 15 days, medical exemption',
 };
 
 export default function SeatBeltTickets() {
+  const serviceDetails = {
+    serviceListTitle: 'Traffic Ticket Services',
+    serviceList: [
+      { name: 'Speeding Tickets', link: '/speeding-tickets', isActive: false },
+      { name: 'Cell Phone Tickets', link: '/cell-phone-tickets', isActive: false },
+      { name: 'Seat Belt Tickets', link: '#', isActive: true },
+      { name: 'Red Light Tickets', link: '/red-light-tickets', isActive: false },
+      { name: 'Stunt Driving', link: '/stunt-driving', isActive: false },
+      { name: 'Suspended License', link: '/suspended-license', isActive: false },
+      { name: 'Demerit Points', link: '/demerit-points', isActive: false },
+    ],
+    contactPattern: 'assets/img/pattern/sidebar-contact-pattern.png',
+    contactIcon: '/assets/img/icon/about-v2-icon1.png',
+    contactTitle: 'Free Consultation',
+    contactSubtitle: 'Seat Belt Ticket Defense',
+    contactLink: '/contact',
+    contactButtonText: 'Speak with a Lawyer',
+    downloadTitle: 'Helpful Resources',
+    downloads: [
+      { text: 'Understanding Ontario Seat Belt Laws', link: '/insights' },
+      { text: 'How Demerit Points Work', link: '/demerit-points' },
+    ],
+    mainImage: '/assets/img/service/service-details-img6.jpg',
+    serviceTitle: 'Seat Belt Tickets in Ontario',
+    serviceDescription1:
+      'A seat belt conviction can lead to a $240 fine, 2 demerit points, and insurance increases. We help drivers challenge tickets, protect driving records, and avoid unnecessary penalties. Our approach is practical and outcome-focused—clear advice, strategic representation, transparent fees.',
+    serviceDescription2:
+      'You typically have 15 days to request a trial or meeting with the prosecutor. Acting quickly preserves your options. Many cases can be resolved without you appearing in court. We review disclosure, officer notes, and any legal exemptions to pursue the best available outcome.',
+    benefitTitle: 'Why work with us',
+    benefitDescription:
+      'We combine deep knowledge of the Highway Traffic Act with disciplined case preparation. Every matter gets a clear strategy: review the facts, evaluate exemptions, and determine whether to challenge evidence or seek a resolution that avoids points and minimizes insurance impact.',
+    benefits: [
+      { icon: 'icon-icon-9', title: 'Protect driving record' },
+      { icon: 'icon-icon-10', title: 'Reduce fines and points' },
+      { icon: 'icon-icon-11', title: 'Clear, honest advice' },
+      { icon: 'icon-icon-12', title: 'Court representation for you' },
+    ],
+    videoThumbnail: '/assets/img/service/service-details-img2.jpg',
+    videoId: 'dQw4w9WgXcQ',
+    justiceTitle: 'Ontario Seat Belt Law: What to Know',
+    justiceText1:
+      'Ontario requires properly worn seat belts for drivers and passengers. Drivers are responsible for passengers under 16. There are limited exemptions. Understanding the rules helps determine whether to fight the ticket or pursue a negotiated outcome.',
+    justiceList: [
+      'Requirements: belt across chest and lap—not under the arm',
+      'Penalties: $240 fine; 2 demerit points for drivers',
+      'Passenger 16+: generally responsible for their own compliance',
+      'Passenger under 16: driver is responsible and may receive points',
+      'Exemptions: valid medical certificate; frequent stops in limited scenarios; reversing; specific professional contexts',
+      'Common defenses: medical exemption proof, observation or identification issues, seat belt malfunction, procedural errors',
+      'Insurance & employment: convictions can raise premiums and affect roles needing clean records',
+      'Next steps: request trial within 15 days to preserve options',
+    ],
+    contentImgs3: [
+      '/assets/img/service/service-details-img3.jpg',
+      '/assets/img/service/service-details-img4.jpg',
+    ],
+    faqTitle: 'Frequently Asked Questions',
+    faqIntro:
+      'Quick answers to common questions. For tailored advice, speak with a lawyer—your circumstances matter.',
+    faqs: [
+      {
+        question: 'How many demerit points for a seat belt ticket?',
+        answer:
+          'Typically 2 points for drivers. For passengers under 16, the driver is responsible and can receive points. Points can affect insurance and accumulate toward suspensions.',
+      },
+      {
+        question: 'Do I have to go to court?',
+        answer:
+          'Often, no. We can typically appear on your behalf. We review disclosure, consider exemptions, and pursue dismissal or resolution without you needing to attend.',
+      },
+      {
+        question: 'Are there valid medical exemptions?',
+        answer:
+          'Yes, with a physician’s certificate stating you cannot wear a seat belt for medical reasons. We advise on documentation and how to present this properly.',
+      },
+      {
+        question: 'What is the deadline to request a trial?',
+        answer:
+          'You generally have 15 days from receiving the ticket to request a trial or meeting with the prosecutor. Acting quickly preserves all options.',
+      },
+      {
+        question: 'Will my insurance go up?',
+        answer:
+          'A conviction may increase premiums for several years. We focus on outcomes that avoid points or reduce impact to protect your record and costs.',
+      },
+    ],
+  };
+
   return (
     <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Seat Belt Tickets">
-      <div>
-        
-
-        {/* Main Content */}
-        <section className="about-page">
-          <div className="container">
-            <div className="row">
-              <div className="col-xl-8 col-lg-8">
-                <div className="about-page__content">
-                  <div className="section-title text-left">
-                    <span className="section-title__tagline">Traffic Violation Defense</span>
-                    <h2 className="section-title__title">Expert Seat Belt Ticket Defense in Ontario</h2>
-                  </div>
-                  
-                  <div className="card mb-4 shadow-sm">
-                    <div className="card-body">
-                      <p className="card-text">
-                        Seat belt violations in Ontario carry significant penalties including fines, demerit points, and potential 
-                        insurance increases. Our experienced paralegals can help you fight seat belt tickets and protect your 
-                        driving record from these serious consequences.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="card mb-4 shadow-sm">
-                    <div className="card-header bg-primary text-white">
-                      <h3 className="card-title mb-0">Ontario Seat Belt Laws</h3>
-                    </div>
-                    <div className="card-body">
-                      <p className="card-text">
-                        Under the Highway Traffic Act, all drivers and passengers in Ontario must wear properly fastened seat belts. 
-                        The law applies to all seating positions in the vehicle and includes specific requirements for different 
-                        age groups and vehicle types.
-                      </p>
-                      
-                      <h5 className="mt-3 mb-2">Seat Belt Requirements:</h5>
-                      <ul className="list-group list-group-flush">
-                        <li className="list-group-item"><strong>Drivers:</strong> Must wear seat belt at all times while vehicle is in motion</li>
-                        <li className="list-group-item"><strong>Front Passengers:</strong> Must wear seat belt regardless of age</li>
-                        <li className="list-group-item"><strong>Back Seat (16+):</strong> Must wear seat belt in all seating positions</li>
-                        <li className="list-group-item"><strong>Children (under 16):</strong> Driver responsible for ensuring compliance</li>
-                        <li className="list-group-item"><strong>Proper Use:</strong> Belt must be worn across chest and lap, not under arm</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="card mb-4 shadow-sm">
-                    <div className="card-header bg-primary text-white">
-                      <h3 className="card-title mb-0">Penalties for Seat Belt Violations</h3>
-                    </div>
-                    <div className="card-body">
-                      <p className="card-text">Seat belt tickets in Ontario carry the following penalties:</p>
-                      
-                      <div className="row">
-                        <div className="col-md-6 mb-3">
-                          <h6 className="text-primary">Driver Not Wearing Seat Belt:</h6>
-                          <ul className="list-group list-group-flush">
-                            <li className="list-group-item">Fine: $240 + $5 court costs</li>
-                            <li className="list-group-item">Demerit Points: 2 points</li>
-                            <li className="list-group-item">Insurance Impact: Potential premium increases</li>
-                          </ul>
-                        </div>
-                        <div className="col-md-6 mb-3">
-                          <h6 className="text-warning">Passenger Not Wearing Seat Belt:</h6>
-                          <ul className="list-group list-group-flush">
-                            <li className="list-group-item"><strong>Passenger 16+:</strong> $240 fine (passenger responsible)</li>
-                            <li className="list-group-item"><strong>Passenger under 16:</strong> $240 fine + 2 demerit points (driver responsible)</li>
-                            <li className="list-group-item"><strong>Multiple violations:</strong> Separate fines for each unbelted passenger</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="card mb-4 shadow-sm">
-                    <div className="card-header bg-primary text-white">
-                      <h3 className="card-title mb-0">Medical and Legal Exemptions</h3>
-                    </div>
-                    <div className="card-body">
-                      <p className="card-text">Limited exemptions exist for seat belt requirements:</p>
-                      <ul className="list-group list-group-flush">
-                        <li className="list-group-item"><strong>Medical Exemptions:</strong> Doctor's certificate for medical conditions</li>
-                        <li className="list-group-item"><strong>Delivery Drivers:</strong> When making frequent stops under specific conditions</li>
-                        <li className="list-group-item"><strong>Emergency Vehicles:</strong> Police, fire, ambulance in emergency situations</li>
-                        <li className="list-group-item"><strong>Taxi Drivers:</strong> Limited exemptions in certain circumstances</li>
-                        <li className="list-group-item"><strong>Backing Up:</strong> When reversing the vehicle</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="card mb-4 shadow-sm">
-                    <div className="card-header bg-primary text-white">
-                      <h3 className="card-title mb-0">Common Defenses for Seat Belt Tickets</h3>
-                    </div>
-                    <div className="card-body">
-                      <p className="card-text">Our experienced paralegals use various defense strategies:</p>
-                      <ul className="list-group list-group-flush">
-                        <li className="list-group-item"><strong>Medical Exemption:</strong> Valid medical certificate for exemption</li>
-                        <li className="list-group-item"><strong>Officer Error:</strong> Challenging the officer's observations</li>
-                        <li className="list-group-item"><strong>Seat Belt Malfunction:</strong> Mechanical failure of seat belt system</li>
-                        <li className="list-group-item"><strong>Proper Use:</strong> Proving seat belt was properly worn</li>
-                        <li className="list-group-item"><strong>Technical Defects:</strong> Errors in ticket information or procedure</li>
-                        <li className="list-group-item"><strong>Charter Rights:</strong> Violations during the traffic stop</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="card mb-4 shadow-sm">
-                    <div className="card-header bg-primary text-dark">
-                      <h3 className="card-title mb-0">Impact on Insurance and Driving Record</h3>
-                    </div>
-                    <div className="card-body">
-                      <p className="card-text">A seat belt conviction can have lasting consequences:</p>
-                      <ul className="list-group list-group-flush">
-                        <li className="list-group-item"><strong>Demerit Points:</strong> 2 points added to driving record</li>
-                        <li className="list-group-item"><strong>Insurance Increases:</strong> Potential premium increases for 3+ years</li>
-                        <li className="list-group-item"><strong>Employment Impact:</strong> May affect jobs requiring clean driving record</li>
-                        <li className="list-group-item"><strong>Point Accumulation:</strong> Contributes to license suspension risk</li>
-                        <li className="list-group-item"><strong>Repeat Offenses:</strong> Pattern of violations may lead to increased scrutiny</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="card mb-4 shadow-sm">
-                    <div className="card-header bg-primary text-white">
-                      <h3 className="card-title mb-0">Child Car Seat and Booster Seat Requirements</h3>
-                    </div>
-                    <div className="card-body">
-                      <p className="card-text">Ontario has specific requirements for children in vehicles:</p>
-                      <ul className="list-group list-group-flush">
-                        <li className="list-group-item"><strong>Under 1 year:</strong> Rear-facing car seat</li>
-                        <li className="list-group-item"><strong>1-4 years (under 40 lbs):</strong> Forward-facing car seat with harness</li>
-                        <li className="list-group-item"><strong>4-8 years (40-80 lbs):</strong> Booster seat with seat belt</li>
-                        <li className="list-group-item"><strong>8+ years or 80+ lbs:</strong> Seat belt (if properly fitted)</li>
-                        <li className="list-group-item"><strong>Under 13:</strong> Should sit in back seat when possible</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="card mb-4 shadow-sm">
-                    <div className="card-header bg-primary text-white">
-                      <h3 className="card-title mb-0">How We Can Help</h3>
-                    </div>
-                    <div className="card-body">
-                      <p className="card-text">Our experienced team will:</p>
-                      <ul className="list-group list-group-flush">
-                        <li className="list-group-item">Review the circumstances of your seat belt ticket</li>
-                        <li className="list-group-item">Examine officer notes and evidence for inconsistencies</li>
-                        <li className="list-group-item">Investigate potential medical or legal exemptions</li>
-                        <li className="list-group-item">Challenge the officer's ability to observe the violation</li>
-                        <li className="list-group-item">Negotiate with prosecutors for reduced charges</li>
-                        <li className="list-group-item">Represent you in court to fight for dismissal</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="card mb-4 shadow-sm">
-                    <div className="card-header bg-primary text-white">
-                      <h3 className="card-title mb-0">Safety and Legal Compliance</h3>
-                    </div>
-                    <div className="card-body">
-                      <p className="card-text">Beyond avoiding tickets, proper seat belt use is crucial for safety:</p>
-                      <ul className="list-group list-group-flush">
-                        <li className="list-group-item">Reduces risk of death by 45% and serious injury by 50%</li>
-                        <li className="list-group-item">Protects all occupants in the vehicle</li>
-                        <li className="list-group-item">Required by law in all Canadian provinces</li>
-                        <li className="list-group-item">Essential for insurance coverage in case of accident</li>
-                        <li className="list-group-item">Sets good example for children and passengers</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-xl-4 col-lg-4">
-                <div className="sidebar">
-                  <div className="sidebar__single sidebar__services">
-                    <h3 className="sidebar__title">Related Services</h3>
-                    <ul className="sidebar__services-list">
-                      <li><Link href="/speeding-tickets">Speeding Tickets</Link></li>
-                      <li><Link href="/cell-phone-tickets">Cell Phone Tickets</Link></li>
-                      <li><Link href="/red-light-tickets">Red Light Tickets</Link></li>
-                      <li><Link href="/stunt-driving">Stunt Driving</Link></li>
-                      <li><Link href="/suspended-license">Suspended License</Link></li>
-                      <li><Link href="/demerit-points">Demerit Points</Link></li>
-                    </ul>
-                  </div>
-
-                  <div className="sidebar__single sidebar__contact">
-                    <div className="sidebar__contact-bg" style={{backgroundImage: 'url(assets/images/resources/sidebar-contact-bg.jpg)'}}></div>
-                    <div className="sidebar__contact-content">
-                      <h3 className="sidebar__contact-title">Free Consultation</h3>
-                      <p className="sidebar__contact-text">Get expert advice on your seat belt ticket case</p>
-                      <div className="sidebar__contact-btn">
-                        <Link href="/contact" className="thm-btn">Contact Us</Link>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="sidebar__single sidebar__info">
-                    <h3 className="sidebar__title">Quick Facts</h3>
-                    <ul className="sidebar__info-list">
-                      <li><strong>Fine Amount:</strong> $240 + court costs</li>
-                      <li><strong>Demerit Points:</strong> 2 points for drivers</li>
-                      <li><strong>Court Option:</strong> Can request trial within 15 days</li>
-                      <li><strong>Success Rate:</strong> Good defense options available</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Call to Action */}
-        <div className="container my-5">
-          <div className="row justify-content-center">
-            <div className="col-xl-10">
-              <div className="card shadow-lg border-0">
-                <div className="card-header bg-primary text-white text-center py-4">
-                  <h3 className="card-title mb-2">Don't Let a Seat Belt Ticket Impact Your Future</h3>
-                  <p className="card-text mb-0">Contact Rathod Law today for expert legal representation and protect your driving record.</p>
-                </div>
-                <div className="card-body text-center py-4">
-                  <div className="row">
-                    <div className="col-md-4 mb-3">
-                      <div className="d-flex flex-column align-items-center">
-                        <i className="fas fa-shield-alt fa-2x text-primary mb-2"></i>
-                        <h6>Expert Defense</h6>
-                        <small className="text-muted">Experienced paralegals fighting for you</small>
-                      </div>
-                    </div>
-                    <div className="col-md-4 mb-3">
-                      <div className="d-flex flex-column align-items-center">
-                        <i className="fas fa-gavel fa-2x text-success mb-2"></i>
-                        <h6>Court Representation</h6>
-                        <small className="text-muted">Professional advocacy in court</small>
-                      </div>
-                    </div>
-                    <div className="col-md-4 mb-3">
-                      <div className="d-flex flex-column align-items-center">
-                        <i className="fas fa-phone fa-2x text-info mb-2"></i>
-                        <h6>Free Consultation</h6>
-                        <small className="text-muted">No obligation case review</small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="mt-4">
-                    <Link href="/contact" className="btn btn-primary btn-lg px-5">Get Free Consultation</Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ServiceDetails serviceDetails={serviceDetails} />
     </Layout>
   );
 }

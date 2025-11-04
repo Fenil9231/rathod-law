@@ -12,12 +12,11 @@ const footerBrands = [
 ];
 
 const services = [
-  { href: "/criminal-case", text: "Corporate Law" },
-  { href: "/criminal-case", text: "Insurance Law" },
-  { href: "/criminal-case", text: "Family Law" },
-  { href: "/criminal-case", text: "Car Accident" },
-  { href: "/criminal-case", text: "Health Care" },
-  { href: "/criminal-case", text: "Real Estate Law" }
+  { href: "/immigration-appeals", text: "Immigration Appeals" },
+  { href: "/refugee-appeals", text: "Refugee Appeals" },
+  { href: "/immigration-applications", text: "Immigration Applications" },
+  { href: "/family-law-services", text: "Family Law Services" },
+  { href: "/notarization", text: "Notarization" }
 ];
 
 const socialLinks = [
@@ -75,7 +74,40 @@ export default function Footer1() {
 
                       <div className="text-box2">
                         <h3>Open Hours</h3>
-                        <p>Sunday To Thursday: 10:30AM - 5:30PM</p>
+                        <p>Monday To Friday: 09:00AM - 05:00PM</p>
+                      </div>
+
+                      {/* Offices placed directly after Open Hours with Google Maps links */}
+                      <div className="text-box2 footer-widget__locations" style={{ marginTop: '12px' }}>
+                        <h3>Our Offices</h3>
+                        <ul>
+                          <li>
+                            <p className="text1"><span className="icon-icon-24 iconcol"></span> Brampton Office</p>
+                            <p className="text2">
+                              <a
+                                className="text1"
+                                // style={color:}
+                                href="https://www.google.com/maps/search/?api=1&query=106-2250%20Bovaird%20Drive%20East%2C%20Brampton%2C%20Ontario%20L6R%200W3"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                106-2250 Bovaird Drive East <br /> Brampton, Ontario L6R 0W3
+                              </a>
+                            </p>
+                          </li>
+                          <li>
+                            <p className="text1"><span className="icon-icon-24 iconcol"></span> Scarborough Office</p>
+                            <p className="text2">
+                              <a
+                                href="https://www.google.com/maps/search/?api=1&query=122-1200%20Markham%20Road%2C%20Scarborough%2C%20ON%20M1H%203C3"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                122-1200 Markham Road <br /> Scarborough, ON M1H 3C3
+                              </a>
+                            </p>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -91,15 +123,15 @@ export default function Footer1() {
 
                     <div className="footer-widget__contact-list">
                       <ul>
-                        <li>
+                        {/* <li>
                           <p className="text1"><span className="icon-icon-24"></span> Brampton Office</p>
-                          <p className="text2">106-2250 Bovaird Drive East <br /> Brampton, Ontario L6R 0W3</p>
+                                <p className="text2" style={{ color: '#B3B7BB' }}>106-2250 Bovaird Drive East <br /> Brampton, Ontario L6R 0W3</p>
                         </li>
 
                         <li>
                           <p className="text1"><span className="icon-icon-24"></span> Scarborough Office</p>
-                          <p className="text2">122-1200 Markham Road <br /> Scarborough, ON M1H 3C3</p>
-                        </li>
+                                <p className="text2" style={{ color: '#B3B7BB' }}>122-1200 Markham Road <br /> Scarborough, ON M1H 3C3</p>
+                        </li> */}
 
                         <li>
                           <p className="text1"><span className="icon-icon-25"></span> Email Us</p>
@@ -113,7 +145,6 @@ export default function Footer1() {
                           <p className="text2">
                             Brampton: <a href="tel:(647) 654-9454">(647) 654-9454</a><br />
                             Scarborough: <a href="tel:(437) 880-9656">(437) 880-9656</a><br />
-                            <small>Hours: 9am-5pm Mon-Fri</small>
                           </p>
                         </li>
                       </ul>
